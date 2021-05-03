@@ -1,0 +1,47 @@
+module processor(enable, inc, position, flick);
+	input [4:0] position;
+	input flick;
+	
+	output reg inc;
+	output enable;
+	
+	reg [4:0] max, min, pre_min;
+	reg isFlick;
+	
+	reg isWorking, isEnd;
+	
+	initial begin
+		inc = 1'b1;
+		isFlick = 1'b0;
+		isWoring = 1'b0;
+		isEnd = 1'b0;
+	end
+	
+	assign enable = isWorking & !isEnd;
+	
+	
+	
+	always @(posedge flick)
+	begin
+		if (isWorking == 1'b0)
+		begin
+			isWorking <= 1'b1;
+		end
+		else 
+		begin
+			if (position == 5'd6) or (position == 5'd10) 
+			begin
+				isFlick <= 1'b1;
+			end
+			else
+			begin
+				isFlick <= 1'b0;
+			end 
+		end
+	end
+	
+	always @(position) 
+	begin
+		 
+	end
+endmodule 

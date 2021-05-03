@@ -1,0 +1,8 @@
+module t_shifter();
+
+	wire [15:0]out, [3:0]position;
+	reg en, clk, inc;
+	
+endmodule 
+	
+	

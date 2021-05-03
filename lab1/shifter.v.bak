@@ -1,0 +1,3 @@
+module shifter(out, position, en, inc, clk)
+
+endmodule

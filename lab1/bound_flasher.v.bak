@@ -1,0 +1,10 @@
+module bound_flasher(led, flick, clk)
+	output [15:0] led;
+	input flick, clk;
+	
+	wire enable, increase, position;
+	
+	processor p0(.enable(enable), .increase(increase), .position(position), .flick(flick));
+	shifter s0(.out(led), .position(position), .enable(enable), .increase(increase), .clk(clk));
+	
+endmodule 
