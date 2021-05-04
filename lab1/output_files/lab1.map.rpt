@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab1
-Mon May 03 07:36:05 2021
+Tue May 04 13:58:38 2021
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -46,16 +46,16 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon May 03 07:36:05 2021       ;
+; Analysis & Synthesis Status        ; Successful - Tue May 04 13:58:38 2021       ;
 ; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                      ; lab1                                        ;
 ; Top-level Entity Name              ; bound_flasher                               ;
 ; Family                             ; Cyclone IV GX                               ;
-; Total logic elements               ; 50                                          ;
-;     Total combinational functions  ; 49                                          ;
+; Total logic elements               ; 38                                          ;
+;     Total combinational functions  ; 37                                          ;
 ;     Dedicated logic registers      ; 22                                          ;
 ; Total registers                    ; 22                                          ;
-; Total pins                         ; 19                                          ;
+; Total pins                         ; 30                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -166,7 +166,7 @@ agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.1%      ;
+;     Processor 2            ;   0.0%      ;
 ;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
@@ -182,20 +182,20 @@ agreement for further details.
 +----------------------------------+-----------------+------------------------+-------------------------------------------+---------+
 
 
-+----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary        ;
-+--------------------------+-------------------------+
-; Resource                 ; Usage                   ;
-+--------------------------+-------------------------+
-; I/O pins                 ; 19                      ;
-;                          ;                         ;
-; DSP block 9-bit elements ; 0                       ;
-;                          ;                         ;
-; Maximum fan-out node     ; processor:p0|increase~0 ;
-; Maximum fan-out          ; 26                      ;
-; Total fan-out            ; 250                     ;
-; Average fan-out          ; 2.29                    ;
-+--------------------------+-------------------------+
++--------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary      ;
++--------------------------+-----------------------+
+; Resource                 ; Usage                 ;
++--------------------------+-----------------------+
+; I/O pins                 ; 30                    ;
+;                          ;                       ;
+; DSP block 9-bit elements ; 0                     ;
+;                          ;                       ;
+; Maximum fan-out node     ; processor:p0|increase ;
+; Maximum fan-out          ; 24                    ;
+; Total fan-out            ; 231                   ;
+; Average fan-out          ; 1.94                  ;
++--------------------------+-----------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -203,31 +203,25 @@ agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------+---------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name         ; Entity Name   ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------+---------------+--------------+
-; |bound_flasher             ; 49 (0)              ; 22 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0         ; 19   ; 0            ; |bound_flasher              ; bound_flasher ; work         ;
-;    |processor:p0|          ; 28 (28)             ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bound_flasher|processor:p0 ; processor     ; work         ;
+; |bound_flasher             ; 37 (0)              ; 22 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0         ; 30   ; 0            ; |bound_flasher              ; bound_flasher ; work         ;
+;    |processor:p0|          ; 16 (16)             ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bound_flasher|processor:p0 ; processor     ; work         ;
 ;    |shifter:s0|            ; 21 (21)             ; 21 (21)                   ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bound_flasher|shifter:s0   ; shifter       ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------+---------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+--------------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                    ;
-+-----------------------------------------------------+-------------------------+------------------------+
-; Latch Name                                          ; Latch Enable Signal     ; Free of Timing Hazards ;
-+-----------------------------------------------------+-------------------------+------------------------+
-; processor:p0|increase                               ; processor:p0|increase   ; yes                    ;
-; processor:p0|min[0]                                 ; processor:p0|min[0]     ; yes                    ;
-; processor:p0|min[2]                                 ; processor:p0|min[0]     ; yes                    ;
-; processor:p0|isFlick                                ; processor:p0|isFlick    ; yes                    ;
-; processor:p0|max[0]                                 ; processor:p0|max[1]     ; yes                    ;
-; processor:p0|max[1]                                 ; processor:p0|max[1]     ; yes                    ;
-; processor:p0|max[2]                                 ; processor:p0|max[1]     ; yes                    ;
-; processor:p0|max[3]                                 ; processor:p0|max[1]     ; yes                    ;
-; processor:p0|max[4]                                 ; processor:p0|max[1]     ; yes                    ;
-; processor:p0|pre_min[0]                             ; processor:p0|pre_min[0] ; yes                    ;
-; processor:p0|pre_min[2]                             ; processor:p0|pre_min[0] ; yes                    ;
-; Number of user-specified and inferred latches = 11  ;                         ;                        ;
-+-----------------------------------------------------+-------------------------+------------------------+
++----------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                      ;
++----------------------------------------------------+----------------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal        ; Free of Timing Hazards ;
++----------------------------------------------------+----------------------------+------------------------+
+; processor:p0|state.01                              ; processor:p0|next_state.00 ; yes                    ;
+; processor:p0|state.10                              ; processor:p0|next_state.00 ; yes                    ;
+; processor:p0|state.00                              ; processor:p0|next_state.00 ; yes                    ;
+; processor:p0|increase                              ; processor:p0|increase      ; yes                    ;
+; processor:p0|isEnd                                 ; processor:p0|isEnd         ; yes                    ;
+; Number of user-specified and inferred latches = 5  ;                            ;                        ;
++----------------------------------------------------+----------------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
@@ -251,7 +245,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------+---------+
 ; Inverted Register                      ; Fan out ;
 +----------------------------------------+---------+
-; processor:p0|enable                    ; 22      ;
+; processor:p0|enable                    ; 21      ;
 ; Total number of inverted registers = 1 ;         ;
 +----------------------------------------+---------+
 
@@ -270,21 +264,23 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 19                          ;
+; boundary_port         ; 30                          ;
 ; cycloneiii_ff         ; 22                          ;
 ;     CLR               ; 1                           ;
 ;     SCLR              ; 21                          ;
-; cycloneiii_lcell_comb ; 49                          ;
+; cycloneiii_lcell_comb ; 39                          ;
 ;     arith             ; 4                           ;
 ;         2 data inputs ; 1                           ;
 ;         3 data inputs ; 3                           ;
-;     normal            ; 45                          ;
-;         2 data inputs ; 7                           ;
-;         3 data inputs ; 28                          ;
-;         4 data inputs ; 10                          ;
+;     normal            ; 35                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 6                           ;
+;         3 data inputs ; 20                          ;
+;         4 data inputs ; 7                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 1.93                        ;
+; Average LUT depth     ; 2.04                        ;
 +-----------------------+-----------------------------+
 
 
@@ -293,7 +289,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -303,7 +299,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Mon May 03 07:35:50 2021
+    Info: Processing started: Tue May 04 13:58:25 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab1 -c lab1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -319,81 +315,53 @@ Info (12021): Found 1 design units, including 1 entities, in source file t_bound
     Info (12023): Found entity 1: t_bound_flasher File: D:/Quang/202/Verilog/lab1/t_bound_flasher.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file t_processor.v
     Info (12023): Found entity 1: t_processor File: D:/Quang/202/Verilog/lab1/t_processor.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file de2i_run.v
+    Info (12023): Found entity 1: DE2i_run File: D:/Quang/202/Verilog/lab1/DE2i_run.v Line: 1
 Info (12127): Elaborating entity "bound_flasher" for the top level hierarchy
 Info (12128): Elaborating entity "processor" for hierarchy "processor:p0" File: D:/Quang/202/Verilog/lab1/bound_flasher.v Line: 11
-Warning (10240): Verilog HDL Always Construct warning at processor.v(24): inferring latch(es) for variable "isFlick", which holds its previous value in one or more paths through the always construct File: D:/Quang/202/Verilog/lab1/processor.v Line: 24
-Warning (10235): Verilog HDL Always Construct warning at processor.v(52): variable "increase" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Quang/202/Verilog/lab1/processor.v Line: 52
-Warning (10235): Verilog HDL Always Construct warning at processor.v(54): variable "isFlick" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Quang/202/Verilog/lab1/processor.v Line: 54
-Warning (10235): Verilog HDL Always Construct warning at processor.v(56): variable "pre_min" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Quang/202/Verilog/lab1/processor.v Line: 56
-Warning (10235): Verilog HDL Always Construct warning at processor.v(58): variable "max" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Quang/202/Verilog/lab1/processor.v Line: 58
-Warning (10235): Verilog HDL Always Construct warning at processor.v(78): variable "max" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Quang/202/Verilog/lab1/processor.v Line: 78
-Warning (10235): Verilog HDL Always Construct warning at processor.v(79): variable "increase" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Quang/202/Verilog/lab1/processor.v Line: 79
-Warning (10235): Verilog HDL Always Construct warning at processor.v(85): variable "max" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Quang/202/Verilog/lab1/processor.v Line: 85
-Warning (10235): Verilog HDL Always Construct warning at processor.v(86): variable "increase" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Quang/202/Verilog/lab1/processor.v Line: 86
-Warning (10235): Verilog HDL Always Construct warning at processor.v(91): variable "min" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Quang/202/Verilog/lab1/processor.v Line: 91
-Warning (10235): Verilog HDL Always Construct warning at processor.v(108): variable "min" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Quang/202/Verilog/lab1/processor.v Line: 108
-Warning (10235): Verilog HDL Always Construct warning at processor.v(109): variable "pre_min" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Quang/202/Verilog/lab1/processor.v Line: 109
-Warning (10235): Verilog HDL Always Construct warning at processor.v(110): variable "increase" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Quang/202/Verilog/lab1/processor.v Line: 110
-Warning (10235): Verilog HDL Always Construct warning at processor.v(116): variable "min" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Quang/202/Verilog/lab1/processor.v Line: 116
-Warning (10235): Verilog HDL Always Construct warning at processor.v(117): variable "increase" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Quang/202/Verilog/lab1/processor.v Line: 117
-Warning (10240): Verilog HDL Always Construct warning at processor.v(50): inferring latch(es) for variable "min", which holds its previous value in one or more paths through the always construct File: D:/Quang/202/Verilog/lab1/processor.v Line: 50
-Warning (10240): Verilog HDL Always Construct warning at processor.v(50): inferring latch(es) for variable "max", which holds its previous value in one or more paths through the always construct File: D:/Quang/202/Verilog/lab1/processor.v Line: 50
-Warning (10240): Verilog HDL Always Construct warning at processor.v(50): inferring latch(es) for variable "increase", which holds its previous value in one or more paths through the always construct File: D:/Quang/202/Verilog/lab1/processor.v Line: 50
-Warning (10240): Verilog HDL Always Construct warning at processor.v(50): inferring latch(es) for variable "pre_min", which holds its previous value in one or more paths through the always construct File: D:/Quang/202/Verilog/lab1/processor.v Line: 50
-Info (10041): Inferred latch for "pre_min[0]" at processor.v(91) File: D:/Quang/202/Verilog/lab1/processor.v Line: 91
-Info (10041): Inferred latch for "pre_min[1]" at processor.v(91) File: D:/Quang/202/Verilog/lab1/processor.v Line: 91
-Info (10041): Inferred latch for "pre_min[2]" at processor.v(91) File: D:/Quang/202/Verilog/lab1/processor.v Line: 91
-Info (10041): Inferred latch for "pre_min[3]" at processor.v(91) File: D:/Quang/202/Verilog/lab1/processor.v Line: 91
-Info (10041): Inferred latch for "pre_min[4]" at processor.v(91) File: D:/Quang/202/Verilog/lab1/processor.v Line: 91
-Info (10041): Inferred latch for "increase" at processor.v(91) File: D:/Quang/202/Verilog/lab1/processor.v Line: 91
-Info (10041): Inferred latch for "max[0]" at processor.v(91) File: D:/Quang/202/Verilog/lab1/processor.v Line: 91
-Info (10041): Inferred latch for "max[1]" at processor.v(91) File: D:/Quang/202/Verilog/lab1/processor.v Line: 91
-Info (10041): Inferred latch for "max[2]" at processor.v(91) File: D:/Quang/202/Verilog/lab1/processor.v Line: 91
-Info (10041): Inferred latch for "max[3]" at processor.v(91) File: D:/Quang/202/Verilog/lab1/processor.v Line: 91
-Info (10041): Inferred latch for "max[4]" at processor.v(91) File: D:/Quang/202/Verilog/lab1/processor.v Line: 91
-Info (10041): Inferred latch for "min[0]" at processor.v(91) File: D:/Quang/202/Verilog/lab1/processor.v Line: 91
-Info (10041): Inferred latch for "min[1]" at processor.v(91) File: D:/Quang/202/Verilog/lab1/processor.v Line: 91
-Info (10041): Inferred latch for "min[2]" at processor.v(91) File: D:/Quang/202/Verilog/lab1/processor.v Line: 91
-Info (10041): Inferred latch for "min[3]" at processor.v(91) File: D:/Quang/202/Verilog/lab1/processor.v Line: 91
-Info (10041): Inferred latch for "min[4]" at processor.v(91) File: D:/Quang/202/Verilog/lab1/processor.v Line: 91
-Info (10041): Inferred latch for "isFlick" at processor.v(24) File: D:/Quang/202/Verilog/lab1/processor.v Line: 24
+Warning (10036): Verilog HDL or VHDL warning at processor.v(10): object "pre_min" assigned a value but never read File: D:/Quang/202/Verilog/lab1/processor.v Line: 10
+Warning (10235): Verilog HDL Always Construct warning at processor.v(91): variable "increase" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Quang/202/Verilog/lab1/processor.v Line: 91
+Warning (10235): Verilog HDL Always Construct warning at processor.v(96): variable "increase" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Quang/202/Verilog/lab1/processor.v Line: 96
+Warning (10235): Verilog HDL Always Construct warning at processor.v(98): variable "max" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Quang/202/Verilog/lab1/processor.v Line: 98
+Warning (10235): Verilog HDL Always Construct warning at processor.v(105): variable "increase" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Quang/202/Verilog/lab1/processor.v Line: 105
+Warning (10235): Verilog HDL Always Construct warning at processor.v(110): variable "min" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Quang/202/Verilog/lab1/processor.v Line: 110
+Warning (10235): Verilog HDL Always Construct warning at processor.v(112): variable "state" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Quang/202/Verilog/lab1/processor.v Line: 112
+Warning (10235): Verilog HDL Always Construct warning at processor.v(125): variable "increase" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Quang/202/Verilog/lab1/processor.v Line: 125
+Warning (10240): Verilog HDL Always Construct warning at processor.v(78): inferring latch(es) for variable "isEnd", which holds its previous value in one or more paths through the always construct File: D:/Quang/202/Verilog/lab1/processor.v Line: 78
+Warning (10240): Verilog HDL Always Construct warning at processor.v(78): inferring latch(es) for variable "isFlick", which holds its previous value in one or more paths through the always construct File: D:/Quang/202/Verilog/lab1/processor.v Line: 78
+Warning (10240): Verilog HDL Always Construct warning at processor.v(78): inferring latch(es) for variable "increase", which holds its previous value in one or more paths through the always construct File: D:/Quang/202/Verilog/lab1/processor.v Line: 78
+Warning (10240): Verilog HDL Always Construct warning at processor.v(78): inferring latch(es) for variable "next_state", which holds its previous value in one or more paths through the always construct File: D:/Quang/202/Verilog/lab1/processor.v Line: 78
+Info (10041): Inferred latch for "next_state.10" at processor.v(96) File: D:/Quang/202/Verilog/lab1/processor.v Line: 96
+Info (10041): Inferred latch for "next_state.01" at processor.v(96) File: D:/Quang/202/Verilog/lab1/processor.v Line: 96
+Info (10041): Inferred latch for "next_state.00" at processor.v(96) File: D:/Quang/202/Verilog/lab1/processor.v Line: 96
+Info (10041): Inferred latch for "increase" at processor.v(96) File: D:/Quang/202/Verilog/lab1/processor.v Line: 96
+Info (10041): Inferred latch for "isEnd" at processor.v(96) File: D:/Quang/202/Verilog/lab1/processor.v Line: 96
 Info (12128): Elaborating entity "shifter" for hierarchy "shifter:s0" File: D:/Quang/202/Verilog/lab1/bound_flasher.v Line: 12
 Warning (10230): Verilog HDL assignment warning at shifter.v(17): truncated value with size 32 to match size of target (5) File: D:/Quang/202/Verilog/lab1/shifter.v Line: 17
 Warning (10230): Verilog HDL assignment warning at shifter.v(22): truncated value with size 32 to match size of target (5) File: D:/Quang/202/Verilog/lab1/shifter.v Line: 22
-Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
-    Info (13026): Duplicate LATCH primitive "processor:p0|max[3]" merged with LATCH primitive "processor:p0|max[0]" File: D:/Quang/202/Verilog/lab1/processor.v Line: 91
-    Info (13026): Duplicate LATCH primitive "processor:p0|pre_min[2]" merged with LATCH primitive "processor:p0|pre_min[0]" File: D:/Quang/202/Verilog/lab1/processor.v Line: 91
-Warning (13012): Latch processor:p0|min[0] has unsafe behavior File: D:/Quang/202/Verilog/lab1/processor.v Line: 91
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal processor:p0|increase File: D:/Quang/202/Verilog/lab1/processor.v Line: 6
-Warning (13012): Latch processor:p0|min[2] has unsafe behavior File: D:/Quang/202/Verilog/lab1/processor.v Line: 91
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal processor:p0|increase File: D:/Quang/202/Verilog/lab1/processor.v Line: 6
-Warning (13012): Latch processor:p0|max[0] has unsafe behavior File: D:/Quang/202/Verilog/lab1/processor.v Line: 91
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal shifter:s0|position[0] File: D:/Quang/202/Verilog/lab1/shifter.v Line: 11
-Warning (13012): Latch processor:p0|max[1] has unsafe behavior File: D:/Quang/202/Verilog/lab1/processor.v Line: 91
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal shifter:s0|position[0] File: D:/Quang/202/Verilog/lab1/shifter.v Line: 11
-Warning (13012): Latch processor:p0|max[2] has unsafe behavior File: D:/Quang/202/Verilog/lab1/processor.v Line: 91
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal shifter:s0|position[4] File: D:/Quang/202/Verilog/lab1/shifter.v Line: 11
-Warning (13012): Latch processor:p0|max[4] has unsafe behavior File: D:/Quang/202/Verilog/lab1/processor.v Line: 91
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal shifter:s0|position[0] File: D:/Quang/202/Verilog/lab1/shifter.v Line: 11
-Warning (13012): Latch processor:p0|pre_min[0] has unsafe behavior File: D:/Quang/202/Verilog/lab1/processor.v Line: 91
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal shifter:s0|position[0] File: D:/Quang/202/Verilog/lab1/shifter.v Line: 11
+Warning (13012): Latch processor:p0|state.10 has unsafe behavior File: D:/Quang/202/Verilog/lab1/processor.v Line: 12
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal processor:p0|state.01 File: D:/Quang/202/Verilog/lab1/processor.v Line: 12
+Warning (13012): Latch processor:p0|increase has unsafe behavior File: D:/Quang/202/Verilog/lab1/processor.v Line: 5
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal flick File: D:/Quang/202/Verilog/lab1/bound_flasher.v Line: 6
 Info (13000): Registers with preset signals will power-up high File: D:/Quang/202/Verilog/lab1/processor.v Line: 5
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
-Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
-    Info (13026): Duplicate LATCH primitive "processor:p0|min[2]" merged with LATCH primitive "processor:p0|min[0]" File: D:/Quang/202/Verilog/lab1/processor.v Line: 91
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "min[1]" is stuck at GND File: D:/Quang/202/Verilog/lab1/bound_flasher.v Line: 3
+    Warning (13410): Pin "min[3]" is stuck at GND File: D:/Quang/202/Verilog/lab1/bound_flasher.v Line: 3
+    Warning (13410): Pin "min[4]" is stuck at GND File: D:/Quang/202/Verilog/lab1/bound_flasher.v Line: 3
 Info (286030): Timing-Driven Synthesis is running
 Critical Warning (18061): Ignored Power-Up Level option on the following registers
     Critical Warning (18010): Register processor:p0|enable will power up to High File: D:/Quang/202/Verilog/lab1/processor.v Line: 5
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 69 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 68 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 17 output pins
-    Info (21061): Implemented 50 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 38 warnings
-    Info: Peak virtual memory: 4849 megabytes
-    Info: Processing ended: Mon May 03 07:36:05 2021
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:25
+    Info (21059): Implemented 28 output pins
+    Info (21061): Implemented 38 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 25 warnings
+    Info: Peak virtual memory: 4848 megabytes
+    Info: Processing ended: Tue May 04 13:58:38 2021
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:28
 
 

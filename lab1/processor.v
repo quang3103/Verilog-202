@@ -1,12 +1,15 @@
-module processor(enable, increase, position, flick);
+module processor(enable, increase, position, flick, out_max, out_min, out_state);
 	input [4:0] position;
 	input flick;
 	
-	output reg enable;
-	output reg increase;
+	output reg enable, increase;
 	
-	reg [4:0] max, min, pre_min;
+	output [4:0]out_max, out_min;
+	output [1:0]out_state;
+	
+	reg [4:0] max, min, pre_min, pre_position;
 	reg isFlick, isEnd;
+	reg [1:0] state, next_state, pre_state;
 	
 	initial begin
 		isFlick = 1'b0;
@@ -15,11 +18,15 @@ module processor(enable, increase, position, flick);
 		max = 5'd6;
 		min = 5'd0;
 		pre_min = 5'd0;
+		state = 2'b00;
+		next_state = 2'b00;
 	end
 	
-	//assign enable = isWorking & !isEnd;
+	assign out_max = max;
+	assign out_min = min;
+	assign out_state = state;
 
-	always @(posedge flick, posedge isEnd)
+	/*always @(posedge flick, posedge isEnd)
 	begin
 		if (flick == 1'b1)
 		begin
@@ -39,158 +46,152 @@ module processor(enable, increase, position, flick);
 				end
 			end	
 		end
-		else 
+		else if (isEnd == 1'b1)
+		begin
+			enable <= 1'b0;
+		end
+		else
+		begin
+			isFlick <= 1'b0;
+		end
+	end*/
+	
+	always @(posedge flick, posedge isEnd)
+	begin
+		if (flick == 1'b1)
+		begin
+			if (enable == 1'b0)
+			begin
+				enable <= 1'b1;
+			end
+			else 
+			begin
+				enable <= enable;
+			end
+		end
+		else
 		begin
 			enable <= 1'b0;
 		end
 	end
 	
-	always @(position) 
+	always @(position, flick) 
 	begin
-		if (increase == 1'b1)
+		if (flick == 1'b1)
 		begin
-			if (position == max)
-			begin 
+			isEnd = 1'b0;
+			if ((position == 5'd6) || (position == 5'd11))
+			begin	
+				next_state = pre_state;
+				isFlick = 1'b1;
 				increase = 1'b0;
-			end 
-			else 
+			end
+			else
 			begin
+				isFlick = 1'b0;
 				increase = increase;
+			end
+			//-----------------------------------------------
+			if (increase == 1'b1)
+			begin
+				if (position == max)
+				begin 
+					isFlick = 1'b0;
+					increase = 1'b0;
+				end 
+				else 
+				begin
+					increase = increase;
+				end
+			end
+			else
+			begin
+				if (position == min)
+				begin
+					case (state)
+						2'b00: next_state = 2'b01;
+						2'b01: next_state = 2'b10;
+						2'b10: 
+							begin 
+								next_state = 2'b00;
+								isEnd = 1'b1;
+							end
+					endcase
+					isFlick = 1'b0;
+					increase = 1'b1;
+				end 
+				else 
+				begin
+					increase = increase;
+				end
 			end
 		end
 		else
 		begin
-			if (position == min)
+			if (increase == 1'b1)
 			begin
-				increase = 1'b1;
-			end 
-			else 
+				if (position == max)
+				begin 
+					isFlick = 1'b0;
+					increase = 1'b0;
+				end 
+				else 
+				begin
+					increase = increase;
+				end
+			end
+			else
 			begin
-				increase = increase;
+				if (position == min)
+				begin
+					case (state)
+						2'b00: next_state = 2'b01;
+						2'b01: next_state = 2'b10;
+						2'b10: 
+							begin 
+								next_state = 2'b00;
+								isEnd = 1'b1;
+							end
+					endcase
+					isFlick = 1'b0;
+					increase = 1'b1;
+				end 
+				else 
+				begin
+					increase = increase;
+				end
 			end
 		end
 	end
 	
-	always @(increase)
+	always @(next_state, isFlick)
 	begin
-		if (enable == 1'b1)
-		begin
-			begin
-				if (increase == 1'b0)
-				begin
-					case (max)
-						5'd6: max = 5'd11;
-						5'd11: max = 5'd16;
-						5'd16: max = 5'd6;
-						default: max = max;
-					endcase
-				end
-				else
-				begin
-					case (min)
-					5'd0:
-						begin
-							if (max == 5'd6) 
-							begin
-								min = 5'd0;
-								pre_min = 5'd0;
-								isEnd = 1'b1;
-							end
-							else
-							begin
-								min = 5'd5;
-								pre_min = 5'd0;
-								isEnd = 1'b0;
-							end
-						end
-					5'd5:
-						begin
-							min = 5'd0;
-							pre_min = 5'd5;
-						end
-					default:
-						begin
-							min = min;
-							pre_min = pre_min;
-						end
-					endcase
-				end
-			end
-		end
-		else
-		begin
-			enable = 1'b0;
-			min = 5'd0;
-			max = 5'd6;
-			pre_min = 5'd0;
-		end
-	end 
+		pre_state = state;
+		state = next_state;
+	end
 	
-	/*always @(position) 
+	always @(state)
 	begin
-		if (increase == 1'b1)
-		begin
-			if (position == max)
-			begin
-				case (position)
-				5'd6:
-					begin
-						max = 5'd11;
-						increase = 1'b0;
-					end
-				5'd11:
-					begin
-						max = 5'd16;
-						increase = 1'b0;
-					end
-				5'd16:
-					begin
-						max = 5'd6;
-						increase = 1'b0;
-					end
-				default:
-					begin
-						max = max;
-						increase = increase;
-					end
-				endcase
-			end
-			else 
-			begin
-				max = max;
-				increase = increase;
-			end
-		end
-		else 
-		begin
-			if (position == min)
-			begin
-				case (position)
-				5'd0:
-					begin
-						min = 5'd5;
-						pre_min = 5'd0;
-						increase = 1'b1;
-					end
-				5'd5:
-					begin
-						min = 5'd0;
-						pre_min = 5'd5;
-						increase = 1'b1;
-					end
-				default:
-					begin
-						min = min;
-						pre_min = pre_min;
-						increase = increase;
-					end
-				endcase
-			end
-			else 
-			begin
-				min = min;
-				increase = increase;
-			end
-		end 
-	end */
-endmodule 
+		case (state)
+			2'b00:
+				begin
+					max = 5'd6;
+					min = 5'd0;
+					//pre_min = 5'd0;
+				end
+			2'b01:
+				begin
+					max = 5'd11;
+					min = 5'd5;
+					//pre_min = 5'd0;
+				end
+			2'b10:
+				begin
+					max = 5'd16;
+					min = 5'd0;
+					//pre_min = 5'd5;
+				end
+		endcase
+	end
+
+endmodule

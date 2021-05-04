@@ -3,40 +3,28 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'clk'
-Slack : -12.406
-TNS   : -229.705
-
-Type  : Slow 1200mV 85C Model Setup 'shifter:s0|position[4]'
-Slack : -11.390
-TNS   : -28.985
+Slack : -2.702
+TNS   : -45.875
 
 Type  : Slow 1200mV 85C Model Setup 'flick'
-Slack : -5.220
-TNS   : -5.220
-
-Type  : Slow 1200mV 85C Model Hold 'shifter:s0|position[4]'
-Slack : -2.500
-TNS   : -13.321
-
-Type  : Slow 1200mV 85C Model Hold 'clk'
-Slack : 0.438
-TNS   : 0.000
+Slack : -2.678
+TNS   : -4.173
 
 Type  : Slow 1200mV 85C Model Hold 'flick'
-Slack : 1.606
+Slack : 0.096
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Recovery 'shifter:s0|position[4]'
-Slack : -0.833
-TNS   : -0.833
-
-Type  : Slow 1200mV 85C Model Removal 'shifter:s0|position[4]'
-Slack : 1.018
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.437
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'shifter:s0|position[4]'
-Slack : -3.186
-TNS   : -171.159
+Type  : Slow 1200mV 85C Model Recovery 'processor:p0|isEnd'
+Slack : -1.474
+TNS   : -1.474
+
+Type  : Slow 1200mV 85C Model Removal 'processor:p0|isEnd'
+Slack : 1.515
+TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
 Slack : -3.000
@@ -44,38 +32,34 @@ TNS   : -34.500
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'flick'
 Slack : -3.000
-TNS   : -3.000
+TNS   : -6.910
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'processor:p0|isEnd'
+Slack : -1.500
+TNS   : -1.500
 
 Type  : Slow 1200mV 0C Model Setup 'clk'
-Slack : -11.225
-TNS   : -208.643
-
-Type  : Slow 1200mV 0C Model Setup 'shifter:s0|position[4]'
-Slack : -10.371
-TNS   : -26.887
+Slack : -2.405
+TNS   : -41.468
 
 Type  : Slow 1200mV 0C Model Setup 'flick'
-Slack : -4.868
-TNS   : -4.868
-
-Type  : Slow 1200mV 0C Model Hold 'shifter:s0|position[4]'
-Slack : -2.276
-TNS   : -11.785
-
-Type  : Slow 1200mV 0C Model Hold 'clk'
-Slack : 0.403
-TNS   : 0.000
+Slack : -2.349
+TNS   : -3.418
 
 Type  : Slow 1200mV 0C Model Hold 'flick'
-Slack : 1.474
+Slack : 0.109
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Recovery 'shifter:s0|position[4]'
-Slack : -0.770
-TNS   : -0.770
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.401
+TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Removal 'shifter:s0|position[4]'
-Slack : 0.943
+Type  : Slow 1200mV 0C Model Recovery 'processor:p0|isEnd'
+Slack : -1.288
+TNS   : -1.288
+
+Type  : Slow 1200mV 0C Model Removal 'processor:p0|isEnd'
+Slack : 1.412
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
@@ -84,54 +68,46 @@ TNS   : -34.500
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'flick'
 Slack : -3.000
-TNS   : -3.000
+TNS   : -6.266
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'shifter:s0|position[4]'
-Slack : -2.948
-TNS   : -152.737
-
-Type  : Fast 1200mV 0C Model Setup 'clk'
-Slack : -6.109
-TNS   : -112.005
-
-Type  : Fast 1200mV 0C Model Setup 'shifter:s0|position[4]'
-Slack : -5.553
-TNS   : -13.021
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'processor:p0|isEnd'
+Slack : -1.500
+TNS   : -1.500
 
 Type  : Fast 1200mV 0C Model Setup 'flick'
-Slack : -2.266
-TNS   : -2.266
+Slack : -1.428
+TNS   : -1.428
 
-Type  : Fast 1200mV 0C Model Hold 'shifter:s0|position[4]'
-Slack : -1.337
-TNS   : -6.619
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -1.324
+TNS   : -23.736
+
+Type  : Fast 1200mV 0C Model Hold 'flick'
+Slack : 0.064
+TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'clk'
 Slack : 0.192
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'flick'
-Slack : 0.484
-TNS   : 0.000
+Type  : Fast 1200mV 0C Model Recovery 'processor:p0|isEnd'
+Slack : -0.849
+TNS   : -0.849
 
-Type  : Fast 1200mV 0C Model Recovery 'shifter:s0|position[4]'
-Slack : -0.122
-TNS   : -0.122
-
-Type  : Fast 1200mV 0C Model Removal 'shifter:s0|position[4]'
-Slack : 0.805
+Type  : Fast 1200mV 0C Model Removal 'processor:p0|isEnd'
+Slack : 0.731
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -24.267
+TNS   : -24.160
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'flick'
 Slack : -3.000
-TNS   : -3.000
+TNS   : -4.316
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'shifter:s0|position[4]'
-Slack : -1.330
-TNS   : -64.570
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'processor:p0|isEnd'
+Slack : -1.000
+TNS   : -1.000
 
 ------------------------------------------------------------
