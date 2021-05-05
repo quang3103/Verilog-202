@@ -1,64 +1,128 @@
-|bound_flasher
-led[0] << shifter:s0.out
-led[1] << shifter:s0.out
-led[2] << shifter:s0.out
-led[3] << shifter:s0.out
-led[4] << shifter:s0.out
-led[5] << shifter:s0.out
-led[6] << shifter:s0.out
-led[7] << shifter:s0.out
-led[8] << shifter:s0.out
-led[9] << shifter:s0.out
-led[10] << shifter:s0.out
-led[11] << shifter:s0.out
-led[12] << shifter:s0.out
-led[13] << shifter:s0.out
-led[14] << shifter:s0.out
-led[15] << shifter:s0.out
+|DE2i_run
+LEDR[0] << bound_flasher:comb_5.led
+LEDR[1] << bound_flasher:comb_5.led
+LEDR[2] << bound_flasher:comb_5.led
+LEDR[3] << bound_flasher:comb_5.led
+LEDR[4] << bound_flasher:comb_5.led
+LEDR[5] << bound_flasher:comb_5.led
+LEDR[6] << bound_flasher:comb_5.led
+LEDR[7] << bound_flasher:comb_5.led
+LEDR[8] << bound_flasher:comb_5.led
+LEDR[9] << bound_flasher:comb_5.led
+LEDR[10] << bound_flasher:comb_5.led
+LEDR[11] << bound_flasher:comb_5.led
+LEDR[12] << bound_flasher:comb_5.led
+LEDR[13] << bound_flasher:comb_5.led
+LEDR[14] << bound_flasher:comb_5.led
+LEDR[15] << bound_flasher:comb_5.led
+LEDG[0] << clock1s.DB_MAX_OUTPUT_PORT_TYPE
+LEDG[1] << clock1s.DB_MAX_OUTPUT_PORT_TYPE
+KEY[0] => _.IN1
+KEY[1] => ~NO_FANOUT~
+CLOCK_50 => CLOCK_50.IN1
+
+
+|DE2i_run|clock_div:clk1
+clock50 => counter[0].CLK
+clock50 => counter[1].CLK
+clock50 => counter[2].CLK
+clock50 => counter[3].CLK
+clock50 => counter[4].CLK
+clock50 => counter[5].CLK
+clock50 => counter[6].CLK
+clock50 => counter[7].CLK
+clock50 => counter[8].CLK
+clock50 => counter[9].CLK
+clock50 => counter[10].CLK
+clock50 => counter[11].CLK
+clock50 => counter[12].CLK
+clock50 => counter[13].CLK
+clock50 => counter[14].CLK
+clock50 => counter[15].CLK
+clock50 => counter[16].CLK
+clock50 => counter[17].CLK
+clock50 => counter[18].CLK
+clock50 => counter[19].CLK
+clock50 => counter[20].CLK
+clock50 => counter[21].CLK
+clock50 => counter[22].CLK
+clock50 => counter[23].CLK
+clock50 => counter[24].CLK
+clock50 => counter[25].CLK
+clock50 => counter[26].CLK
+clock50 => counter[27].CLK
+clock50 => counter[28].CLK
+clock50 => counter[29].CLK
+clock50 => counter[30].CLK
+clock50 => clock~reg0.CLK
+clock <= clock~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE2i_run|bound_flasher:comb_5
+led[0] <= shifter:s0.out
+led[1] <= shifter:s0.out
+led[2] <= shifter:s0.out
+led[3] <= shifter:s0.out
+led[4] <= shifter:s0.out
+led[5] <= shifter:s0.out
+led[6] <= shifter:s0.out
+led[7] <= shifter:s0.out
+led[8] <= shifter:s0.out
+led[9] <= shifter:s0.out
+led[10] <= shifter:s0.out
+led[11] <= shifter:s0.out
+led[12] <= shifter:s0.out
+led[13] <= shifter:s0.out
+led[14] <= shifter:s0.out
+led[15] <= shifter:s0.out
 flick => flick.IN1
 clk => clk.IN1
-max[0] << processor:p0.out_max
-max[1] << processor:p0.out_max
-max[2] << processor:p0.out_max
-max[3] << processor:p0.out_max
-max[4] << processor:p0.out_max
-min[0] << processor:p0.out_min
-min[1] << processor:p0.out_min
-min[2] << processor:p0.out_min
-min[3] << processor:p0.out_min
-min[4] << processor:p0.out_min
-isFlick[0] << processor:p0.out_state
-isFlick[1] << processor:p0.out_state
+max[0] <= processor:p0.out_max
+max[1] <= processor:p0.out_max
+max[2] <= processor:p0.out_max
+max[3] <= processor:p0.out_max
+max[4] <= processor:p0.out_max
+min[0] <= processor:p0.out_min
+min[1] <= processor:p0.out_min
+min[2] <= processor:p0.out_min
+min[3] <= processor:p0.out_min
+min[4] <= processor:p0.out_min
+isFlick[0] <= processor:p0.out_state
+isFlick[1] <= processor:p0.out_state
 
 
-|bound_flasher|processor:p0
+|DE2i_run|bound_flasher:comb_5|processor:p0
 enable <= enable~reg0.DB_MAX_OUTPUT_PORT_TYPE
 increase <= increase$latch.DB_MAX_OUTPUT_PORT_TYPE
-position[0] => Equal2.IN4
-position[0] => Equal3.IN7
+position[0] => Equal2.IN7
+position[0] => Equal3.IN4
 position[0] => Equal0.IN4
 position[0] => Equal1.IN2
-position[1] => Equal2.IN3
+position[1] => Equal3.IN3
 position[1] => Equal0.IN1
 position[1] => Equal1.IN1
-position[1] => Equal3.IN2
-position[2] => Equal2.IN2
-position[2] => Equal3.IN5
+position[1] => Equal2.IN2
+position[2] => Equal2.IN5
+position[2] => Equal3.IN2
 position[2] => Equal0.IN0
 position[2] => Equal1.IN4
-position[3] => Equal2.IN1
+position[3] => Equal3.IN1
 position[3] => Equal0.IN3
 position[3] => Equal1.IN0
-position[3] => Equal3.IN1
-position[4] => Equal2.IN0
+position[3] => Equal2.IN1
+position[4] => Equal3.IN0
 position[4] => Equal0.IN2
 position[4] => Equal1.IN3
-position[4] => Equal3.IN0
+position[4] => Equal2.IN0
 flick => increase.OUTPUTSELECT
 flick => increase.OUTPUTSELECT
+flick => next_state.10.OUTPUTSELECT
+flick => next_state.01.OUTPUTSELECT
+flick => next_state.00.OUTPUTSELECT
+flick => next_state.00.OUTPUTSELECT
+flick => isEnd.OUTPUTSELECT
+flick => isEnd.IN1
 flick => enable~reg0.ALOAD
-flick => isEnd.ACLR
-flick => next_state.00.IN1
 out_max[0] <= state.01.DB_MAX_OUTPUT_PORT_TYPE
 out_max[1] <= state.10.DB_MAX_OUTPUT_PORT_TYPE
 out_max[2] <= state.00.DB_MAX_OUTPUT_PORT_TYPE
@@ -73,7 +137,7 @@ out_state[0] <= state.01.DB_MAX_OUTPUT_PORT_TYPE
 out_state[1] <= state.10.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|bound_flasher|shifter:s0
+|DE2i_run|bound_flasher:comb_5|shifter:s0
 out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE

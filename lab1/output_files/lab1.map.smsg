@@ -1,1 +1,1 @@
-Warning (10268): Verilog HDL information at processor.v(63): always construct contains both blocking and non-blocking assignments File: D:/Quang/202/Verilog/lab1/processor.v Line: 63
+Warning (10268): Verilog HDL information at clock_div.v(13): always construct contains both blocking and non-blocking assignments File: D:/Quang/202/Verilog/lab1/clock_div.v Line: 13
