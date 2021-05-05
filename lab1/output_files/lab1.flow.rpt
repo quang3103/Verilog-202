@@ -1,5 +1,5 @@
 Flow report for lab1
-Wed May 05 09:20:21 2021
+Wed May 05 09:54:56 2021
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -41,18 +41,18 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Wed May 05 09:20:21 2021       ;
+; Flow Status                        ; Successful - Wed May 05 09:54:56 2021       ;
 ; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                      ; lab1                                        ;
 ; Top-level Entity Name              ; DE2i_run                                    ;
 ; Family                             ; Cyclone IV GX                               ;
 ; Device                             ; EP4CGX150DF31C7                             ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 100 / 149,760 ( < 1 % )                     ;
-;     Total combinational functions  ; 97 / 149,760 ( < 1 % )                      ;
+; Total logic elements               ; 129 / 149,760 ( < 1 % )                     ;
+;     Total combinational functions  ; 128 / 149,760 ( < 1 % )                     ;
 ;     Dedicated logic registers      ; 54 / 149,760 ( < 1 % )                      ;
 ; Total registers                    ; 54                                          ;
-; Total pins                         ; 21 / 508 ( 4 % )                            ;
+; Total pins                         ; 49 / 508 ( 10 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 6,635,520 ( 0 % )                       ;
 ; Embedded Multiplier 9-bit elements ; 0 / 720 ( 0 % )                             ;
@@ -69,7 +69,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/05/2021 09:19:50 ;
+; Start date & time ; 05/05/2021 09:54:22 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; lab1                ;
 +-------------------+---------------------+
@@ -80,7 +80,7 @@ agreement for further details.
 +--------------------------------------+----------------------------------------+---------------+-------------+--------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id         ;
 +--------------------------------------+----------------------------------------+---------------+-------------+--------------------+
-; COMPILER_SIGNATURE_ID                ; 242011223730214.162018119000280        ; --            ; --          ; --                 ;
+; COMPILER_SIGNATURE_ID                ; 242011223730214.162018326206940        ; --            ; --          ; --                 ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; test_bound_flasher ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; t_shifter          ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; test_processor     ;
@@ -116,12 +116,12 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:07     ; 1.0                     ; 4849 MB             ; 00:00:16                           ;
-; Fitter                    ; 00:00:15     ; 1.0                     ; 5834 MB             ; 00:00:24                           ;
-; Assembler                 ; 00:00:03     ; 1.0                     ; 4751 MB             ; 00:00:03                           ;
-; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4861 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4718 MB             ; 00:00:01                           ;
-; Total                     ; 00:00:27     ; --                      ; --                  ; 00:00:45                           ;
+; Analysis & Synthesis      ; 00:00:08     ; 1.0                     ; 4841 MB             ; 00:00:16                           ;
+; Fitter                    ; 00:00:17     ; 1.0                     ; 5838 MB             ; 00:00:22                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 4753 MB             ; 00:00:03                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4864 MB             ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4720 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:30     ; --                      ; --                  ; 00:00:44                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -1,5 +1,5 @@
 Fitter report for lab1
-Wed May 05 09:20:13 2021
+Wed May 05 09:54:48 2021
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -69,18 +69,18 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Wed May 05 09:20:13 2021       ;
+; Fitter Status                      ; Successful - Wed May 05 09:54:48 2021       ;
 ; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                      ; lab1                                        ;
 ; Top-level Entity Name              ; DE2i_run                                    ;
 ; Family                             ; Cyclone IV GX                               ;
 ; Device                             ; EP4CGX150DF31C7                             ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 100 / 149,760 ( < 1 % )                     ;
-;     Total combinational functions  ; 97 / 149,760 ( < 1 % )                      ;
+; Total logic elements               ; 129 / 149,760 ( < 1 % )                     ;
+;     Total combinational functions  ; 128 / 149,760 ( < 1 % )                     ;
 ;     Dedicated logic registers      ; 54 / 149,760 ( < 1 % )                      ;
 ; Total registers                    ; 54                                          ;
-; Total pins                         ; 21 / 508 ( 4 % )                            ;
+; Total pins                         ; 49 / 508 ( 10 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 6,635,520 ( 0 % )                       ;
 ; Embedded Multiplier 9-bit elements ; 0 / 720 ( 0 % )                             ;
@@ -167,8 +167,8 @@ agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.2%      ;
-;     Processors 3-4         ;   0.2%      ;
+;     Processor 2            ;   0.1%      ;
+;     Processors 3-4         ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -386,34 +386,6 @@ agreement for further details.
 ; Location ;                ;              ; HEX3[4]         ; PIN_E3        ; QSF Assignment ;
 ; Location ;                ;              ; HEX3[5]         ; PIN_D5        ; QSF Assignment ;
 ; Location ;                ;              ; HEX3[6]         ; PIN_D4        ; QSF Assignment ;
-; Location ;                ;              ; HEX4[0]         ; PIN_A14       ; QSF Assignment ;
-; Location ;                ;              ; HEX4[1]         ; PIN_A13       ; QSF Assignment ;
-; Location ;                ;              ; HEX4[2]         ; PIN_C7        ; QSF Assignment ;
-; Location ;                ;              ; HEX4[3]         ; PIN_C6        ; QSF Assignment ;
-; Location ;                ;              ; HEX4[4]         ; PIN_C5        ; QSF Assignment ;
-; Location ;                ;              ; HEX4[5]         ; PIN_C4        ; QSF Assignment ;
-; Location ;                ;              ; HEX4[6]         ; PIN_C3        ; QSF Assignment ;
-; Location ;                ;              ; HEX5[0]         ; PIN_D3        ; QSF Assignment ;
-; Location ;                ;              ; HEX5[1]         ; PIN_A10       ; QSF Assignment ;
-; Location ;                ;              ; HEX5[2]         ; PIN_A9        ; QSF Assignment ;
-; Location ;                ;              ; HEX5[3]         ; PIN_A7        ; QSF Assignment ;
-; Location ;                ;              ; HEX5[4]         ; PIN_A6        ; QSF Assignment ;
-; Location ;                ;              ; HEX5[5]         ; PIN_A11       ; QSF Assignment ;
-; Location ;                ;              ; HEX5[6]         ; PIN_B6        ; QSF Assignment ;
-; Location ;                ;              ; HEX6[0]         ; PIN_B9        ; QSF Assignment ;
-; Location ;                ;              ; HEX6[1]         ; PIN_B10       ; QSF Assignment ;
-; Location ;                ;              ; HEX6[2]         ; PIN_C8        ; QSF Assignment ;
-; Location ;                ;              ; HEX6[3]         ; PIN_C9        ; QSF Assignment ;
-; Location ;                ;              ; HEX6[4]         ; PIN_D8        ; QSF Assignment ;
-; Location ;                ;              ; HEX6[5]         ; PIN_D9        ; QSF Assignment ;
-; Location ;                ;              ; HEX6[6]         ; PIN_E9        ; QSF Assignment ;
-; Location ;                ;              ; HEX7[0]         ; PIN_E10       ; QSF Assignment ;
-; Location ;                ;              ; HEX7[1]         ; PIN_F8        ; QSF Assignment ;
-; Location ;                ;              ; HEX7[2]         ; PIN_F9        ; QSF Assignment ;
-; Location ;                ;              ; HEX7[3]         ; PIN_C10       ; QSF Assignment ;
-; Location ;                ;              ; HEX7[4]         ; PIN_C11       ; QSF Assignment ;
-; Location ;                ;              ; HEX7[5]         ; PIN_C12       ; QSF Assignment ;
-; Location ;                ;              ; HEX7[6]         ; PIN_D12       ; QSF Assignment ;
 ; Location ;                ;              ; HSMC_CLKIN0     ; PIN_K15       ; QSF Assignment ;
 ; Location ;                ;              ; HSMC_CLKIN_N1   ; PIN_V30       ; QSF Assignment ;
 ; Location ;                ;              ; HSMC_CLKIN_N2   ; PIN_T30       ; QSF Assignment ;
@@ -616,8 +588,8 @@ agreement for further details.
 ; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+--------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                    ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 205 ) ; 0.00 % ( 0 / 205 )         ; 0.00 % ( 0 / 205 )       ;
-;     -- Achieved     ; 0.00 % ( 0 / 205 ) ; 0.00 % ( 0 / 205 )         ; 0.00 % ( 0 / 205 )       ;
+;     -- Requested    ; 0.00 % ( 0 / 292 ) ; 0.00 % ( 0 / 292 )         ; 0.00 % ( 0 / 292 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 292 ) ; 0.00 % ( 0 / 292 )         ; 0.00 % ( 0 / 292 )       ;
 ;                     ;                    ;                            ;                          ;
 ; Routing (by net)    ;                    ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -640,7 +612,7 @@ agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 195 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 282 )    ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 10 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -656,28 +628,28 @@ The pin-out file can be found in D:/Quang/202/Verilog/lab1/output_files/lab1.pin
 +---------------------------------------------+-------------------------+
 ; Resource                                    ; Usage                   ;
 +---------------------------------------------+-------------------------+
-; Total logic elements                        ; 100 / 149,760 ( < 1 % ) ;
-;     -- Combinational with no register       ; 46                      ;
-;     -- Register only                        ; 3                       ;
-;     -- Combinational with a register        ; 51                      ;
+; Total logic elements                        ; 129 / 149,760 ( < 1 % ) ;
+;     -- Combinational with no register       ; 75                      ;
+;     -- Register only                        ; 1                       ;
+;     -- Combinational with a register        ; 53                      ;
 ;                                             ;                         ;
 ; Logic element usage by number of LUT inputs ;                         ;
-;     -- 4 input functions                    ; 19                      ;
-;     -- 3 input functions                    ; 28                      ;
-;     -- <=2 input functions                  ; 50                      ;
-;     -- Register only                        ; 3                       ;
+;     -- 4 input functions                    ; 29                      ;
+;     -- 3 input functions                    ; 34                      ;
+;     -- <=2 input functions                  ; 65                      ;
+;     -- Register only                        ; 1                       ;
 ;                                             ;                         ;
 ; Logic elements by mode                      ;                         ;
-;     -- normal mode                          ; 63                      ;
-;     -- arithmetic mode                      ; 34                      ;
+;     -- normal mode                          ; 87                      ;
+;     -- arithmetic mode                      ; 41                      ;
 ;                                             ;                         ;
 ; Total registers*                            ; 54 / 152,165 ( < 1 % )  ;
 ;     -- Dedicated logic registers            ; 54 / 149,760 ( < 1 % )  ;
 ;     -- I/O registers                        ; 0 / 2,405 ( 0 % )       ;
 ;                                             ;                         ;
-; Total LABs:  partially or completely used   ; 7 / 9,360 ( < 1 % )     ;
+; Total LABs:  partially or completely used   ; 10 / 9,360 ( < 1 % )    ;
 ; Virtual pins                                ; 0                       ;
-; I/O pins                                    ; 21 / 508 ( 4 % )        ;
+; I/O pins                                    ; 49 / 508 ( 10 % )       ;
 ;     -- Clock pins                           ; 1 / 10 ( 10 % )         ;
 ;     -- Dedicated input pins                 ; 0 / 25 ( 0 % )          ;
 ;                                             ;                         ;
@@ -697,12 +669,12 @@ The pin-out file can be found in D:/Quang/202/Verilog/lab1/output_files/lab1.pin
 ; GXB Transmitter channel PCSs                ; 0 / 8 ( 0 % )           ;
 ; GXB Transmitter channel PMAs                ; 0 / 8 ( 0 % )           ;
 ; Impedance control blocks                    ; 0 / 3 ( 0 % )           ;
-; Average interconnect usage (total/H/V)      ; 0.0% / 0.0% / 0.0%      ;
-; Peak interconnect usage (total/H/V)         ; 0.5% / 0.4% / 0.8%      ;
+; Average interconnect usage (total/H/V)      ; 0.0% / 0.0% / 0.1%      ;
+; Peak interconnect usage (total/H/V)         ; 0.5% / 0.7% / 1.0%      ;
 ; Maximum fan-out                             ; 32                      ;
 ; Highest non-global fan-out                  ; 27                      ;
-; Total fan-out                               ; 436                     ;
-; Average fan-out                             ; 2.10                    ;
+; Total fan-out                               ; 561                     ;
+; Average fan-out                             ; 1.91                    ;
 +---------------------------------------------+-------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -715,29 +687,29 @@ The pin-out file can be found in D:/Quang/202/Verilog/lab1/output_files/lab1.pin
 +---------------------------------------------+------------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                    ; Low                            ;
 ;                                             ;                        ;                                ;
-; Total logic elements                        ; 100 / 149760 ( < 1 % ) ; 0 / 149760 ( 0 % )             ;
-;     -- Combinational with no register       ; 46                     ; 0                              ;
-;     -- Register only                        ; 3                      ; 0                              ;
-;     -- Combinational with a register        ; 51                     ; 0                              ;
+; Total logic elements                        ; 129 / 149760 ( < 1 % ) ; 0 / 149760 ( 0 % )             ;
+;     -- Combinational with no register       ; 75                     ; 0                              ;
+;     -- Register only                        ; 1                      ; 0                              ;
+;     -- Combinational with a register        ; 53                     ; 0                              ;
 ;                                             ;                        ;                                ;
 ; Logic element usage by number of LUT inputs ;                        ;                                ;
-;     -- 4 input functions                    ; 19                     ; 0                              ;
-;     -- 3 input functions                    ; 28                     ; 0                              ;
-;     -- <=2 input functions                  ; 50                     ; 0                              ;
-;     -- Register only                        ; 3                      ; 0                              ;
+;     -- 4 input functions                    ; 29                     ; 0                              ;
+;     -- 3 input functions                    ; 34                     ; 0                              ;
+;     -- <=2 input functions                  ; 65                     ; 0                              ;
+;     -- Register only                        ; 1                      ; 0                              ;
 ;                                             ;                        ;                                ;
 ; Logic elements by mode                      ;                        ;                                ;
-;     -- normal mode                          ; 63                     ; 0                              ;
-;     -- arithmetic mode                      ; 34                     ; 0                              ;
+;     -- normal mode                          ; 87                     ; 0                              ;
+;     -- arithmetic mode                      ; 41                     ; 0                              ;
 ;                                             ;                        ;                                ;
 ; Total registers                             ; 54                     ; 0                              ;
 ;     -- Dedicated logic registers            ; 54 / 149760 ( < 1 % )  ; 0 / 149760 ( 0 % )             ;
 ;     -- I/O registers                        ; 0                      ; 0                              ;
 ;                                             ;                        ;                                ;
-; Total LABs:  partially or completely used   ; 7 / 9360 ( < 1 % )     ; 0 / 9360 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 10 / 9360 ( < 1 % )    ; 0 / 9360 ( 0 % )               ;
 ;                                             ;                        ;                                ;
 ; Virtual pins                                ; 0                      ; 0                              ;
-; I/O pins                                    ; 21                     ; 0                              ;
+; I/O pins                                    ; 49                     ; 0                              ;
 ; Embedded Multiplier 9-bit elements          ; 0 / 720 ( 0 % )        ; 0 / 720 ( 0 % )                ;
 ; Total memory bits                           ; 0                      ; 0                              ;
 ; Total RAM block bits                        ; 0                      ; 0                              ;
@@ -750,8 +722,8 @@ The pin-out file can be found in D:/Quang/202/Verilog/lab1/output_files/lab1.pin
 ;     -- Registered Output Connections        ; 0                      ; 0                              ;
 ;                                             ;                        ;                                ;
 ; Internal Connections                        ;                        ;                                ;
-;     -- Total Connections                    ; 431                    ; 5                              ;
-;     -- Registered Connections               ; 158                    ; 0                              ;
+;     -- Total Connections                    ; 556                    ; 5                              ;
+;     -- Registered Connections               ; 156                    ; 0                              ;
 ;                                             ;                        ;                                ;
 ; External Connections                        ;                        ;                                ;
 ;     -- Top                                  ; 0                      ; 0                              ;
@@ -759,7 +731,7 @@ The pin-out file can be found in D:/Quang/202/Verilog/lab1/output_files/lab1.pin
 ;                                             ;                        ;                                ;
 ; Partition Interface                         ;                        ;                                ;
 ;     -- Input Ports                          ; 3                      ; 0                              ;
-;     -- Output Ports                         ; 18                     ; 0                              ;
+;     -- Output Ports                         ; 46                     ; 0                              ;
 ;     -- Bidir Ports                          ; 0                      ; 0                              ;
 ;                                             ;                        ;                                ;
 ; Registered Ports                            ;                        ;                                ;
@@ -794,6 +766,34 @@ The pin-out file can be found in D:/Quang/202/Verilog/lab1/output_files/lab1.pin
 +----------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 ; Name     ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Output Register ; Output Enable Register ; Power Up High ; Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination                       ; Termination Control Block ; Output Buffer Pre-emphasis ; Voltage Output Differential ; Location assigned by ; Output Enable Source ; Output Enable Group ;
 +----------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
+; HEX4[0]  ; A14   ; 8        ; 50           ; 91           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; HEX4[1]  ; A13   ; 8        ; 50           ; 91           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; HEX4[2]  ; C7    ; 8        ; 24           ; 91           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; HEX4[3]  ; C6    ; 8        ; 26           ; 91           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; HEX4[4]  ; C5    ; 8        ; 26           ; 91           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; HEX4[5]  ; C4    ; 8        ; 28           ; 91           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; HEX4[6]  ; C3    ; 8        ; 19           ; 91           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; HEX5[0]  ; D3    ; 8        ; 19           ; 91           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; HEX5[1]  ; A10   ; 8        ; 44           ; 91           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; HEX5[2]  ; A9    ; 8        ; 34           ; 91           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; HEX5[3]  ; A7    ; 8        ; 32           ; 91           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; HEX5[4]  ; A6    ; 8        ; 30           ; 91           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; HEX5[5]  ; A11   ; 8        ; 44           ; 91           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; HEX5[6]  ; B6    ; 8        ; 32           ; 91           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; HEX6[0]  ; B9    ; 8        ; 34           ; 91           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; HEX6[1]  ; B10   ; 8        ; 39           ; 91           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; HEX6[2]  ; C8    ; 8        ; 17           ; 91           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; HEX6[3]  ; C9    ; 8        ; 17           ; 91           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; HEX6[4]  ; D8    ; 8        ; 5            ; 91           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; HEX6[5]  ; D9    ; 8        ; 17           ; 91           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; HEX6[6]  ; E9    ; 8        ; 15           ; 91           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; HEX7[0]  ; E10   ; 8        ; 19           ; 91           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; HEX7[1]  ; F8    ; 8        ; 3            ; 91           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; HEX7[2]  ; F9    ; 8        ; 15           ; 91           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; HEX7[3]  ; C10   ; 8        ; 39           ; 91           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; HEX7[4]  ; C11   ; 8        ; 32           ; 91           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; HEX7[5]  ; C12   ; 8        ; 37           ; 91           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; HEX7[6]  ; D12   ; 8        ; 37           ; 91           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; LEDG[0]  ; AA25  ; 5        ; 117          ; 7            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; LEDG[1]  ; AB25  ; 5        ; 117          ; 7            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; LEDR[0]  ; T23   ; 5        ; 117          ; 43           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
@@ -851,7 +851,7 @@ The pin-out file can be found in D:/Quang/202/Verilog/lab1/output_files/lab1.pin
 ; 6        ; 9 / 69 ( 13 % )  ; 2.5V          ; --           ; --               ;
 ; 7        ; 0 / 80 ( 0 % )   ; 2.5V          ; --           ; --               ;
 ; 8A       ; 0 / 2 ( 0 % )    ; --            ; --           ; 2.5V             ;
-; 8        ; 0 / 81 ( 0 % )   ; 2.5V          ; --           ; --               ;
+; 8        ; 28 / 81 ( 35 % ) ; 2.5V          ; --           ; --               ;
 ; 8B       ; 0 / 4 ( 0 % )    ; --            ; --           ; 2.5V             ;
 ; 9        ; 4 / 4 ( 100 % )  ; 2.5V          ; --           ; --               ;
 +----------+------------------+---------------+--------------+------------------+
@@ -866,15 +866,15 @@ The pin-out file can be found in D:/Quang/202/Verilog/lab1/output_files/lab1.pin
 ; A3       ; 510        ; 9        ; ~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP      ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; On           ;
 ; A4       ; 505        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; A5       ; 465        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; A6       ; 466        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; A7       ; 460        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; A6       ; 466        ; 8        ; HEX5[4]                                               ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
+; A7       ; 460        ; 8        ; HEX5[3]                                               ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; A8       ; 456        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; A9       ; 458        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; A10      ; 442        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; A11      ; 443        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; A9       ; 458        ; 8        ; HEX5[2]                                               ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
+; A10      ; 442        ; 8        ; HEX5[1]                                               ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
+; A11      ; 443        ; 8        ; HEX5[5]                                               ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; A12      ; 438        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; A13      ; 431        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; A14      ; 432        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; A13      ; 431        ; 8        ; HEX4[1]                                               ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
+; A14      ; 432        ; 8        ; HEX4[0]                                               ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; A15      ; 421        ; 7        ; GND+                                                  ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; A16      ; 418        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; A17      ; 412        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -1193,11 +1193,11 @@ The pin-out file can be found in D:/Quang/202/Verilog/lab1/output_files/lab1.pin
 ; B3       ; 513        ; 9        ; ~ALTERA_DCLK~                                         ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; On           ;
 ; B4       ; 512        ; 9        ; ~ALTERA_NCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP       ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; On           ;
 ; B5       ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; B6       ; 461        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; B6       ; 461        ; 8        ; HEX5[6]                                               ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; B7       ; 457        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; B8       ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; B9       ; 459        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; B10      ; 450        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; B9       ; 459        ; 8        ; HEX6[0]                                               ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
+; B10      ; 450        ; 8        ; HEX6[1]                                               ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; B11      ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; B12      ; 439        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; B13      ; 435        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
@@ -1220,16 +1220,16 @@ The pin-out file can be found in D:/Quang/202/Verilog/lab1/output_files/lab1.pin
 ; B30      ; 358        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; C1       ; 515        ; 9        ; ^nCE                                                  ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; C2       ; 490        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; C3       ; 481        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; C4       ; 471        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; C5       ; 473        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; C6       ; 474        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; C7       ; 475        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; C8       ; 487        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
-; C9       ; 485        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; C10      ; 451        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; C11      ; 462        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; C12      ; 454        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; C3       ; 481        ; 8        ; HEX4[6]                                               ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
+; C4       ; 471        ; 8        ; HEX4[5]                                               ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
+; C5       ; 473        ; 8        ; HEX4[4]                                               ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
+; C6       ; 474        ; 8        ; HEX4[3]                                               ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
+; C7       ; 475        ; 8        ; HEX4[2]                                               ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
+; C8       ; 487        ; 8        ; HEX6[2]                                               ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
+; C9       ; 485        ; 8        ; HEX6[3]                                               ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
+; C10      ; 451        ; 8        ; HEX7[3]                                               ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
+; C11      ; 462        ; 8        ; HEX7[4]                                               ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
+; C12      ; 454        ; 8        ; HEX7[5]                                               ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; C13      ; 446        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; C14      ; 444        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; C15      ; 440        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -1250,16 +1250,16 @@ The pin-out file can be found in D:/Quang/202/Verilog/lab1/output_files/lab1.pin
 ; C30      ; 328        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; D1       ; 491        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; D2       ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; D3       ; 482        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; D3       ; 482        ; 8        ; HEX5[0]                                               ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; D4       ; 472        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; D5       ; 477        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; D6       ; 476        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; D7       ; 467        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; D8       ; 498        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; D9       ; 486        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; D8       ; 498        ; 8        ; HEX6[4]                                               ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
+; D9       ; 486        ; 8        ; HEX6[5]                                               ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; D10      ; 483        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; D11      ; 463        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; D12      ; 455        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; D12      ; 455        ; 8        ; HEX7[6]                                               ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; D13      ; 447        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; D14      ; 445        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; D15      ; 441        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -1286,8 +1286,8 @@ The pin-out file can be found in D:/Quang/202/Verilog/lab1/output_files/lab1.pin
 ; E6       ; 478        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; E7       ; 468        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; E8       ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; E9       ; 488        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; E10      ; 484        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; E9       ; 488        ; 8        ; HEX6[6]                                               ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
+; E10      ; 484        ; 8        ; HEX7[0]                                               ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; E11      ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; E12      ; 469        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; E13      ; 448        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -1315,8 +1315,8 @@ The pin-out file can be found in D:/Quang/202/Verilog/lab1/output_files/lab1.pin
 ; F5       ; 495        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; F6       ; 499        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; F7       ; 501        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; F8       ; 503        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; F9       ; 489        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; F8       ; 503        ; 8        ; HEX7[1]                                               ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
+; F9       ; 489        ; 8        ; HEX7[2]                                               ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; F10      ; 479        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; F11      ; 470        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; F12      ; 452        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -1786,22 +1786,57 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; LEDG[0]  ; Incomplete set of assignments ;
 ; LEDG[1]  ; Incomplete set of assignments ;
 ; KEY[1]   ; Incomplete set of assignments ;
-; CLOCK_50 ; Incomplete set of assignments ;
+; HEX7[0]  ; Incomplete set of assignments ;
+; HEX7[1]  ; Incomplete set of assignments ;
+; HEX7[2]  ; Incomplete set of assignments ;
+; HEX7[3]  ; Incomplete set of assignments ;
+; HEX7[4]  ; Incomplete set of assignments ;
+; HEX7[5]  ; Incomplete set of assignments ;
+; HEX7[6]  ; Incomplete set of assignments ;
+; HEX6[0]  ; Incomplete set of assignments ;
+; HEX6[1]  ; Incomplete set of assignments ;
+; HEX6[2]  ; Incomplete set of assignments ;
+; HEX6[3]  ; Incomplete set of assignments ;
+; HEX6[4]  ; Incomplete set of assignments ;
+; HEX6[5]  ; Incomplete set of assignments ;
+; HEX6[6]  ; Incomplete set of assignments ;
+; HEX5[0]  ; Incomplete set of assignments ;
+; HEX5[1]  ; Incomplete set of assignments ;
+; HEX5[2]  ; Incomplete set of assignments ;
+; HEX5[3]  ; Incomplete set of assignments ;
+; HEX5[4]  ; Incomplete set of assignments ;
+; HEX5[5]  ; Incomplete set of assignments ;
+; HEX5[6]  ; Incomplete set of assignments ;
+; HEX4[0]  ; Incomplete set of assignments ;
+; HEX4[1]  ; Incomplete set of assignments ;
+; HEX4[2]  ; Incomplete set of assignments ;
+; HEX4[3]  ; Incomplete set of assignments ;
+; HEX4[4]  ; Incomplete set of assignments ;
+; HEX4[5]  ; Incomplete set of assignments ;
+; HEX4[6]  ; Incomplete set of assignments ;
 ; KEY[0]   ; Incomplete set of assignments ;
+; CLOCK_50 ; Incomplete set of assignments ;
 +----------+-------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                               ;
-+----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+---------------------------------------------+---------------+--------------+
-; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                         ; Entity Name   ; Library Name ;
-+----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+---------------------------------------------+---------------+--------------+
-; |DE2i_run                  ; 100 (0)     ; 54 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 21   ; 0            ; 46 (0)       ; 3 (0)             ; 51 (0)           ; |DE2i_run                                   ; DE2i_run      ; work         ;
-;    |bound_flasher:comb_5|  ; 43 (0)      ; 22 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 21 (0)       ; 0 (0)             ; 22 (0)           ; |DE2i_run|bound_flasher:comb_5              ; bound_flasher ; work         ;
-;       |processor:p0|       ; 22 (22)     ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 21 (21)      ; 0 (0)             ; 1 (1)            ; |DE2i_run|bound_flasher:comb_5|processor:p0 ; processor     ; work         ;
-;       |shifter:s0|         ; 21 (21)     ; 21 (21)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 21 (21)          ; |DE2i_run|bound_flasher:comb_5|shifter:s0   ; shifter       ; work         ;
-;    |clock_div:clk1|        ; 57 (57)     ; 32 (32)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 25 (25)      ; 3 (3)             ; 29 (29)          ; |DE2i_run|clock_div:clk1                    ; clock_div     ; work         ;
-+----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+---------------------------------------------+---------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                                                                   ;
++-------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node                ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                                                                        ; Entity Name         ; Library Name ;
++-------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; |DE2i_run                                 ; 129 (0)     ; 54 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 49   ; 0            ; 75 (0)       ; 1 (0)             ; 53 (0)           ; |DE2i_run                                                                                                                  ; DE2i_run            ; work         ;
+;    |BCD_to_HEX:hex_0|                     ; 3 (3)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; |DE2i_run|BCD_to_HEX:hex_0                                                                                                 ; BCD_to_HEX          ; work         ;
+;    |BCD_to_HEX:hex_1|                     ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |DE2i_run|BCD_to_HEX:hex_1                                                                                                 ; BCD_to_HEX          ; work         ;
+;    |bound_flasher:bf1|                    ; 43 (0)      ; 22 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 21 (0)       ; 0 (0)             ; 22 (0)           ; |DE2i_run|bound_flasher:bf1                                                                                                ; bound_flasher       ; work         ;
+;       |processor:p0|                      ; 22 (22)     ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 21 (21)      ; 0 (0)             ; 1 (1)            ; |DE2i_run|bound_flasher:bf1|processor:p0                                                                                   ; processor           ; work         ;
+;       |shifter:s0|                        ; 21 (21)     ; 21 (21)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 21 (21)          ; |DE2i_run|bound_flasher:bf1|shifter:s0                                                                                     ; shifter             ; work         ;
+;    |clock_div:clk1|                       ; 55 (55)     ; 32 (32)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 23 (23)      ; 1 (1)             ; 31 (31)          ; |DE2i_run|clock_div:clk1                                                                                                   ; clock_div           ; work         ;
+;    |dec5toBCD:dec5_0|                     ; 21 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 21 (0)       ; 0 (0)             ; 0 (0)            ; |DE2i_run|dec5toBCD:dec5_0                                                                                                 ; dec5toBCD           ; work         ;
+;       |lpm_divide:Mod0|                   ; 21 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 21 (0)       ; 0 (0)             ; 0 (0)            ; |DE2i_run|dec5toBCD:dec5_0|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_ddm:auto_generated|  ; 21 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 21 (0)       ; 0 (0)             ; 0 (0)            ; |DE2i_run|dec5toBCD:dec5_0|lpm_divide:Mod0|lpm_divide_ddm:auto_generated                                                   ; lpm_divide_ddm      ; work         ;
+;             |sign_div_unsign_8kh:divider| ; 21 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 21 (0)       ; 0 (0)             ; 0 (0)            ; |DE2i_run|dec5toBCD:dec5_0|lpm_divide:Mod0|lpm_divide_ddm:auto_generated|sign_div_unsign_8kh:divider                       ; sign_div_unsign_8kh ; work         ;
+;                |alt_u_div_u7f:divider|    ; 21 (21)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 21 (21)      ; 0 (0)             ; 0 (0)            ; |DE2i_run|dec5toBCD:dec5_0|lpm_divide:Mod0|lpm_divide_ddm:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_u7f:divider ; alt_u_div_u7f       ; work         ;
++-------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -1829,53 +1864,81 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; LEDG[0]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; LEDG[1]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; KEY[1]   ; Input    ; --            ; --            ; --                    ; --  ; --   ;
-; CLOCK_50 ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
+; HEX7[0]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX7[1]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX7[2]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX7[3]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX7[4]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX7[5]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX7[6]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX6[0]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX6[1]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX6[2]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX6[3]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX6[4]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX6[5]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX6[6]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX5[0]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX5[1]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX5[2]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX5[3]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX5[4]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX5[5]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX5[6]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX4[0]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX4[1]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX4[2]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX4[3]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX4[4]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX4[5]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX4[6]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; KEY[0]   ; Input    ; (0) 0 ps      ; (0) 0 ps      ; --                    ; --  ; --   ;
+; CLOCK_50 ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
 +----------+----------+---------------+---------------+-----------------------+-----+------+
 
 
-+----------------------------------------------------------------------------------------+
-; Pad To Core Delay Chain Fanout                                                         ;
-+----------------------------------------------------------+-------------------+---------+
-; Source Pin / Fanout                                      ; Pad To Core Index ; Setting ;
-+----------------------------------------------------------+-------------------+---------+
-; KEY[1]                                                   ;                   ;         ;
-; CLOCK_50                                                 ;                   ;         ;
-; KEY[0]                                                   ;                   ;         ;
-;      - bound_flasher:comb_5|processor:p0|enable          ; 0                 ; 0       ;
-;      - bound_flasher:comb_5|processor:p0|increase~0      ; 1                 ; 0       ;
-;      - bound_flasher:comb_5|processor:p0|next_state.00~0 ; 0                 ; 0       ;
-;      - bound_flasher:comb_5|processor:p0|next_state.10~0 ; 1                 ; 0       ;
-;      - bound_flasher:comb_5|processor:p0|isEnd~1         ; 1                 ; 0       ;
-;      - bound_flasher:comb_5|processor:p0|isEnd~2         ; 1                 ; 0       ;
-+----------------------------------------------------------+-------------------+---------+
++-------------------------------------------------------------------------------------+
+; Pad To Core Delay Chain Fanout                                                      ;
++-------------------------------------------------------+-------------------+---------+
+; Source Pin / Fanout                                   ; Pad To Core Index ; Setting ;
++-------------------------------------------------------+-------------------+---------+
+; KEY[1]                                                ;                   ;         ;
+; KEY[0]                                                ;                   ;         ;
+;      - bound_flasher:bf1|processor:p0|enable          ; 1                 ; 0       ;
+;      - bound_flasher:bf1|processor:p0|next_state.00~0 ; 0                 ; 0       ;
+;      - bound_flasher:bf1|processor:p0|next_state.00~1 ; 0                 ; 0       ;
+;      - bound_flasher:bf1|processor:p0|increase~0      ; 0                 ; 0       ;
+;      - bound_flasher:bf1|processor:p0|isEnd~1         ; 0                 ; 0       ;
+;      - bound_flasher:bf1|processor:p0|isEnd~2         ; 1                 ; 0       ;
+; CLOCK_50                                              ;                   ;         ;
++-------------------------------------------------------+-------------------+---------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                                                 ;
-+---------------------------------------------------+---------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; Name                                              ; Location            ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+---------------------------------------------------+---------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; CLOCK_50                                          ; PIN_AJ16            ; 32      ; Clock        ; yes    ; Global Clock         ; GCLK28           ; --                        ;
-; KEY[0]                                            ; PIN_AA26            ; 6       ; Async. clear ; no     ; --                   ; --               ; --                        ;
-; bound_flasher:comb_5|processor:p0|enable          ; FF_X115_Y16_N31     ; 21      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; bound_flasher:comb_5|processor:p0|increase~3      ; LCCOMB_X116_Y16_N12 ; 1       ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; bound_flasher:comb_5|processor:p0|isEnd           ; LCCOMB_X115_Y16_N2  ; 2       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; bound_flasher:comb_5|processor:p0|isEnd~2         ; LCCOMB_X116_Y16_N10 ; 1       ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; bound_flasher:comb_5|processor:p0|next_state.00~0 ; LCCOMB_X116_Y16_N4  ; 4       ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; clock_div:clk1|clock                              ; FF_X116_Y16_N3      ; 9       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; clock_div:clk1|clock                              ; FF_X116_Y16_N3      ; 16      ; Clock        ; yes    ; Global Clock         ; GCLK17           ; --                        ;
-+---------------------------------------------------+---------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                                              ;
++------------------------------------------------+---------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; Name                                           ; Location            ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++------------------------------------------------+---------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; CLOCK_50                                       ; PIN_AJ16            ; 32      ; Clock        ; yes    ; Global Clock         ; GCLK28           ; --                        ;
+; KEY[0]                                         ; PIN_AA26            ; 6       ; Async. clear ; no     ; --                   ; --               ; --                        ;
+; bound_flasher:bf1|processor:p0|enable          ; FF_X116_Y20_N7      ; 21      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
+; bound_flasher:bf1|processor:p0|increase~3      ; LCCOMB_X115_Y20_N18 ; 1       ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; bound_flasher:bf1|processor:p0|isEnd           ; LCCOMB_X116_Y20_N8  ; 2       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; bound_flasher:bf1|processor:p0|isEnd~2         ; LCCOMB_X116_Y20_N4  ; 1       ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; bound_flasher:bf1|processor:p0|next_state.00~1 ; LCCOMB_X115_Y20_N22 ; 4       ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; clock_div:clk1|clock                           ; FF_X116_Y41_N31     ; 7       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; clock_div:clk1|clock                           ; FF_X116_Y41_N31     ; 16      ; Clock        ; yes    ; Global Clock         ; GCLK17           ; --                        ;
++------------------------------------------------+---------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Global & Other Fast Signals                                                                                                                                  ;
-+----------------------+----------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; Name                 ; Location       ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+----------------------+----------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; CLOCK_50             ; PIN_AJ16       ; 32      ; 0                                    ; Global Clock         ; GCLK28           ; --                        ;
-; clock_div:clk1|clock ; FF_X116_Y16_N3 ; 16      ; 0                                    ; Global Clock         ; GCLK17           ; --                        ;
-+----------------------+----------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Global & Other Fast Signals                                                                                                                                   ;
++----------------------+-----------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
+; Name                 ; Location        ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++----------------------+-----------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
+; CLOCK_50             ; PIN_AJ16        ; 32      ; 0                                    ; Global Clock         ; GCLK28           ; --                        ;
+; clock_div:clk1|clock ; FF_X116_Y41_N31 ; 16      ; 0                                    ; Global Clock         ; GCLK17           ; --                        ;
++----------------------+-----------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
 +-------------------------------------------------------------+
@@ -1883,148 +1946,147 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------+-------------------------+
 ; Routing Resource Type             ; Usage                   ;
 +-----------------------------------+-------------------------+
-; Block interconnects               ; 113 / 445,464 ( < 1 % ) ;
-; C16 interconnects                 ; 6 / 12,402 ( < 1 % )    ;
-; C4 interconnects                  ; 87 / 263,952 ( < 1 % )  ;
-; Direct links                      ; 53 / 445,464 ( < 1 % )  ;
+; Block interconnects               ; 144 / 445,464 ( < 1 % ) ;
+; C16 interconnects                 ; 13 / 12,402 ( < 1 % )   ;
+; C4 interconnects                  ; 138 / 263,952 ( < 1 % ) ;
+; Direct links                      ; 71 / 445,464 ( < 1 % )  ;
 ; GXB block output buffers          ; 0 / 3,600 ( 0 % )       ;
 ; Global clocks                     ; 2 / 30 ( 7 % )          ;
 ; Interquad Reference Clock Outputs ; 0 / 2 ( 0 % )           ;
 ; Interquad TXRX Clocks             ; 0 / 16 ( 0 % )          ;
 ; Interquad TXRX PCSRX outputs      ; 0 / 8 ( 0 % )           ;
 ; Interquad TXRX PCSTX outputs      ; 0 / 8 ( 0 % )           ;
-; Local interconnects               ; 67 / 149,760 ( < 1 % )  ;
-; R24 interconnects                 ; 3 / 12,690 ( < 1 % )    ;
-; R4 interconnects                  ; 40 / 370,260 ( < 1 % )  ;
+; Local interconnects               ; 85 / 149,760 ( < 1 % )  ;
+; R24 interconnects                 ; 15 / 12,690 ( < 1 % )   ;
+; R4 interconnects                  ; 100 / 370,260 ( < 1 % ) ;
 +-----------------------------------+-------------------------+
 
 
-+---------------------------------------------------------------------------+
-; LAB Logic Elements                                                        ;
-+---------------------------------------------+-----------------------------+
-; Number of Logic Elements  (Average = 14.29) ; Number of LABs  (Total = 7) ;
-+---------------------------------------------+-----------------------------+
-; 1                                           ; 0                           ;
-; 2                                           ; 0                           ;
-; 3                                           ; 0                           ;
-; 4                                           ; 0                           ;
-; 5                                           ; 0                           ;
-; 6                                           ; 0                           ;
-; 7                                           ; 0                           ;
-; 8                                           ; 0                           ;
-; 9                                           ; 0                           ;
-; 10                                          ; 0                           ;
-; 11                                          ; 1                           ;
-; 12                                          ; 1                           ;
-; 13                                          ; 0                           ;
-; 14                                          ; 1                           ;
-; 15                                          ; 1                           ;
-; 16                                          ; 3                           ;
-+---------------------------------------------+-----------------------------+
-
-
-+------------------------------------------------------------------+
-; LAB-wide Signals                                                 ;
-+------------------------------------+-----------------------------+
-; LAB-wide Signals  (Average = 1.29) ; Number of LABs  (Total = 7) ;
-+------------------------------------+-----------------------------+
-; 1 Async. clear                     ; 1                           ;
-; 1 Clock                            ; 7                           ;
-; 1 Sync. clear                      ; 1                           ;
-+------------------------------------+-----------------------------+
-
-
 +----------------------------------------------------------------------------+
-; LAB Signals Sourced                                                        ;
-+----------------------------------------------+-----------------------------+
-; Number of Signals Sourced  (Average = 22.00) ; Number of LABs  (Total = 7) ;
-+----------------------------------------------+-----------------------------+
-; 0                                            ; 0                           ;
-; 1                                            ; 0                           ;
-; 2                                            ; 0                           ;
-; 3                                            ; 0                           ;
-; 4                                            ; 0                           ;
-; 5                                            ; 0                           ;
-; 6                                            ; 0                           ;
-; 7                                            ; 0                           ;
-; 8                                            ; 0                           ;
-; 9                                            ; 0                           ;
-; 10                                           ; 0                           ;
-; 11                                           ; 0                           ;
-; 12                                           ; 0                           ;
-; 13                                           ; 0                           ;
-; 14                                           ; 0                           ;
-; 15                                           ; 1                           ;
-; 16                                           ; 0                           ;
-; 17                                           ; 1                           ;
-; 18                                           ; 0                           ;
-; 19                                           ; 1                           ;
-; 20                                           ; 0                           ;
-; 21                                           ; 1                           ;
-; 22                                           ; 1                           ;
-; 23                                           ; 0                           ;
-; 24                                           ; 0                           ;
-; 25                                           ; 0                           ;
-; 26                                           ; 0                           ;
-; 27                                           ; 0                           ;
-; 28                                           ; 1                           ;
-; 29                                           ; 0                           ;
-; 30                                           ; 0                           ;
-; 31                                           ; 0                           ;
-; 32                                           ; 1                           ;
-+----------------------------------------------+-----------------------------+
+; LAB Logic Elements                                                         ;
++---------------------------------------------+------------------------------+
+; Number of Logic Elements  (Average = 12.90) ; Number of LABs  (Total = 10) ;
++---------------------------------------------+------------------------------+
+; 1                                           ; 0                            ;
+; 2                                           ; 0                            ;
+; 3                                           ; 0                            ;
+; 4                                           ; 1                            ;
+; 5                                           ; 0                            ;
+; 6                                           ; 0                            ;
+; 7                                           ; 0                            ;
+; 8                                           ; 0                            ;
+; 9                                           ; 0                            ;
+; 10                                          ; 1                            ;
+; 11                                          ; 2                            ;
+; 12                                          ; 0                            ;
+; 13                                          ; 1                            ;
+; 14                                          ; 0                            ;
+; 15                                          ; 0                            ;
+; 16                                          ; 5                            ;
++---------------------------------------------+------------------------------+
+
+
++-------------------------------------------------------------------+
+; LAB-wide Signals                                                  ;
++------------------------------------+------------------------------+
+; LAB-wide Signals  (Average = 0.70) ; Number of LABs  (Total = 10) ;
++------------------------------------+------------------------------+
+; 1 Clock                            ; 6                            ;
+; 1 Sync. clear                      ; 1                            ;
++------------------------------------+------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; LAB Signals Sourced                                                         ;
++----------------------------------------------+------------------------------+
+; Number of Signals Sourced  (Average = 18.20) ; Number of LABs  (Total = 10) ;
++----------------------------------------------+------------------------------+
+; 0                                            ; 0                            ;
+; 1                                            ; 0                            ;
+; 2                                            ; 0                            ;
+; 3                                            ; 0                            ;
+; 4                                            ; 1                            ;
+; 5                                            ; 0                            ;
+; 6                                            ; 0                            ;
+; 7                                            ; 0                            ;
+; 8                                            ; 0                            ;
+; 9                                            ; 0                            ;
+; 10                                           ; 1                            ;
+; 11                                           ; 1                            ;
+; 12                                           ; 0                            ;
+; 13                                           ; 0                            ;
+; 14                                           ; 0                            ;
+; 15                                           ; 1                            ;
+; 16                                           ; 1                            ;
+; 17                                           ; 0                            ;
+; 18                                           ; 0                            ;
+; 19                                           ; 0                            ;
+; 20                                           ; 1                            ;
+; 21                                           ; 0                            ;
+; 22                                           ; 1                            ;
+; 23                                           ; 0                            ;
+; 24                                           ; 1                            ;
+; 25                                           ; 0                            ;
+; 26                                           ; 0                            ;
+; 27                                           ; 0                            ;
+; 28                                           ; 1                            ;
+; 29                                           ; 0                            ;
+; 30                                           ; 0                            ;
+; 31                                           ; 0                            ;
+; 32                                           ; 1                            ;
++----------------------------------------------+------------------------------+
 
 
 +--------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                        ;
-+--------------------------------------------------+-----------------------------+
-; Number of Signals Sourced Out  (Average = 10.29) ; Number of LABs  (Total = 7) ;
-+--------------------------------------------------+-----------------------------+
-; 0                                                ; 0                           ;
-; 1                                                ; 0                           ;
-; 2                                                ; 0                           ;
-; 3                                                ; 0                           ;
-; 4                                                ; 0                           ;
-; 5                                                ; 2                           ;
-; 6                                                ; 0                           ;
-; 7                                                ; 1                           ;
-; 8                                                ; 1                           ;
-; 9                                                ; 0                           ;
-; 10                                               ; 0                           ;
-; 11                                               ; 0                           ;
-; 12                                               ; 0                           ;
-; 13                                               ; 0                           ;
-; 14                                               ; 0                           ;
-; 15                                               ; 1                           ;
-; 16                                               ; 2                           ;
-+--------------------------------------------------+-----------------------------+
++-------------------------------------------------+------------------------------+
+; Number of Signals Sourced Out  (Average = 9.60) ; Number of LABs  (Total = 10) ;
++-------------------------------------------------+------------------------------+
+; 0                                               ; 0                            ;
+; 1                                               ; 0                            ;
+; 2                                               ; 0                            ;
+; 3                                               ; 1                            ;
+; 4                                               ; 2                            ;
+; 5                                               ; 0                            ;
+; 6                                               ; 1                            ;
+; 7                                               ; 0                            ;
+; 8                                               ; 1                            ;
+; 9                                               ; 1                            ;
+; 10                                              ; 0                            ;
+; 11                                              ; 0                            ;
+; 12                                              ; 0                            ;
+; 13                                              ; 0                            ;
+; 14                                              ; 0                            ;
+; 15                                              ; 2                            ;
+; 16                                              ; 2                            ;
++-------------------------------------------------+------------------------------+
 
 
-+---------------------------------------------------------------------------+
-; LAB Distinct Inputs                                                       ;
-+---------------------------------------------+-----------------------------+
-; Number of Distinct Inputs  (Average = 9.71) ; Number of LABs  (Total = 7) ;
-+---------------------------------------------+-----------------------------+
-; 0                                           ; 0                           ;
-; 1                                           ; 0                           ;
-; 2                                           ; 0                           ;
-; 3                                           ; 1                           ;
-; 4                                           ; 0                           ;
-; 5                                           ; 1                           ;
-; 6                                           ; 1                           ;
-; 7                                           ; 1                           ;
-; 8                                           ; 0                           ;
-; 9                                           ; 0                           ;
-; 10                                          ; 0                           ;
-; 11                                          ; 0                           ;
-; 12                                          ; 1                           ;
-; 13                                          ; 0                           ;
-; 14                                          ; 0                           ;
-; 15                                          ; 0                           ;
-; 16                                          ; 0                           ;
-; 17                                          ; 1                           ;
-; 18                                          ; 1                           ;
-+---------------------------------------------+-----------------------------+
++----------------------------------------------------------------------------+
+; LAB Distinct Inputs                                                        ;
++---------------------------------------------+------------------------------+
+; Number of Distinct Inputs  (Average = 8.60) ; Number of LABs  (Total = 10) ;
++---------------------------------------------+------------------------------+
+; 0                                           ; 0                            ;
+; 1                                           ; 0                            ;
+; 2                                           ; 0                            ;
+; 3                                           ; 1                            ;
+; 4                                           ; 1                            ;
+; 5                                           ; 2                            ;
+; 6                                           ; 1                            ;
+; 7                                           ; 0                            ;
+; 8                                           ; 0                            ;
+; 9                                           ; 2                            ;
+; 10                                          ; 1                            ;
+; 11                                          ; 0                            ;
+; 12                                          ; 0                            ;
+; 13                                          ; 0                            ;
+; 14                                          ; 0                            ;
+; 15                                          ; 0                            ;
+; 16                                          ; 0                            ;
+; 17                                          ; 1                            ;
+; 18                                          ; 1                            ;
++---------------------------------------------+------------------------------+
 
 
 +------------------------------------------+
@@ -2084,9 +2146,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 ; Pin/Rules          ; IO_000001 ; IO_000002    ; IO_000003 ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007 ; IO_000008    ; IO_000009 ; IO_000010 ; IO_000011    ; IO_000012    ; IO_000013    ; IO_000014    ; IO_000015    ; IO_000018    ; IO_000019    ; IO_000020    ; IO_000021    ; IO_000022    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000045    ; IO_000046    ; IO_000047    ; IO_000033 ; IO_000034    ; IO_000042    ;
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
-; Total Pass         ; 21        ; 0            ; 21        ; 0            ; 0            ; 21        ; 21        ; 0            ; 21        ; 21        ; 0            ; 18           ; 0            ; 0            ; 3            ; 0            ; 18           ; 3            ; 0            ; 0            ; 0            ; 18           ; 0            ; 0            ; 0            ; 0            ; 0            ; 21        ; 0            ; 0            ;
+; Total Pass         ; 49        ; 0            ; 49        ; 0            ; 0            ; 49        ; 49        ; 0            ; 49        ; 49        ; 0            ; 46           ; 0            ; 0            ; 3            ; 0            ; 46           ; 3            ; 0            ; 0            ; 0            ; 46           ; 0            ; 0            ; 0            ; 0            ; 0            ; 49        ; 0            ; 0            ;
 ; Total Unchecked    ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
-; Total Inapplicable ; 0         ; 21           ; 0         ; 21           ; 21           ; 0         ; 0         ; 21           ; 0         ; 0         ; 21           ; 3            ; 21           ; 21           ; 18           ; 21           ; 3            ; 18           ; 21           ; 21           ; 21           ; 3            ; 21           ; 21           ; 21           ; 21           ; 21           ; 0         ; 21           ; 21           ;
+; Total Inapplicable ; 0         ; 49           ; 0         ; 49           ; 49           ; 0         ; 0         ; 49           ; 0         ; 0         ; 49           ; 3            ; 49           ; 49           ; 46           ; 49           ; 3            ; 46           ; 49           ; 49           ; 49           ; 3            ; 49           ; 49           ; 49           ; 49           ; 49           ; 0         ; 49           ; 49           ;
 ; Total Fail         ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
 ; LEDR[0]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; LEDR[1]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
@@ -2107,8 +2169,36 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; LEDG[0]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; LEDG[1]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; KEY[1]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; CLOCK_50           ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; HEX7[0]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; HEX7[1]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; HEX7[2]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; HEX7[3]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; HEX7[4]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; HEX7[5]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; HEX7[6]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; HEX6[0]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; HEX6[1]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; HEX6[2]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; HEX6[3]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; HEX6[4]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; HEX6[5]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; HEX6[6]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; HEX5[0]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; HEX5[1]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; HEX5[2]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; HEX5[3]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; HEX5[4]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; HEX5[5]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; HEX5[6]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; HEX4[0]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; HEX4[1]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; HEX4[2]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; HEX4[3]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; HEX4[4]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; HEX4[5]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; HEX4[6]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; KEY[0]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; CLOCK_50           ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 
 
@@ -2148,89 +2238,85 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------+--------+
 
 
-+------------------------------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Summary                                      ;
-+-----------------------------------------+----------------------+-------------------+
-; Source Clock(s)                         ; Destination Clock(s) ; Delay Added in ns ;
-+-----------------------------------------+----------------------+-------------------+
-; KEY[0]                                  ; clock_div:clk1|clock ; 18.6              ;
-; CLOCK_50                                ; CLOCK_50             ; 4.4               ;
-; clock_div:clk1|clock                    ; clock_div:clk1|clock ; 3.5               ;
-; bound_flasher:comb_5|processor:p0|isEnd ; clock_div:clk1|clock ; 2.9               ;
-; clock_div:clk1|clock,KEY[0],I/O         ; KEY[0]               ; 2.4               ;
-; I/O                                     ; KEY[0]               ; 1.6               ;
-; clock_div:clk1|clock,KEY[0]             ; KEY[0]               ; 1.2               ;
-+-----------------------------------------+----------------------+-------------------+
++---------------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Summary                                   ;
++--------------------------------------+----------------------+-------------------+
+; Source Clock(s)                      ; Destination Clock(s) ; Delay Added in ns ;
++--------------------------------------+----------------------+-------------------+
+; CLOCK_50                             ; CLOCK_50             ; 4.4               ;
+; bound_flasher:bf1|processor:p0|isEnd ; clock_div:clk1|clock ; 3.3               ;
+; clock_div:clk1|clock,KEY[0],I/O      ; KEY[0]               ; 2.9               ;
+; I/O                                  ; KEY[0]               ; 2.0               ;
++--------------------------------------+----------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the TimeQuest Timing Analyzer.
 
 
-+--------------------------------------------------------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Details                                                                ;
-+---------------------------------------------+--------------------------------------------+-------------------+
-; Source Register                             ; Destination Register                       ; Delay Added in ns ;
-+---------------------------------------------+--------------------------------------------+-------------------+
-; clock_div:clk1|clock                        ; clock_div:clk1|clock                       ; 4.378             ;
-; bound_flasher:comb_5|processor:p0|enable    ; bound_flasher:comb_5|shifter:s0|out[0]     ; 2.563             ;
-; KEY[0]                                      ; bound_flasher:comb_5|processor:p0|increase ; 1.299             ;
-; bound_flasher:comb_5|processor:p0|increase  ; bound_flasher:comb_5|shifter:s0|out[15]    ; 1.275             ;
-; clock_div:clk1|counter[29]                  ; clock_div:clk1|clock                       ; 1.250             ;
-; clock_div:clk1|counter[28]                  ; clock_div:clk1|clock                       ; 1.250             ;
-; clock_div:clk1|counter[27]                  ; clock_div:clk1|clock                       ; 1.250             ;
-; clock_div:clk1|counter[26]                  ; clock_div:clk1|clock                       ; 1.250             ;
-; clock_div:clk1|counter[25]                  ; clock_div:clk1|clock                       ; 1.250             ;
-; clock_div:clk1|counter[24]                  ; clock_div:clk1|clock                       ; 1.250             ;
-; clock_div:clk1|counter[23]                  ; clock_div:clk1|clock                       ; 1.250             ;
-; clock_div:clk1|counter[22]                  ; clock_div:clk1|clock                       ; 1.250             ;
-; clock_div:clk1|counter[21]                  ; clock_div:clk1|clock                       ; 1.250             ;
-; clock_div:clk1|counter[20]                  ; clock_div:clk1|clock                       ; 1.250             ;
-; clock_div:clk1|counter[19]                  ; clock_div:clk1|clock                       ; 1.250             ;
-; clock_div:clk1|counter[18]                  ; clock_div:clk1|clock                       ; 1.250             ;
-; clock_div:clk1|counter[17]                  ; clock_div:clk1|clock                       ; 1.250             ;
-; clock_div:clk1|counter[16]                  ; clock_div:clk1|clock                       ; 1.250             ;
-; clock_div:clk1|counter[15]                  ; clock_div:clk1|clock                       ; 1.250             ;
-; clock_div:clk1|counter[14]                  ; clock_div:clk1|clock                       ; 1.250             ;
-; clock_div:clk1|counter[13]                  ; clock_div:clk1|clock                       ; 1.250             ;
-; clock_div:clk1|counter[12]                  ; clock_div:clk1|clock                       ; 1.250             ;
-; clock_div:clk1|counter[11]                  ; clock_div:clk1|clock                       ; 1.250             ;
-; clock_div:clk1|counter[10]                  ; clock_div:clk1|clock                       ; 1.250             ;
-; clock_div:clk1|counter[9]                   ; clock_div:clk1|clock                       ; 1.250             ;
-; clock_div:clk1|counter[8]                   ; clock_div:clk1|clock                       ; 1.250             ;
-; clock_div:clk1|counter[7]                   ; clock_div:clk1|clock                       ; 1.250             ;
-; clock_div:clk1|counter[6]                   ; clock_div:clk1|clock                       ; 1.250             ;
-; clock_div:clk1|counter[5]                   ; clock_div:clk1|clock                       ; 1.250             ;
-; clock_div:clk1|counter[4]                   ; clock_div:clk1|clock                       ; 1.250             ;
-; clock_div:clk1|counter[3]                   ; clock_div:clk1|clock                       ; 1.250             ;
-; clock_div:clk1|counter[2]                   ; clock_div:clk1|clock                       ; 1.250             ;
-; clock_div:clk1|counter[1]                   ; clock_div:clk1|clock                       ; 1.250             ;
-; clock_div:clk1|counter[0]                   ; clock_div:clk1|clock                       ; 1.250             ;
-; clock_div:clk1|counter[30]                  ; clock_div:clk1|clock                       ; 1.250             ;
-; bound_flasher:comb_5|shifter:s0|position[3] ; bound_flasher:comb_5|processor:p0|increase ; 1.223             ;
-; bound_flasher:comb_5|shifter:s0|position[2] ; bound_flasher:comb_5|processor:p0|increase ; 1.223             ;
-; bound_flasher:comb_5|shifter:s0|position[1] ; bound_flasher:comb_5|processor:p0|increase ; 1.223             ;
-; bound_flasher:comb_5|shifter:s0|position[0] ; bound_flasher:comb_5|processor:p0|increase ; 1.223             ;
-; bound_flasher:comb_5|shifter:s0|position[4] ; bound_flasher:comb_5|processor:p0|increase ; 1.223             ;
-; bound_flasher:comb_5|processor:p0|state.01  ; bound_flasher:comb_5|processor:p0|isEnd    ; 1.149             ;
-; bound_flasher:comb_5|processor:p0|state.10  ; bound_flasher:comb_5|processor:p0|isEnd    ; 0.790             ;
-; bound_flasher:comb_5|processor:p0|state.00  ; bound_flasher:comb_5|processor:p0|state.00 ; 0.226             ;
-; bound_flasher:comb_5|shifter:s0|out[14]     ; bound_flasher:comb_5|shifter:s0|out[15]    ; 0.139             ;
-; bound_flasher:comb_5|shifter:s0|out[13]     ; bound_flasher:comb_5|shifter:s0|out[14]    ; 0.137             ;
-; bound_flasher:comb_5|shifter:s0|out[12]     ; bound_flasher:comb_5|shifter:s0|out[13]    ; 0.137             ;
-; bound_flasher:comb_5|shifter:s0|out[11]     ; bound_flasher:comb_5|shifter:s0|out[12]    ; 0.137             ;
-; bound_flasher:comb_5|shifter:s0|out[10]     ; bound_flasher:comb_5|shifter:s0|out[11]    ; 0.137             ;
-; bound_flasher:comb_5|shifter:s0|out[9]      ; bound_flasher:comb_5|shifter:s0|out[10]    ; 0.137             ;
-; bound_flasher:comb_5|shifter:s0|out[8]      ; bound_flasher:comb_5|shifter:s0|out[9]     ; 0.137             ;
-; bound_flasher:comb_5|shifter:s0|out[7]      ; bound_flasher:comb_5|shifter:s0|out[8]     ; 0.137             ;
-; bound_flasher:comb_5|shifter:s0|out[6]      ; bound_flasher:comb_5|shifter:s0|out[7]     ; 0.137             ;
-; bound_flasher:comb_5|shifter:s0|out[5]      ; bound_flasher:comb_5|shifter:s0|out[6]     ; 0.137             ;
-; bound_flasher:comb_5|shifter:s0|out[4]      ; bound_flasher:comb_5|shifter:s0|out[5]     ; 0.137             ;
-; bound_flasher:comb_5|shifter:s0|out[3]      ; bound_flasher:comb_5|shifter:s0|out[4]     ; 0.137             ;
-; bound_flasher:comb_5|shifter:s0|out[2]      ; bound_flasher:comb_5|shifter:s0|out[3]     ; 0.137             ;
-; bound_flasher:comb_5|shifter:s0|out[1]      ; bound_flasher:comb_5|shifter:s0|out[2]     ; 0.137             ;
-; bound_flasher:comb_5|shifter:s0|out[0]      ; bound_flasher:comb_5|shifter:s0|out[1]     ; 0.137             ;
-; bound_flasher:comb_5|shifter:s0|out[15]     ; bound_flasher:comb_5|shifter:s0|out[14]    ; 0.093             ;
-+---------------------------------------------+--------------------------------------------+-------------------+
-Note: This table only shows the top 59 path(s) that have the largest delay added for hold.
++--------------------------------------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Details                                                          ;
++------------------------------------------+-----------------------------------------+-------------------+
+; Source Register                          ; Destination Register                    ; Delay Added in ns ;
++------------------------------------------+-----------------------------------------+-------------------+
+; clock_div:clk1|clock                     ; clock_div:clk1|clock                    ; 4.380             ;
+; KEY[0]                                   ; bound_flasher:bf1|processor:p0|increase ; 1.937             ;
+; bound_flasher:bf1|processor:p0|enable    ; bound_flasher:bf1|shifter:s0|out[0]     ; 1.786             ;
+; clock_div:clk1|counter[29]               ; clock_div:clk1|clock                    ; 1.693             ;
+; clock_div:clk1|counter[28]               ; clock_div:clk1|clock                    ; 1.693             ;
+; clock_div:clk1|counter[27]               ; clock_div:clk1|clock                    ; 1.693             ;
+; clock_div:clk1|counter[26]               ; clock_div:clk1|clock                    ; 1.693             ;
+; clock_div:clk1|counter[25]               ; clock_div:clk1|clock                    ; 1.693             ;
+; clock_div:clk1|counter[24]               ; clock_div:clk1|clock                    ; 1.693             ;
+; clock_div:clk1|counter[23]               ; clock_div:clk1|clock                    ; 1.693             ;
+; clock_div:clk1|counter[22]               ; clock_div:clk1|clock                    ; 1.693             ;
+; clock_div:clk1|counter[21]               ; clock_div:clk1|clock                    ; 1.693             ;
+; clock_div:clk1|counter[20]               ; clock_div:clk1|clock                    ; 1.693             ;
+; clock_div:clk1|counter[19]               ; clock_div:clk1|clock                    ; 1.693             ;
+; clock_div:clk1|counter[18]               ; clock_div:clk1|clock                    ; 1.693             ;
+; clock_div:clk1|counter[17]               ; clock_div:clk1|clock                    ; 1.693             ;
+; clock_div:clk1|counter[16]               ; clock_div:clk1|clock                    ; 1.693             ;
+; clock_div:clk1|counter[15]               ; clock_div:clk1|clock                    ; 1.693             ;
+; clock_div:clk1|counter[14]               ; clock_div:clk1|clock                    ; 1.693             ;
+; clock_div:clk1|counter[13]               ; clock_div:clk1|clock                    ; 1.693             ;
+; clock_div:clk1|counter[12]               ; clock_div:clk1|clock                    ; 1.693             ;
+; clock_div:clk1|counter[11]               ; clock_div:clk1|clock                    ; 1.693             ;
+; clock_div:clk1|counter[10]               ; clock_div:clk1|clock                    ; 1.693             ;
+; clock_div:clk1|counter[9]                ; clock_div:clk1|clock                    ; 1.693             ;
+; clock_div:clk1|counter[8]                ; clock_div:clk1|clock                    ; 1.693             ;
+; clock_div:clk1|counter[7]                ; clock_div:clk1|clock                    ; 1.693             ;
+; clock_div:clk1|counter[6]                ; clock_div:clk1|clock                    ; 1.693             ;
+; clock_div:clk1|counter[5]                ; clock_div:clk1|clock                    ; 1.693             ;
+; clock_div:clk1|counter[4]                ; clock_div:clk1|clock                    ; 1.693             ;
+; clock_div:clk1|counter[3]                ; clock_div:clk1|clock                    ; 1.693             ;
+; clock_div:clk1|counter[2]                ; clock_div:clk1|clock                    ; 1.693             ;
+; clock_div:clk1|counter[1]                ; clock_div:clk1|clock                    ; 1.693             ;
+; clock_div:clk1|counter[0]                ; clock_div:clk1|clock                    ; 1.693             ;
+; clock_div:clk1|counter[30]               ; clock_div:clk1|clock                    ; 1.693             ;
+; bound_flasher:bf1|shifter:s0|position[3] ; bound_flasher:bf1|processor:p0|increase ; 1.236             ;
+; bound_flasher:bf1|shifter:s0|position[2] ; bound_flasher:bf1|processor:p0|increase ; 1.236             ;
+; bound_flasher:bf1|shifter:s0|position[1] ; bound_flasher:bf1|processor:p0|increase ; 1.236             ;
+; bound_flasher:bf1|shifter:s0|position[0] ; bound_flasher:bf1|processor:p0|increase ; 1.236             ;
+; bound_flasher:bf1|shifter:s0|position[4] ; bound_flasher:bf1|processor:p0|increase ; 1.236             ;
+; bound_flasher:bf1|processor:p0|state.01  ; bound_flasher:bf1|processor:p0|increase ; 1.149             ;
+; bound_flasher:bf1|processor:p0|increase  ; bound_flasher:bf1|processor:p0|increase ; 0.959             ;
+; bound_flasher:bf1|processor:p0|state.10  ; bound_flasher:bf1|processor:p0|isEnd    ; 0.440             ;
+; bound_flasher:bf1|processor:p0|state.00  ; bound_flasher:bf1|processor:p0|state.00 ; 0.251             ;
+; bound_flasher:bf1|shifter:s0|out[13]     ; bound_flasher:bf1|shifter:s0|out[14]    ; 0.026             ;
+; bound_flasher:bf1|shifter:s0|out[12]     ; bound_flasher:bf1|shifter:s0|out[13]    ; 0.026             ;
+; bound_flasher:bf1|shifter:s0|out[11]     ; bound_flasher:bf1|shifter:s0|out[12]    ; 0.026             ;
+; bound_flasher:bf1|shifter:s0|out[10]     ; bound_flasher:bf1|shifter:s0|out[11]    ; 0.026             ;
+; bound_flasher:bf1|shifter:s0|out[9]      ; bound_flasher:bf1|shifter:s0|out[10]    ; 0.026             ;
+; bound_flasher:bf1|shifter:s0|out[8]      ; bound_flasher:bf1|shifter:s0|out[9]     ; 0.026             ;
+; bound_flasher:bf1|shifter:s0|out[7]      ; bound_flasher:bf1|shifter:s0|out[8]     ; 0.026             ;
+; bound_flasher:bf1|shifter:s0|out[6]      ; bound_flasher:bf1|shifter:s0|out[7]     ; 0.026             ;
+; bound_flasher:bf1|shifter:s0|out[5]      ; bound_flasher:bf1|shifter:s0|out[6]     ; 0.026             ;
+; bound_flasher:bf1|shifter:s0|out[4]      ; bound_flasher:bf1|shifter:s0|out[5]     ; 0.026             ;
+; bound_flasher:bf1|shifter:s0|out[3]      ; bound_flasher:bf1|shifter:s0|out[4]     ; 0.026             ;
+; bound_flasher:bf1|shifter:s0|out[2]      ; bound_flasher:bf1|shifter:s0|out[3]     ; 0.026             ;
+; bound_flasher:bf1|shifter:s0|out[1]      ; bound_flasher:bf1|shifter:s0|out[2]     ; 0.026             ;
+; bound_flasher:bf1|shifter:s0|out[0]      ; bound_flasher:bf1|shifter:s0|out[1]     ; 0.026             ;
+; bound_flasher:bf1|shifter:s0|out[14]     ; bound_flasher:bf1|shifter:s0|out[15]    ; 0.024             ;
++------------------------------------------+-----------------------------------------+-------------------+
+Note: This table only shows the top 58 path(s) that have the largest delay added for hold.
 
 
 +-----------------+
@@ -2266,14 +2352,12 @@ Info (176353): Automatically promoted node CLOCK_50~input (placed in PIN AJ16 (C
 Info (176353): Automatically promoted node clock_div:clk1|clock  File: D:/Quang/202/Verilog/lab1/clock_div.v Line: 4
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node bound_flasher:comb_5|shifter:s0|position[0] File: D:/Quang/202/Verilog/lab1/shifter.v Line: 11
-        Info (176357): Destination node bound_flasher:comb_5|shifter:s0|position[2] File: D:/Quang/202/Verilog/lab1/shifter.v Line: 11
-        Info (176357): Destination node bound_flasher:comb_5|shifter:s0|position[1] File: D:/Quang/202/Verilog/lab1/shifter.v Line: 11
-        Info (176357): Destination node bound_flasher:comb_5|shifter:s0|position[3] File: D:/Quang/202/Verilog/lab1/shifter.v Line: 11
-        Info (176357): Destination node bound_flasher:comb_5|shifter:s0|position[4] File: D:/Quang/202/Verilog/lab1/shifter.v Line: 11
+        Info (176357): Destination node bound_flasher:bf1|shifter:s0|position[0] File: D:/Quang/202/Verilog/lab1/shifter.v Line: 11
+        Info (176357): Destination node bound_flasher:bf1|shifter:s0|position[2] File: D:/Quang/202/Verilog/lab1/shifter.v Line: 11
+        Info (176357): Destination node bound_flasher:bf1|shifter:s0|position[1] File: D:/Quang/202/Verilog/lab1/shifter.v Line: 11
+        Info (176357): Destination node bound_flasher:bf1|shifter:s0|position[3] File: D:/Quang/202/Verilog/lab1/shifter.v Line: 11
+        Info (176357): Destination node bound_flasher:bf1|shifter:s0|position[4] File: D:/Quang/202/Verilog/lab1/shifter.v Line: 11
         Info (176357): Destination node clock_div:clk1|clock~0 File: D:/Quang/202/Verilog/lab1/clock_div.v Line: 4
-        Info (176357): Destination node LEDG[0]~output File: D:/Quang/202/Verilog/lab1/DE2i_run.v Line: 5
-        Info (176357): Destination node LEDG[1]~output File: D:/Quang/202/Verilog/lab1/DE2i_run.v Line: 5
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
@@ -2487,34 +2571,6 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "HEX3[4]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "HEX3[5]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "HEX3[6]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HEX4[0]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HEX4[1]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HEX4[2]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HEX4[3]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HEX4[4]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HEX4[5]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HEX4[6]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HEX5[0]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HEX5[1]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HEX5[2]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HEX5[3]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HEX5[4]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HEX5[5]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HEX5[6]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HEX6[0]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HEX6[1]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HEX6[2]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HEX6[3]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HEX6[4]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HEX6[5]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HEX6[6]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HEX7[0]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HEX7[1]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HEX7[2]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HEX7[3]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HEX7[4]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HEX7[5]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HEX7[6]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "HSMC_CLKIN0" is assigned to location or region, but does not exist in design
     Warning (15706): Node "HSMC_CLKIN_N1" is assigned to location or region, but does not exist in design
     Warning (15706): Node "HSMC_CLKIN_N2" is assigned to location or region, but does not exist in design
@@ -2717,23 +2773,23 @@ Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:06
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X106_Y11 to location X117_Y22
+    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X106_Y34 to location X117_Y45
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.17 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.16 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file D:/Quang/202/Verilog/lab1/output_files/lab1.fit.smsg
-Info: Quartus Prime Fitter was successful. 0 errors, 437 warnings
-    Info: Peak virtual memory: 5834 megabytes
-    Info: Processing ended: Wed May 05 09:20:14 2021
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:24
+Info: Quartus Prime Fitter was successful. 0 errors, 409 warnings
+    Info: Peak virtual memory: 5838 megabytes
+    Info: Processing ended: Wed May 05 09:54:48 2021
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:22
 
 
 +----------------------------+

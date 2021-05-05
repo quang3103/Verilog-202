@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab1
-Wed May 05 09:19:57 2021
+Wed May 05 09:54:30 2021
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -17,11 +17,15 @@ Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
   9. General Register Statistics
  10. Inverted Register Statistics
  11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Port Connectivity Checks: "bound_flasher:comb_5"
- 13. Post-Synthesis Netlist Statistics for Top Partition
- 14. Elapsed Time Per Partition
- 15. Analysis & Synthesis Messages
- 16. Analysis & Synthesis Suppressed Messages
+ 12. Parameter Settings for Inferred Entity Instance: dec5toBCD:dec5_0|lpm_divide:Mod0
+ 13. Parameter Settings for Inferred Entity Instance: dec5toBCD:dec5_1|lpm_divide:Mod0
+ 14. Port Connectivity Checks: "bound_flasher:bf1"
+ 15. Port Connectivity Checks: "dec5toBCD:dec5_1"
+ 16. Port Connectivity Checks: "dec5toBCD:dec5_0"
+ 17. Post-Synthesis Netlist Statistics for Top Partition
+ 18. Elapsed Time Per Partition
+ 19. Analysis & Synthesis Messages
+ 20. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -48,16 +52,16 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed May 05 09:19:57 2021       ;
+; Analysis & Synthesis Status        ; Successful - Wed May 05 09:54:30 2021       ;
 ; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                      ; lab1                                        ;
 ; Top-level Entity Name              ; DE2i_run                                    ;
 ; Family                             ; Cyclone IV GX                               ;
-; Total logic elements               ; 97                                          ;
-;     Total combinational functions  ; 96                                          ;
+; Total logic elements               ; 128                                         ;
+;     Total combinational functions  ; 127                                         ;
 ;     Dedicated logic registers      ; 54                                          ;
 ; Total registers                    ; 54                                          ;
-; Total pins                         ; 21                                          ;
+; Total pins                         ; 49                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -168,22 +172,32 @@ agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processors 3-4         ;   0.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                            ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path              ; Library ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------+---------+
-; shifter.v                        ; yes             ; User Verilog HDL File  ; D:/Quang/202/Verilog/lab1/shifter.v       ;         ;
-; processor.v                      ; yes             ; User Verilog HDL File  ; D:/Quang/202/Verilog/lab1/processor.v     ;         ;
-; bound_flasher.v                  ; yes             ; User Verilog HDL File  ; D:/Quang/202/Verilog/lab1/bound_flasher.v ;         ;
-; DE2i_run.v                       ; yes             ; User Verilog HDL File  ; D:/Quang/202/Verilog/lab1/DE2i_run.v      ;         ;
-; clock_div.v                      ; yes             ; User Verilog HDL File  ; D:/Quang/202/Verilog/lab1/clock_div.v     ;         ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                   ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                               ; Library ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
+; shifter.v                        ; yes             ; User Verilog HDL File        ; D:/Quang/202/Verilog/lab1/shifter.v                                        ;         ;
+; processor.v                      ; yes             ; User Verilog HDL File        ; D:/Quang/202/Verilog/lab1/processor.v                                      ;         ;
+; bound_flasher.v                  ; yes             ; User Verilog HDL File        ; D:/Quang/202/Verilog/lab1/bound_flasher.v                                  ;         ;
+; DE2i_run.v                       ; yes             ; User Verilog HDL File        ; D:/Quang/202/Verilog/lab1/DE2i_run.v                                       ;         ;
+; clock_div.v                      ; yes             ; User Verilog HDL File        ; D:/Quang/202/Verilog/lab1/clock_div.v                                      ;         ;
+; dec5toBCD.v                      ; yes             ; User Verilog HDL File        ; D:/Quang/202/Verilog/lab1/dec5toBCD.v                                      ;         ;
+; BCD_to_HEX.v                     ; yes             ; User Verilog HDL File        ; D:/Quang/202/Verilog/lab1/BCD_to_HEX.v                                     ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/lpm_divide.tdf      ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/abs_divider.inc     ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/sign_div_unsign.inc ;         ;
+; aglobal161.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/aglobal161.inc      ;         ;
+; db/lpm_divide_ddm.tdf            ; yes             ; Auto-Generated Megafunction  ; D:/Quang/202/Verilog/lab1/db/lpm_divide_ddm.tdf                            ;         ;
+; db/sign_div_unsign_8kh.tdf       ; yes             ; Auto-Generated Megafunction  ; D:/Quang/202/Verilog/lab1/db/sign_div_unsign_8kh.tdf                       ;         ;
+; db/alt_u_div_u7f.tdf             ; yes             ; Auto-Generated Megafunction  ; D:/Quang/202/Verilog/lab1/db/alt_u_div_u7f.tdf                             ;         ;
+; db/add_sub_1tc.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/Quang/202/Verilog/lab1/db/add_sub_1tc.tdf                               ;         ;
+; db/add_sub_2tc.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/Quang/202/Verilog/lab1/db/add_sub_2tc.tdf                               ;         ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------+
@@ -191,43 +205,50 @@ agreement for further details.
 +--------------------------+------------------+
 ; Resource                 ; Usage            ;
 +--------------------------+------------------+
-; I/O pins                 ; 21               ;
+; I/O pins                 ; 49               ;
 ;                          ;                  ;
 ; DSP block 9-bit elements ; 0                ;
 ;                          ;                  ;
 ; Maximum fan-out node     ; CLOCK_50~input   ;
 ; Maximum fan-out          ; 32               ;
-; Total fan-out            ; 425              ;
-; Average fan-out          ; 2.21             ;
+; Total fan-out            ; 552              ;
+; Average fan-out          ; 1.98             ;
 +--------------------------+------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                            ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------------------+---------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                         ; Entity Name   ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------------------+---------------+--------------+
-; |DE2i_run                  ; 96 (0)              ; 54 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0         ; 21   ; 0            ; |DE2i_run                                   ; DE2i_run      ; work         ;
-;    |bound_flasher:comb_5|  ; 42 (0)              ; 22 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |DE2i_run|bound_flasher:comb_5              ; bound_flasher ; work         ;
-;       |processor:p0|       ; 21 (21)             ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |DE2i_run|bound_flasher:comb_5|processor:p0 ; processor     ; work         ;
-;       |shifter:s0|         ; 21 (21)             ; 21 (21)                   ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |DE2i_run|bound_flasher:comb_5|shifter:s0   ; shifter       ; work         ;
-;    |clock_div:clk1|        ; 54 (54)             ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |DE2i_run|clock_div:clk1                    ; clock_div     ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------------------+---------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                ;
++-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                        ; Entity Name         ; Library Name ;
++-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; |DE2i_run                                 ; 127 (0)             ; 54 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0         ; 49   ; 0            ; |DE2i_run                                                                                                                  ; DE2i_run            ; work         ;
+;    |BCD_to_HEX:hex_0|                     ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |DE2i_run|BCD_to_HEX:hex_0                                                                                                 ; BCD_to_HEX          ; work         ;
+;    |BCD_to_HEX:hex_1|                     ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |DE2i_run|BCD_to_HEX:hex_1                                                                                                 ; BCD_to_HEX          ; work         ;
+;    |bound_flasher:bf1|                    ; 42 (0)              ; 22 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |DE2i_run|bound_flasher:bf1                                                                                                ; bound_flasher       ; work         ;
+;       |processor:p0|                      ; 21 (21)             ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |DE2i_run|bound_flasher:bf1|processor:p0                                                                                   ; processor           ; work         ;
+;       |shifter:s0|                        ; 21 (21)             ; 21 (21)                   ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |DE2i_run|bound_flasher:bf1|shifter:s0                                                                                     ; shifter             ; work         ;
+;    |clock_div:clk1|                       ; 54 (54)             ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |DE2i_run|clock_div:clk1                                                                                                   ; clock_div           ; work         ;
+;    |dec5toBCD:dec5_0|                     ; 21 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |DE2i_run|dec5toBCD:dec5_0                                                                                                 ; dec5toBCD           ; work         ;
+;       |lpm_divide:Mod0|                   ; 21 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |DE2i_run|dec5toBCD:dec5_0|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_ddm:auto_generated|  ; 21 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |DE2i_run|dec5toBCD:dec5_0|lpm_divide:Mod0|lpm_divide_ddm:auto_generated                                                   ; lpm_divide_ddm      ; work         ;
+;             |sign_div_unsign_8kh:divider| ; 21 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |DE2i_run|dec5toBCD:dec5_0|lpm_divide:Mod0|lpm_divide_ddm:auto_generated|sign_div_unsign_8kh:divider                       ; sign_div_unsign_8kh ; work         ;
+;                |alt_u_div_u7f:divider|    ; 21 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |DE2i_run|dec5toBCD:dec5_0|lpm_divide:Mod0|lpm_divide_ddm:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_u7f:divider ; alt_u_div_u7f       ; work         ;
++-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-------------------------------------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                                           ;
-+----------------------------------------------------+-------------------------------------------------+------------------------+
-; Latch Name                                         ; Latch Enable Signal                             ; Free of Timing Hazards ;
-+----------------------------------------------------+-------------------------------------------------+------------------------+
-; bound_flasher:comb_5|processor:p0|increase         ; bound_flasher:comb_5|processor:p0|increase      ; yes                    ;
-; bound_flasher:comb_5|processor:p0|state.01         ; bound_flasher:comb_5|processor:p0|next_state.00 ; yes                    ;
-; bound_flasher:comb_5|processor:p0|state.10         ; bound_flasher:comb_5|processor:p0|next_state.00 ; yes                    ;
-; bound_flasher:comb_5|processor:p0|state.00         ; bound_flasher:comb_5|processor:p0|next_state.00 ; yes                    ;
-; bound_flasher:comb_5|processor:p0|isEnd            ; bound_flasher:comb_5|processor:p0|isEnd         ; yes                    ;
-; Number of user-specified and inferred latches = 5  ;                                                 ;                        ;
-+----------------------------------------------------+-------------------------------------------------+------------------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                        ;
++----------------------------------------------------+----------------------------------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal                          ; Free of Timing Hazards ;
++----------------------------------------------------+----------------------------------------------+------------------------+
+; bound_flasher:bf1|processor:p0|state.01            ; bound_flasher:bf1|processor:p0|next_state.00 ; yes                    ;
+; bound_flasher:bf1|processor:p0|state.10            ; bound_flasher:bf1|processor:p0|next_state.00 ; yes                    ;
+; bound_flasher:bf1|processor:p0|state.00            ; bound_flasher:bf1|processor:p0|next_state.00 ; yes                    ;
+; bound_flasher:bf1|processor:p0|increase            ; bound_flasher:bf1|processor:p0|increase      ; yes                    ;
+; bound_flasher:bf1|processor:p0|isEnd               ; bound_flasher:bf1|processor:p0|isEnd         ; yes                    ;
+; Number of user-specified and inferred latches = 5  ;                                              ;                        ;
++----------------------------------------------------+----------------------------------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
@@ -246,38 +267,100 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 
 
-+----------------------------------------------------+
-; Inverted Register Statistics                       ;
-+------------------------------------------+---------+
-; Inverted Register                        ; Fan out ;
-+------------------------------------------+---------+
-; bound_flasher:comb_5|processor:p0|enable ; 21      ;
-; Total number of inverted registers = 1   ;         ;
-+------------------------------------------+---------+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; bound_flasher:bf1|processor:p0|enable  ; 21      ;
+; Total number of inverted registers = 1 ;         ;
++----------------------------------------+---------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                          ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
-; 3:1                ; 14 bits   ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; Yes        ; |DE2i_run|bound_flasher:comb_5|shifter:s0|out[9]          ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; No         ; |DE2i_run|bound_flasher:comb_5|processor:p0|next_state.10 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
+; 3:1                ; 14 bits   ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; Yes        ; |DE2i_run|bound_flasher:bf1|shifter:s0|out[5]          ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; No         ; |DE2i_run|bound_flasher:bf1|processor:p0|next_state.00 ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |DE2i_run|BCD_to_HEX:hex_1|data_out[6]                 ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |DE2i_run|BCD_to_HEX:hex_3|data_out[5]                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "bound_flasher:comb_5"                                                                                                         ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                                                                    ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------------------------+
-; max     ; Output ; Warning  ; Output or bidir port (5 bits) is wider than the port expression (1 bits) it drives; bit(s) "max[4..1]" have no fanouts     ;
-; max     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                        ;
-; min     ; Output ; Warning  ; Output or bidir port (5 bits) is wider than the port expression (1 bits) it drives; bit(s) "min[4..1]" have no fanouts     ;
-; min     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                        ;
-; isFlick ; Output ; Warning  ; Output or bidir port (2 bits) is wider than the port expression (1 bits) it drives; bit(s) "isFlick[1..1]" have no fanouts ;
-; isFlick ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                        ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: dec5toBCD:dec5_0|lpm_divide:Mod0 ;
++------------------------+----------------+-----------------------------------------+
+; Parameter Name         ; Value          ; Type                                    ;
++------------------------+----------------+-----------------------------------------+
+; LPM_WIDTHN             ; 5              ; Untyped                                 ;
+; LPM_WIDTHD             ; 4              ; Untyped                                 ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                 ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                 ;
+; LPM_PIPELINE           ; 0              ; Untyped                                 ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                 ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                 ;
+; CBXI_PARAMETER         ; lpm_divide_ddm ; Untyped                                 ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                 ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                 ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                              ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                            ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                            ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                          ;
++------------------------+----------------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: dec5toBCD:dec5_1|lpm_divide:Mod0 ;
++------------------------+----------------+-----------------------------------------+
+; Parameter Name         ; Value          ; Type                                    ;
++------------------------+----------------+-----------------------------------------+
+; LPM_WIDTHN             ; 5              ; Untyped                                 ;
+; LPM_WIDTHD             ; 4              ; Untyped                                 ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                 ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                 ;
+; LPM_PIPELINE           ; 0              ; Untyped                                 ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                 ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                 ;
+; CBXI_PARAMETER         ; lpm_divide_ddm ; Untyped                                 ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                 ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                 ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                              ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                            ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                            ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                          ;
++------------------------+----------------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bound_flasher:bf1"                                                                                                                                                    ;
++------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                                                               ;
++------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; max  ; Output ; Warning  ; Output or bidir port (5 bits) is smaller than the port expression (6 bits) it drives.  The 1 most-significant bit(s) in the port expression will be connected to GND. ;
+; min  ; Output ; Warning  ; Output or bidir port (5 bits) is smaller than the port expression (6 bits) it drives.  The 1 most-significant bit(s) in the port expression will be connected to GND. ;
++------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "dec5toBCD:dec5_1"                                                                                                                                                                  ;
++---------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                          ;
++---------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; data_in ; Input ; Warning  ; Input port expression (6 bits) is wider than the input port (5 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++---------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "dec5toBCD:dec5_0"                                                                                                                                                                  ;
++---------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                          ;
++---------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; data_in ; Input ; Warning  ; Input port expression (6 bits) is wider than the input port (5 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++---------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -285,23 +368,24 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 21                          ;
+; boundary_port         ; 49                          ;
 ; cycloneiii_ff         ; 54                          ;
 ;     CLR               ; 1                           ;
 ;     SCLR              ; 21                          ;
 ;     plain             ; 32                          ;
-; cycloneiii_lcell_comb ; 96                          ;
-;     arith             ; 34                          ;
-;         2 data inputs ; 31                          ;
-;         3 data inputs ; 3                           ;
-;     normal            ; 62                          ;
-;         1 data inputs ; 1                           ;
-;         2 data inputs ; 17                          ;
-;         3 data inputs ; 25                          ;
-;         4 data inputs ; 19                          ;
+; cycloneiii_lcell_comb ; 131                         ;
+;     arith             ; 41                          ;
+;         2 data inputs ; 34                          ;
+;         3 data inputs ; 7                           ;
+;     normal            ; 90                          ;
+;         0 data inputs ; 4                           ;
+;         1 data inputs ; 4                           ;
+;         2 data inputs ; 26                          ;
+;         3 data inputs ; 27                          ;
+;         4 data inputs ; 29                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 3.18                        ;
+; Max LUT depth         ; 5.70                        ;
+; Average LUT depth     ; 3.54                        ;
 +-----------------------+-----------------------------+
 
 
@@ -320,7 +404,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Wed May 05 09:19:50 2021
+    Info: Processing started: Wed May 05 09:54:22 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab1 -c lab1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -340,12 +424,19 @@ Info (12021): Found 1 design units, including 1 entities, in source file de2i_ru
     Info (12023): Found entity 1: DE2i_run File: D:/Quang/202/Verilog/lab1/DE2i_run.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file clock_div.v
     Info (12023): Found entity 1: clock_div File: D:/Quang/202/Verilog/lab1/clock_div.v Line: 1
-Critical Warning (10846): Verilog HDL Instantiation warning at DE2i_run.v(13): instance has no name File: D:/Quang/202/Verilog/lab1/DE2i_run.v Line: 13
+Info (12021): Found 1 design units, including 1 entities, in source file dec5tobcd.v
+    Info (12023): Found entity 1: dec5toBCD File: D:/Quang/202/Verilog/lab1/dec5toBCD.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file bcd_to_hex.v
+    Info (12023): Found entity 1: BCD_to_HEX File: D:/Quang/202/Verilog/lab1/BCD_to_HEX.v Line: 1
 Info (12127): Elaborating entity "DE2i_run" for the top level hierarchy
-Info (12128): Elaborating entity "clock_div" for hierarchy "clock_div:clk1" File: D:/Quang/202/Verilog/lab1/DE2i_run.v Line: 12
+Info (12128): Elaborating entity "dec5toBCD" for hierarchy "dec5toBCD:dec5_0" File: D:/Quang/202/Verilog/lab1/DE2i_run.v Line: 16
+Warning (10230): Verilog HDL assignment warning at dec5toBCD.v(6): truncated value with size 32 to match size of target (4) File: D:/Quang/202/Verilog/lab1/dec5toBCD.v Line: 6
+Warning (10230): Verilog HDL assignment warning at dec5toBCD.v(7): truncated value with size 32 to match size of target (4) File: D:/Quang/202/Verilog/lab1/dec5toBCD.v Line: 7
+Info (12128): Elaborating entity "BCD_to_HEX" for hierarchy "BCD_to_HEX:hex_0" File: D:/Quang/202/Verilog/lab1/DE2i_run.v Line: 19
+Info (12128): Elaborating entity "clock_div" for hierarchy "clock_div:clk1" File: D:/Quang/202/Verilog/lab1/DE2i_run.v Line: 24
 Warning (10230): Verilog HDL assignment warning at clock_div.v(23): truncated value with size 32 to match size of target (31) File: D:/Quang/202/Verilog/lab1/clock_div.v Line: 23
-Info (12128): Elaborating entity "bound_flasher" for hierarchy "bound_flasher:comb_5" File: D:/Quang/202/Verilog/lab1/DE2i_run.v Line: 13
-Info (12128): Elaborating entity "processor" for hierarchy "bound_flasher:comb_5|processor:p0" File: D:/Quang/202/Verilog/lab1/bound_flasher.v Line: 11
+Info (12128): Elaborating entity "bound_flasher" for hierarchy "bound_flasher:bf1" File: D:/Quang/202/Verilog/lab1/DE2i_run.v Line: 25
+Info (12128): Elaborating entity "processor" for hierarchy "bound_flasher:bf1|processor:p0" File: D:/Quang/202/Verilog/lab1/bound_flasher.v Line: 11
 Warning (10036): Verilog HDL or VHDL warning at processor.v(10): object "pre_min" assigned a value but never read File: D:/Quang/202/Verilog/lab1/processor.v Line: 10
 Warning (10235): Verilog HDL Always Construct warning at processor.v(85): variable "pre_state" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Quang/202/Verilog/lab1/processor.v Line: 85
 Warning (10235): Verilog HDL Always Construct warning at processor.v(92): variable "increase" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Quang/202/Verilog/lab1/processor.v Line: 92
@@ -368,38 +459,83 @@ Info (10041): Inferred latch for "next_state.10" at processor.v(131) File: D:/Qu
 Info (10041): Inferred latch for "next_state.01" at processor.v(131) File: D:/Quang/202/Verilog/lab1/processor.v Line: 131
 Info (10041): Inferred latch for "next_state.00" at processor.v(131) File: D:/Quang/202/Verilog/lab1/processor.v Line: 131
 Info (10041): Inferred latch for "isEnd" at processor.v(131) File: D:/Quang/202/Verilog/lab1/processor.v Line: 131
-Info (12128): Elaborating entity "shifter" for hierarchy "bound_flasher:comb_5|shifter:s0" File: D:/Quang/202/Verilog/lab1/bound_flasher.v Line: 12
+Info (12128): Elaborating entity "shifter" for hierarchy "bound_flasher:bf1|shifter:s0" File: D:/Quang/202/Verilog/lab1/bound_flasher.v Line: 12
 Warning (10230): Verilog HDL assignment warning at shifter.v(17): truncated value with size 32 to match size of target (5) File: D:/Quang/202/Verilog/lab1/shifter.v Line: 17
 Warning (10230): Verilog HDL assignment warning at shifter.v(22): truncated value with size 32 to match size of target (5) File: D:/Quang/202/Verilog/lab1/shifter.v Line: 22
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Warning (13012): Latch bound_flasher:comb_5|processor:p0|increase has unsafe behavior File: D:/Quang/202/Verilog/lab1/processor.v Line: 5
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal bound_flasher:comb_5|processor:p0|increase File: D:/Quang/202/Verilog/lab1/processor.v Line: 5
-Warning (13012): Latch bound_flasher:comb_5|processor:p0|state.01 has unsafe behavior File: D:/Quang/202/Verilog/lab1/processor.v Line: 12
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal bound_flasher:comb_5|processor:p0|state.01 File: D:/Quang/202/Verilog/lab1/processor.v Line: 12
-Warning (13012): Latch bound_flasher:comb_5|processor:p0|state.10 has unsafe behavior File: D:/Quang/202/Verilog/lab1/processor.v Line: 12
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal bound_flasher:comb_5|processor:p0|state.01 File: D:/Quang/202/Verilog/lab1/processor.v Line: 12
-Warning (13012): Latch bound_flasher:comb_5|processor:p0|state.00 has unsafe behavior File: D:/Quang/202/Verilog/lab1/processor.v Line: 12
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "min[5]" is missing source, defaulting to GND File: D:/Quang/202/Verilog/lab1/DE2i_run.v Line: 10
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "max[5]" is missing source, defaulting to GND File: D:/Quang/202/Verilog/lab1/DE2i_run.v Line: 10
+    Warning (12110): Net "min[5]" is missing source, defaulting to GND File: D:/Quang/202/Verilog/lab1/DE2i_run.v Line: 10
+Info (278001): Inferred 2 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "dec5toBCD:dec5_0|Mod0" File: D:/Quang/202/Verilog/lab1/dec5toBCD.v Line: 6
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "dec5toBCD:dec5_1|Mod0" File: D:/Quang/202/Verilog/lab1/dec5toBCD.v Line: 6
+Info (12130): Elaborated megafunction instantiation "dec5toBCD:dec5_0|lpm_divide:Mod0" File: D:/Quang/202/Verilog/lab1/dec5toBCD.v Line: 6
+Info (12133): Instantiated megafunction "dec5toBCD:dec5_0|lpm_divide:Mod0" with the following parameter: File: D:/Quang/202/Verilog/lab1/dec5toBCD.v Line: 6
+    Info (12134): Parameter "LPM_WIDTHN" = "5"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_ddm.tdf
+    Info (12023): Found entity 1: lpm_divide_ddm File: D:/Quang/202/Verilog/lab1/db/lpm_divide_ddm.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_8kh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_8kh File: D:/Quang/202/Verilog/lab1/db/sign_div_unsign_8kh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_u7f.tdf
+    Info (12023): Found entity 1: alt_u_div_u7f File: D:/Quang/202/Verilog/lab1/db/alt_u_div_u7f.tdf Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_1tc.tdf
+    Info (12023): Found entity 1: add_sub_1tc File: D:/Quang/202/Verilog/lab1/db/add_sub_1tc.tdf Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_2tc.tdf
+    Info (12023): Found entity 1: add_sub_2tc File: D:/Quang/202/Verilog/lab1/db/add_sub_2tc.tdf Line: 23
+Info (12130): Elaborated megafunction instantiation "dec5toBCD:dec5_1|lpm_divide:Mod0" File: D:/Quang/202/Verilog/lab1/dec5toBCD.v Line: 6
+Info (12133): Instantiated megafunction "dec5toBCD:dec5_1|lpm_divide:Mod0" with the following parameter: File: D:/Quang/202/Verilog/lab1/dec5toBCD.v Line: 6
+    Info (12134): Parameter "LPM_WIDTHN" = "5"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13012): Latch bound_flasher:bf1|processor:p0|state.01 has unsafe behavior File: D:/Quang/202/Verilog/lab1/processor.v Line: 12
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal bound_flasher:bf1|processor:p0|state.01 File: D:/Quang/202/Verilog/lab1/processor.v Line: 12
+Warning (13012): Latch bound_flasher:bf1|processor:p0|state.10 has unsafe behavior File: D:/Quang/202/Verilog/lab1/processor.v Line: 12
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal bound_flasher:bf1|processor:p0|state.01 File: D:/Quang/202/Verilog/lab1/processor.v Line: 12
+Warning (13012): Latch bound_flasher:bf1|processor:p0|state.00 has unsafe behavior File: D:/Quang/202/Verilog/lab1/processor.v Line: 12
     Warning (13013): Ports D and ENA on the latch are fed by the same signal KEY[0] File: D:/Quang/202/Verilog/lab1/DE2i_run.v Line: 2
-Warning (13012): Latch bound_flasher:comb_5|processor:p0|isEnd has unsafe behavior File: D:/Quang/202/Verilog/lab1/processor.v Line: 11
+Warning (13012): Latch bound_flasher:bf1|processor:p0|increase has unsafe behavior File: D:/Quang/202/Verilog/lab1/processor.v Line: 5
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal bound_flasher:bf1|processor:p0|increase File: D:/Quang/202/Verilog/lab1/processor.v Line: 5
+Warning (13012): Latch bound_flasher:bf1|processor:p0|isEnd has unsafe behavior File: D:/Quang/202/Verilog/lab1/processor.v Line: 11
     Warning (13013): Ports D and ENA on the latch are fed by the same signal KEY[0] File: D:/Quang/202/Verilog/lab1/DE2i_run.v Line: 2
 Info (13000): Registers with preset signals will power-up high File: D:/Quang/202/Verilog/lab1/processor.v Line: 5
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "HEX7[1]" is stuck at GND File: D:/Quang/202/Verilog/lab1/DE2i_run.v Line: 6
+    Warning (13410): Pin "HEX5[0]" is stuck at GND File: D:/Quang/202/Verilog/lab1/DE2i_run.v Line: 6
+    Warning (13410): Pin "HEX5[1]" is stuck at GND File: D:/Quang/202/Verilog/lab1/DE2i_run.v Line: 6
+    Warning (13410): Pin "HEX5[2]" is stuck at GND File: D:/Quang/202/Verilog/lab1/DE2i_run.v Line: 6
+    Warning (13410): Pin "HEX5[3]" is stuck at GND File: D:/Quang/202/Verilog/lab1/DE2i_run.v Line: 6
+    Warning (13410): Pin "HEX5[4]" is stuck at GND File: D:/Quang/202/Verilog/lab1/DE2i_run.v Line: 6
+    Warning (13410): Pin "HEX5[5]" is stuck at GND File: D:/Quang/202/Verilog/lab1/DE2i_run.v Line: 6
+    Warning (13410): Pin "HEX5[6]" is stuck at VCC File: D:/Quang/202/Verilog/lab1/DE2i_run.v Line: 6
+    Warning (13410): Pin "HEX4[0]" is stuck at GND File: D:/Quang/202/Verilog/lab1/DE2i_run.v Line: 6
+    Warning (13410): Pin "HEX4[2]" is stuck at GND File: D:/Quang/202/Verilog/lab1/DE2i_run.v Line: 6
+    Warning (13410): Pin "HEX4[3]" is stuck at GND File: D:/Quang/202/Verilog/lab1/DE2i_run.v Line: 6
+    Warning (13410): Pin "HEX4[5]" is stuck at GND File: D:/Quang/202/Verilog/lab1/DE2i_run.v Line: 6
 Info (286030): Timing-Driven Synthesis is running
 Critical Warning (18061): Ignored Power-Up Level option on the following registers
-    Critical Warning (18010): Register bound_flasher:comb_5|processor:p0|enable will power up to High File: D:/Quang/202/Verilog/lab1/processor.v Line: 5
+    Critical Warning (18010): Register bound_flasher:bf1|processor:p0|enable will power up to High File: D:/Quang/202/Verilog/lab1/processor.v Line: 5
+Info (17016): Found the following redundant logic cells in design
+    Info (17048): Logic cell "dec5toBCD:dec5_0|lpm_divide:Mod0|lpm_divide_ddm:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_u7f:divider|add_sub_3_result_int[0]~8" File: D:/Quang/202/Verilog/lab1/db/alt_u_div_u7f.tdf Line: 42
 Info (144001): Generated suppressed messages file D:/Quang/202/Verilog/lab1/output_files/lab1.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[1]" File: D:/Quang/202/Verilog/lab1/DE2i_run.v Line: 2
-Info (21057): Implemented 118 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 177 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
-    Info (21059): Implemented 18 output pins
-    Info (21061): Implemented 97 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 37 warnings
-    Info: Peak virtual memory: 4849 megabytes
-    Info: Processing ended: Wed May 05 09:19:57 2021
-    Info: Elapsed time: 00:00:07
+    Info (21059): Implemented 46 output pins
+    Info (21061): Implemented 128 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 56 warnings
+    Info: Peak virtual memory: 4841 megabytes
+    Info: Processing ended: Wed May 05 09:54:30 2021
+    Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:16
 
 

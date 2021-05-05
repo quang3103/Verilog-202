@@ -25,7 +25,7 @@ module shifter(out, position, enable, increase, clk);
 		end
 		else 
 		begin
-			out <= 16'b0000_0000_0000_0000;
+			out <= 16'd0;
 			position <= 4'd0;
 		end
 	end

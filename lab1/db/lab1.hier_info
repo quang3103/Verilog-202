@@ -1,25 +1,295 @@
 |DE2i_run
-LEDR[0] << bound_flasher:comb_5.led
-LEDR[1] << bound_flasher:comb_5.led
-LEDR[2] << bound_flasher:comb_5.led
-LEDR[3] << bound_flasher:comb_5.led
-LEDR[4] << bound_flasher:comb_5.led
-LEDR[5] << bound_flasher:comb_5.led
-LEDR[6] << bound_flasher:comb_5.led
-LEDR[7] << bound_flasher:comb_5.led
-LEDR[8] << bound_flasher:comb_5.led
-LEDR[9] << bound_flasher:comb_5.led
-LEDR[10] << bound_flasher:comb_5.led
-LEDR[11] << bound_flasher:comb_5.led
-LEDR[12] << bound_flasher:comb_5.led
-LEDR[13] << bound_flasher:comb_5.led
-LEDR[14] << bound_flasher:comb_5.led
-LEDR[15] << bound_flasher:comb_5.led
-LEDG[0] << clock1s.DB_MAX_OUTPUT_PORT_TYPE
-LEDG[1] << clock1s.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[0] <= bound_flasher:bf1.led
+LEDR[1] <= bound_flasher:bf1.led
+LEDR[2] <= bound_flasher:bf1.led
+LEDR[3] <= bound_flasher:bf1.led
+LEDR[4] <= bound_flasher:bf1.led
+LEDR[5] <= bound_flasher:bf1.led
+LEDR[6] <= bound_flasher:bf1.led
+LEDR[7] <= bound_flasher:bf1.led
+LEDR[8] <= bound_flasher:bf1.led
+LEDR[9] <= bound_flasher:bf1.led
+LEDR[10] <= bound_flasher:bf1.led
+LEDR[11] <= bound_flasher:bf1.led
+LEDR[12] <= bound_flasher:bf1.led
+LEDR[13] <= bound_flasher:bf1.led
+LEDR[14] <= bound_flasher:bf1.led
+LEDR[15] <= bound_flasher:bf1.led
+LEDG[0] <= bound_flasher:bf1.isFlick
+LEDG[1] <= bound_flasher:bf1.isFlick
 KEY[0] => _.IN1
 KEY[1] => ~NO_FANOUT~
 CLOCK_50 => CLOCK_50.IN1
+HEX7[0] <= BCD_to_HEX:hex_0.data_out
+HEX7[1] <= BCD_to_HEX:hex_0.data_out
+HEX7[2] <= BCD_to_HEX:hex_0.data_out
+HEX7[3] <= BCD_to_HEX:hex_0.data_out
+HEX7[4] <= BCD_to_HEX:hex_0.data_out
+HEX7[5] <= BCD_to_HEX:hex_0.data_out
+HEX7[6] <= BCD_to_HEX:hex_0.data_out
+HEX6[0] <= BCD_to_HEX:hex_1.data_out
+HEX6[1] <= BCD_to_HEX:hex_1.data_out
+HEX6[2] <= BCD_to_HEX:hex_1.data_out
+HEX6[3] <= BCD_to_HEX:hex_1.data_out
+HEX6[4] <= BCD_to_HEX:hex_1.data_out
+HEX6[5] <= BCD_to_HEX:hex_1.data_out
+HEX6[6] <= BCD_to_HEX:hex_1.data_out
+HEX5[0] <= BCD_to_HEX:hex_2.data_out
+HEX5[1] <= BCD_to_HEX:hex_2.data_out
+HEX5[2] <= BCD_to_HEX:hex_2.data_out
+HEX5[3] <= BCD_to_HEX:hex_2.data_out
+HEX5[4] <= BCD_to_HEX:hex_2.data_out
+HEX5[5] <= BCD_to_HEX:hex_2.data_out
+HEX5[6] <= BCD_to_HEX:hex_2.data_out
+HEX4[0] <= BCD_to_HEX:hex_3.data_out
+HEX4[1] <= BCD_to_HEX:hex_3.data_out
+HEX4[2] <= BCD_to_HEX:hex_3.data_out
+HEX4[3] <= BCD_to_HEX:hex_3.data_out
+HEX4[4] <= BCD_to_HEX:hex_3.data_out
+HEX4[5] <= BCD_to_HEX:hex_3.data_out
+HEX4[6] <= BCD_to_HEX:hex_3.data_out
+
+
+|DE2i_run|dec5toBCD:dec5_0
+data_in[0] => Mod0.IN8
+data_in[0] => Div0.IN8
+data_in[1] => Mod0.IN7
+data_in[1] => Div0.IN7
+data_in[2] => Mod0.IN6
+data_in[2] => Div0.IN6
+data_in[3] => Mod0.IN5
+data_in[3] => Div0.IN5
+data_in[4] => Mod0.IN4
+data_in[4] => Div0.IN4
+out1[0] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+out1[1] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+out1[2] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+out1[3] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+out0[0] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+out0[1] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+out0[2] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+out0[3] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE2i_run|dec5toBCD:dec5_1
+data_in[0] => Mod0.IN8
+data_in[0] => Div0.IN8
+data_in[1] => Mod0.IN7
+data_in[1] => Div0.IN7
+data_in[2] => Mod0.IN6
+data_in[2] => Div0.IN6
+data_in[3] => Mod0.IN5
+data_in[3] => Div0.IN5
+data_in[4] => Mod0.IN4
+data_in[4] => Div0.IN4
+out1[0] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+out1[1] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+out1[2] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+out1[3] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+out0[0] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+out0[1] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+out0[2] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+out0[3] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE2i_run|BCD_to_HEX:hex_0
+data_in[0] => Equal0.IN3
+data_in[0] => Equal1.IN0
+data_in[0] => Equal2.IN3
+data_in[0] => Equal3.IN1
+data_in[0] => Equal4.IN3
+data_in[0] => Equal5.IN1
+data_in[0] => Equal6.IN3
+data_in[0] => Equal7.IN2
+data_in[0] => Equal8.IN3
+data_in[0] => Equal9.IN1
+data_in[1] => Equal0.IN2
+data_in[1] => Equal1.IN3
+data_in[1] => Equal2.IN0
+data_in[1] => Equal3.IN0
+data_in[1] => Equal4.IN2
+data_in[1] => Equal5.IN3
+data_in[1] => Equal6.IN1
+data_in[1] => Equal7.IN1
+data_in[1] => Equal8.IN2
+data_in[1] => Equal9.IN3
+data_in[2] => Equal0.IN1
+data_in[2] => Equal1.IN2
+data_in[2] => Equal2.IN2
+data_in[2] => Equal3.IN3
+data_in[2] => Equal4.IN0
+data_in[2] => Equal5.IN0
+data_in[2] => Equal6.IN0
+data_in[2] => Equal7.IN0
+data_in[2] => Equal8.IN1
+data_in[2] => Equal9.IN2
+data_in[3] => Equal0.IN0
+data_in[3] => Equal1.IN1
+data_in[3] => Equal2.IN1
+data_in[3] => Equal3.IN2
+data_in[3] => Equal4.IN1
+data_in[3] => Equal5.IN2
+data_in[3] => Equal6.IN2
+data_in[3] => Equal7.IN3
+data_in[3] => Equal8.IN0
+data_in[3] => Equal9.IN0
+data_out[0] <= data_out.DB_MAX_OUTPUT_PORT_TYPE
+data_out[1] <= data_out.DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= data_out.DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= data_out.DB_MAX_OUTPUT_PORT_TYPE
+data_out[4] <= data_out.DB_MAX_OUTPUT_PORT_TYPE
+data_out[5] <= data_out.DB_MAX_OUTPUT_PORT_TYPE
+data_out[6] <= data_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE2i_run|BCD_to_HEX:hex_1
+data_in[0] => Equal0.IN3
+data_in[0] => Equal1.IN0
+data_in[0] => Equal2.IN3
+data_in[0] => Equal3.IN1
+data_in[0] => Equal4.IN3
+data_in[0] => Equal5.IN1
+data_in[0] => Equal6.IN3
+data_in[0] => Equal7.IN2
+data_in[0] => Equal8.IN3
+data_in[0] => Equal9.IN1
+data_in[1] => Equal0.IN2
+data_in[1] => Equal1.IN3
+data_in[1] => Equal2.IN0
+data_in[1] => Equal3.IN0
+data_in[1] => Equal4.IN2
+data_in[1] => Equal5.IN3
+data_in[1] => Equal6.IN1
+data_in[1] => Equal7.IN1
+data_in[1] => Equal8.IN2
+data_in[1] => Equal9.IN3
+data_in[2] => Equal0.IN1
+data_in[2] => Equal1.IN2
+data_in[2] => Equal2.IN2
+data_in[2] => Equal3.IN3
+data_in[2] => Equal4.IN0
+data_in[2] => Equal5.IN0
+data_in[2] => Equal6.IN0
+data_in[2] => Equal7.IN0
+data_in[2] => Equal8.IN1
+data_in[2] => Equal9.IN2
+data_in[3] => Equal0.IN0
+data_in[3] => Equal1.IN1
+data_in[3] => Equal2.IN1
+data_in[3] => Equal3.IN2
+data_in[3] => Equal4.IN1
+data_in[3] => Equal5.IN2
+data_in[3] => Equal6.IN2
+data_in[3] => Equal7.IN3
+data_in[3] => Equal8.IN0
+data_in[3] => Equal9.IN0
+data_out[0] <= data_out.DB_MAX_OUTPUT_PORT_TYPE
+data_out[1] <= data_out.DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= data_out.DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= data_out.DB_MAX_OUTPUT_PORT_TYPE
+data_out[4] <= data_out.DB_MAX_OUTPUT_PORT_TYPE
+data_out[5] <= data_out.DB_MAX_OUTPUT_PORT_TYPE
+data_out[6] <= data_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE2i_run|BCD_to_HEX:hex_2
+data_in[0] => Equal0.IN3
+data_in[0] => Equal1.IN0
+data_in[0] => Equal2.IN3
+data_in[0] => Equal3.IN1
+data_in[0] => Equal4.IN3
+data_in[0] => Equal5.IN1
+data_in[0] => Equal6.IN3
+data_in[0] => Equal7.IN2
+data_in[0] => Equal8.IN3
+data_in[0] => Equal9.IN1
+data_in[1] => Equal0.IN2
+data_in[1] => Equal1.IN3
+data_in[1] => Equal2.IN0
+data_in[1] => Equal3.IN0
+data_in[1] => Equal4.IN2
+data_in[1] => Equal5.IN3
+data_in[1] => Equal6.IN1
+data_in[1] => Equal7.IN1
+data_in[1] => Equal8.IN2
+data_in[1] => Equal9.IN3
+data_in[2] => Equal0.IN1
+data_in[2] => Equal1.IN2
+data_in[2] => Equal2.IN2
+data_in[2] => Equal3.IN3
+data_in[2] => Equal4.IN0
+data_in[2] => Equal5.IN0
+data_in[2] => Equal6.IN0
+data_in[2] => Equal7.IN0
+data_in[2] => Equal8.IN1
+data_in[2] => Equal9.IN2
+data_in[3] => Equal0.IN0
+data_in[3] => Equal1.IN1
+data_in[3] => Equal2.IN1
+data_in[3] => Equal3.IN2
+data_in[3] => Equal4.IN1
+data_in[3] => Equal5.IN2
+data_in[3] => Equal6.IN2
+data_in[3] => Equal7.IN3
+data_in[3] => Equal8.IN0
+data_in[3] => Equal9.IN0
+data_out[0] <= data_out.DB_MAX_OUTPUT_PORT_TYPE
+data_out[1] <= data_out.DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= data_out.DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= data_out.DB_MAX_OUTPUT_PORT_TYPE
+data_out[4] <= data_out.DB_MAX_OUTPUT_PORT_TYPE
+data_out[5] <= data_out.DB_MAX_OUTPUT_PORT_TYPE
+data_out[6] <= data_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE2i_run|BCD_to_HEX:hex_3
+data_in[0] => Equal0.IN3
+data_in[0] => Equal1.IN0
+data_in[0] => Equal2.IN3
+data_in[0] => Equal3.IN1
+data_in[0] => Equal4.IN3
+data_in[0] => Equal5.IN1
+data_in[0] => Equal6.IN3
+data_in[0] => Equal7.IN2
+data_in[0] => Equal8.IN3
+data_in[0] => Equal9.IN1
+data_in[1] => Equal0.IN2
+data_in[1] => Equal1.IN3
+data_in[1] => Equal2.IN0
+data_in[1] => Equal3.IN0
+data_in[1] => Equal4.IN2
+data_in[1] => Equal5.IN3
+data_in[1] => Equal6.IN1
+data_in[1] => Equal7.IN1
+data_in[1] => Equal8.IN2
+data_in[1] => Equal9.IN3
+data_in[2] => Equal0.IN1
+data_in[2] => Equal1.IN2
+data_in[2] => Equal2.IN2
+data_in[2] => Equal3.IN3
+data_in[2] => Equal4.IN0
+data_in[2] => Equal5.IN0
+data_in[2] => Equal6.IN0
+data_in[2] => Equal7.IN0
+data_in[2] => Equal8.IN1
+data_in[2] => Equal9.IN2
+data_in[3] => Equal0.IN0
+data_in[3] => Equal1.IN1
+data_in[3] => Equal2.IN1
+data_in[3] => Equal3.IN2
+data_in[3] => Equal4.IN1
+data_in[3] => Equal5.IN2
+data_in[3] => Equal6.IN2
+data_in[3] => Equal7.IN3
+data_in[3] => Equal8.IN0
+data_in[3] => Equal9.IN0
+data_out[0] <= data_out.DB_MAX_OUTPUT_PORT_TYPE
+data_out[1] <= data_out.DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= data_out.DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= data_out.DB_MAX_OUTPUT_PORT_TYPE
+data_out[4] <= data_out.DB_MAX_OUTPUT_PORT_TYPE
+data_out[5] <= data_out.DB_MAX_OUTPUT_PORT_TYPE
+data_out[6] <= data_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |DE2i_run|clock_div:clk1
@@ -58,7 +328,7 @@ clock50 => clock~reg0.CLK
 clock <= clock~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|DE2i_run|bound_flasher:comb_5
+|DE2i_run|bound_flasher:bf1
 led[0] <= shifter:s0.out
 led[1] <= shifter:s0.out
 led[2] <= shifter:s0.out
@@ -91,7 +361,7 @@ isFlick[0] <= processor:p0.out_state
 isFlick[1] <= processor:p0.out_state
 
 
-|DE2i_run|bound_flasher:comb_5|processor:p0
+|DE2i_run|bound_flasher:bf1|processor:p0
 enable <= enable~reg0.DB_MAX_OUTPUT_PORT_TYPE
 increase <= increase$latch.DB_MAX_OUTPUT_PORT_TYPE
 position[0] => Equal2.IN7
@@ -137,7 +407,7 @@ out_state[0] <= state.01.DB_MAX_OUTPUT_PORT_TYPE
 out_state[1] <= state.10.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|DE2i_run|bound_flasher:comb_5|shifter:s0
+|DE2i_run|bound_flasher:bf1|shifter:s0
 out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
