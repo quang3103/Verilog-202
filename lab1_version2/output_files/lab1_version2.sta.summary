@@ -2,88 +2,124 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'clk'
-Slack : -8.935
-TNS   : -173.700
+Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
+Slack : -4.173
+TNS   : -66.333
 
-Type  : Slow 1200mV 85C Model Setup 'position[0]'
-Slack : -7.466
-TNS   : -18.198
+Type  : Slow 1200mV 85C Model Setup 'clock_div:clock_0|clock'
+Slack : -3.052
+TNS   : -46.126
 
-Type  : Slow 1200mV 85C Model Hold 'clk'
-Slack : 0.438
+Type  : Slow 1200mV 85C Model Setup 'bound_flasher:bound_flasher_0|next_direction'
+Slack : 0.067
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'position[0]'
-Slack : 0.590
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
-Slack : -3.000
-TNS   : -34.500
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'position[0]'
-Slack : -1.511
-TNS   : -23.876
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'isEnd'
-Slack : -1.500
-TNS   : -1.500
-
-Type  : Slow 1200mV 0C Model Setup 'clk'
-Slack : -7.932
-TNS   : -156.392
-
-Type  : Slow 1200mV 0C Model Setup 'position[0]'
-Slack : -6.710
-TNS   : -16.294
-
-Type  : Slow 1200mV 0C Model Hold 'clk'
-Slack : 0.401
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'position[0]'
-Slack : 0.528
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
-Slack : -3.000
-TNS   : -34.500
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'isEnd'
-Slack : -1.500
-TNS   : -1.500
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'position[0]'
-Slack : -1.402
-TNS   : -20.814
-
-Type  : Fast 1200mV 0C Model Setup 'clk'
-Slack : -4.471
-TNS   : -86.399
-
-Type  : Fast 1200mV 0C Model Setup 'position[0]'
-Slack : -3.403
-TNS   : -7.443
-
-Type  : Fast 1200mV 0C Model Hold 'clk'
+Type  : Slow 1200mV 85C Model Hold 'clock_div:clock_0|clock'
 Slack : 0.191
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'position[0]'
-Slack : 0.258
+Type  : Slow 1200mV 85C Model Hold 'bound_flasher:bound_flasher_0|next_direction'
+Slack : 0.403
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
+Slack : 0.648
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
 Slack : -3.000
-TNS   : -24.275
+TNS   : -51.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'isEnd'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'KEY[0]'
+Slack : -3.000
+TNS   : -4.500
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock_div:clock_0|clock'
+Slack : -1.500
+TNS   : -33.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'bound_flasher:bound_flasher_0|next_direction'
+Slack : -1.500
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -3.744
+TNS   : -56.682
+
+Type  : Slow 1200mV 0C Model Setup 'clock_div:clock_0|clock'
+Slack : -2.717
+TNS   : -41.151
+
+Type  : Slow 1200mV 0C Model Setup 'bound_flasher:bound_flasher_0|next_direction'
+Slack : 0.163
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clock_div:clock_0|clock'
+Slack : 0.160
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'bound_flasher:bound_flasher_0|next_direction'
+Slack : 0.361
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.591
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -51.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'KEY[0]'
+Slack : -3.000
+TNS   : -4.500
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock_div:clock_0|clock'
+Slack : -1.500
+TNS   : -33.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'bound_flasher:bound_flasher_0|next_direction'
+Slack : -1.500
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -1.641
+TNS   : -17.682
+
+Type  : Fast 1200mV 0C Model Setup 'clock_div:clock_0|clock'
+Slack : -1.205
+TNS   : -24.571
+
+Type  : Fast 1200mV 0C Model Setup 'bound_flasher:bound_flasher_0|next_direction'
+Slack : 0.532
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clock_div:clock_0|clock'
+Slack : 0.079
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'bound_flasher:bound_flasher_0|next_direction'
+Slack : 0.182
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.295
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -35.384
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'KEY[0]'
+Slack : -3.000
+TNS   : -4.317
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock_div:clock_0|clock'
 Slack : -1.000
-TNS   : -1.000
+TNS   : -22.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'position[0]'
-Slack : -0.456
-TNS   : -6.962
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'bound_flasher:bound_flasher_0|next_direction'
+Slack : -1.000
+TNS   : -2.000
 
 ------------------------------------------------------------

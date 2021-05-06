@@ -1,5 +1,5 @@
 EDA Netlist Writer report for lab1_version2
-Thu May 06 10:02:31 2021
+Thu May 06 16:59:20 2021
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -37,9 +37,9 @@ agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Thu May 06 10:02:31 2021 ;
+; EDA Netlist Writer Status ; Successful - Thu May 06 16:59:20 2021 ;
 ; Revision Name             ; lab1_version2                         ;
-; Top-level Entity Name     ; bound_flasher                         ;
+; Top-level Entity Name     ; main                                  ;
 ; Family                    ; Cyclone IV GX                         ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
@@ -67,20 +67,20 @@ agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+-----------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                    ;
-+-----------------------------------------------------------------------------------------------+
-; Generated Files                                                                               ;
-+-----------------------------------------------------------------------------------------------+
-; D:/Quang/202/Verilog/lab1_version2/simulation/modelsim/lab1_version2_7_1200mv_85c_slow.vo     ;
-; D:/Quang/202/Verilog/lab1_version2/simulation/modelsim/lab1_version2_7_1200mv_0c_slow.vo      ;
-; D:/Quang/202/Verilog/lab1_version2/simulation/modelsim/lab1_version2_min_1200mv_0c_fast.vo    ;
-; D:/Quang/202/Verilog/lab1_version2/simulation/modelsim/lab1_version2.vo                       ;
-; D:/Quang/202/Verilog/lab1_version2/simulation/modelsim/lab1_version2_7_1200mv_85c_v_slow.sdo  ;
-; D:/Quang/202/Verilog/lab1_version2/simulation/modelsim/lab1_version2_7_1200mv_0c_v_slow.sdo   ;
-; D:/Quang/202/Verilog/lab1_version2/simulation/modelsim/lab1_version2_min_1200mv_0c_v_fast.sdo ;
-; D:/Quang/202/Verilog/lab1_version2/simulation/modelsim/lab1_version2_v.sdo                    ;
-+-----------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                                           ;
++----------------------------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                                      ;
++----------------------------------------------------------------------------------------------------------------------+
+; C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/simulation/modelsim/lab1_version2_7_1200mv_85c_slow.vo     ;
+; C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/simulation/modelsim/lab1_version2_7_1200mv_0c_slow.vo      ;
+; C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/simulation/modelsim/lab1_version2_min_1200mv_0c_fast.vo    ;
+; C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/simulation/modelsim/lab1_version2.vo                       ;
+; C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/simulation/modelsim/lab1_version2_7_1200mv_85c_v_slow.sdo  ;
+; C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/simulation/modelsim/lab1_version2_7_1200mv_0c_v_slow.sdo   ;
+; C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/simulation/modelsim/lab1_version2_min_1200mv_0c_v_fast.sdo ;
+; C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/simulation/modelsim/lab1_version2_v.sdo                    ;
++----------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -89,20 +89,20 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Thu May 06 10:02:30 2021
+    Info: Processing started: Thu May 06 16:59:19 2021
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off lab1_version2 -c lab1_version2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file lab1_version2_7_1200mv_85c_slow.vo in folder "D:/Quang/202/Verilog/lab1_version2/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file lab1_version2_7_1200mv_0c_slow.vo in folder "D:/Quang/202/Verilog/lab1_version2/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file lab1_version2_min_1200mv_0c_fast.vo in folder "D:/Quang/202/Verilog/lab1_version2/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file lab1_version2.vo in folder "D:/Quang/202/Verilog/lab1_version2/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file lab1_version2_7_1200mv_85c_v_slow.sdo in folder "D:/Quang/202/Verilog/lab1_version2/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file lab1_version2_7_1200mv_0c_v_slow.sdo in folder "D:/Quang/202/Verilog/lab1_version2/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file lab1_version2_min_1200mv_0c_v_fast.sdo in folder "D:/Quang/202/Verilog/lab1_version2/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file lab1_version2_v.sdo in folder "D:/Quang/202/Verilog/lab1_version2/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file lab1_version2_7_1200mv_85c_slow.vo in folder "C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file lab1_version2_7_1200mv_0c_slow.vo in folder "C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file lab1_version2_min_1200mv_0c_fast.vo in folder "C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file lab1_version2.vo in folder "C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file lab1_version2_7_1200mv_85c_v_slow.sdo in folder "C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file lab1_version2_7_1200mv_0c_v_slow.sdo in folder "C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file lab1_version2_min_1200mv_0c_v_fast.sdo in folder "C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file lab1_version2_v.sdo in folder "C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4716 megabytes
-    Info: Processing ended: Thu May 06 10:02:31 2021
+    Info: Peak virtual memory: 4722 megabytes
+    Info: Processing ended: Thu May 06 16:59:20 2021
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

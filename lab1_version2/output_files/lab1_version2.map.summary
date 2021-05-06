@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Thu May 06 10:01:39 2021
+Analysis & Synthesis Status : Successful - Thu May 06 16:58:55 2021
 Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 Revision Name : lab1_version2
-Top-level Entity Name : bound_flasher
+Top-level Entity Name : main
 Family : Cyclone IV GX
-Total logic elements : 33
-    Total combinational functions : 32
-    Dedicated logic registers : 22
-Total registers : 22
-Total pins : 18
+Total logic elements : 173
+    Total combinational functions : 172
+    Dedicated logic registers : 57
+Total registers : 57
+Total pins : 70
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
