@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab1_version2
-Thu May 06 10:01:39 2021
+Thu May 06 16:58:55 2021
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -13,13 +13,16 @@ Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. User-Specified and Inferred Latches
-  9. General Register Statistics
- 10. Inverted Register Statistics
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Post-Synthesis Netlist Statistics for Top Partition
- 13. Elapsed Time Per Partition
- 14. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Parameter Settings for User Entity Instance: bound_flasher:bound_flasher_0
+ 11. Parameter Settings for Inferred Entity Instance: dec5toBCD:dec_0|lpm_divide:Mod0
+ 12. Parameter Settings for Inferred Entity Instance: dec5toBCD:dec_1|lpm_divide:Mod0
+ 13. Parameter Settings for Inferred Entity Instance: dec5toBCD:dec_2|lpm_divide:Div0
+ 14. Parameter Settings for Inferred Entity Instance: dec5toBCD:dec_2|lpm_divide:Mod0
+ 15. Post-Synthesis Netlist Statistics for Top Partition
+ 16. Elapsed Time Per Partition
+ 17. Analysis & Synthesis Messages
 
 
 
@@ -46,16 +49,16 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu May 06 10:01:39 2021       ;
+; Analysis & Synthesis Status        ; Successful - Thu May 06 16:58:55 2021       ;
 ; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                      ; lab1_version2                               ;
-; Top-level Entity Name              ; bound_flasher                               ;
+; Top-level Entity Name              ; main                                        ;
 ; Family                             ; Cyclone IV GX                               ;
-; Total logic elements               ; 33                                          ;
-;     Total combinational functions  ; 32                                          ;
-;     Dedicated logic registers      ; 22                                          ;
-; Total registers                    ; 22                                          ;
-; Total pins                         ; 18                                          ;
+; Total logic elements               ; 173                                         ;
+;     Total combinational functions  ; 172                                         ;
+;     Dedicated logic registers      ; 57                                          ;
+; Total registers                    ; 57                                          ;
+; Total pins                         ; 70                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -73,7 +76,7 @@ agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP4CGX150DF31C7    ;                    ;
-; Top-level entity name                                                      ; bound_flasher      ; lab1_version2      ;
+; Top-level entity name                                                      ; main               ; lab1_version2      ;
 ; Family name                                                                ; Cyclone IV GX      ; Cyclone V          ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -158,25 +161,39 @@ agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
+;     Processors 2-6         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                     ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                       ; Library ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------------+---------+
-; bound_flasher.v                  ; yes             ; User Verilog HDL File  ; D:/Quang/202/Verilog/lab1_version2/bound_flasher.v ;         ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                             ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                         ; Library ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------+---------+
+; bound_flasher.v                  ; yes             ; User Verilog HDL File        ; C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/bound_flasher.v            ;         ;
+; clock_div.v                      ; yes             ; User Verilog HDL File        ; C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/clock_div.v                ;         ;
+; main.v                           ; yes             ; User Verilog HDL File        ; C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/main.v                     ;         ;
+; BCD_to_HEX.v                     ; yes             ; User Verilog HDL File        ; C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/BCD_to_HEX.v               ;         ;
+; dec5toBCD.v                      ; yes             ; User Verilog HDL File        ; C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/dec5toBCD.v                ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/lpm_divide.tdf                ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/abs_divider.inc               ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/sign_div_unsign.inc           ;         ;
+; aglobal161.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/aglobal161.inc                ;         ;
+; db/lpm_divide_ddm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/db/lpm_divide_ddm.tdf      ;         ;
+; db/sign_div_unsign_8kh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/db/sign_div_unsign_8kh.tdf ;         ;
+; db/alt_u_div_u7f.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/db/alt_u_div_u7f.tdf       ;         ;
+; db/add_sub_1tc.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/db/add_sub_1tc.tdf         ;         ;
+; db/add_sub_2tc.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/db/add_sub_2tc.tdf         ;         ;
+; db/lpm_divide_alm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/db/lpm_divide_alm.tdf      ;         ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------+
@@ -184,40 +201,45 @@ agreement for further details.
 +--------------------------+------------------+
 ; Resource                 ; Usage            ;
 +--------------------------+------------------+
-; I/O pins                 ; 18               ;
+; I/O pins                 ; 70               ;
 ;                          ;                  ;
 ; DSP block 9-bit elements ; 0                ;
 ;                          ;                  ;
-; Maximum fan-out node     ; increase~0       ;
-; Maximum fan-out          ; 24               ;
-; Total fan-out            ; 194              ;
-; Average fan-out          ; 2.16             ;
+; Maximum fan-out node     ; CLOCK_50~input   ;
+; Maximum fan-out          ; 32               ;
+; Total fan-out            ; 711              ;
+; Average fan-out          ; 1.93             ;
 +--------------------------+------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                    ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+---------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name   ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+---------------+--------------+
-; |bound_flasher             ; 32 (32)             ; 22 (22)                   ; 0           ; 0            ; 0       ; 0         ; 0         ; 18   ; 0            ; |bound_flasher      ; bound_flasher ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+---------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                           ;
++-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                   ; Entity Name         ; Library Name ;
++-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; |main                                     ; 172 (0)             ; 57 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0         ; 70   ; 0            ; |main                                                                                                                 ; main                ; work         ;
+;    |BCD_to_HEX:hex_0|                     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |main|BCD_to_HEX:hex_0                                                                                                ; BCD_to_HEX          ; work         ;
+;    |BCD_to_HEX:hex_1|                     ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |main|BCD_to_HEX:hex_1                                                                                                ; BCD_to_HEX          ; work         ;
+;    |BCD_to_HEX:hex_4|                     ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |main|BCD_to_HEX:hex_4                                                                                                ; BCD_to_HEX          ; work         ;
+;    |BCD_to_HEX:hex_5|                     ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |main|BCD_to_HEX:hex_5                                                                                                ; BCD_to_HEX          ; work         ;
+;    |bound_flasher:bound_flasher_0|        ; 39 (39)             ; 25 (25)                   ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |main|bound_flasher:bound_flasher_0                                                                                   ; bound_flasher       ; work         ;
+;    |clock_div:clock_0|                    ; 54 (54)             ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |main|clock_div:clock_0                                                                                               ; clock_div           ; work         ;
+;    |dec5toBCD:dec_0|                      ; 23 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |main|dec5toBCD:dec_0                                                                                                 ; dec5toBCD           ; work         ;
+;       |lpm_divide:Mod0|                   ; 23 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |main|dec5toBCD:dec_0|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_ddm:auto_generated|  ; 23 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |main|dec5toBCD:dec_0|lpm_divide:Mod0|lpm_divide_ddm:auto_generated                                                   ; lpm_divide_ddm      ; work         ;
+;             |sign_div_unsign_8kh:divider| ; 23 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |main|dec5toBCD:dec_0|lpm_divide:Mod0|lpm_divide_ddm:auto_generated|sign_div_unsign_8kh:divider                       ; sign_div_unsign_8kh ; work         ;
+;                |alt_u_div_u7f:divider|    ; 23 (23)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |main|dec5toBCD:dec_0|lpm_divide:Mod0|lpm_divide_ddm:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_u7f:divider ; alt_u_div_u7f       ; work         ;
+;    |dec5toBCD:dec_2|                      ; 37 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |main|dec5toBCD:dec_2                                                                                                 ; dec5toBCD           ; work         ;
+;       |lpm_divide:Div0|                   ; 17 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |main|dec5toBCD:dec_2|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_alm:auto_generated|  ; 17 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |main|dec5toBCD:dec_2|lpm_divide:Div0|lpm_divide_alm:auto_generated                                                   ; lpm_divide_alm      ; work         ;
+;             |sign_div_unsign_8kh:divider| ; 17 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |main|dec5toBCD:dec_2|lpm_divide:Div0|lpm_divide_alm:auto_generated|sign_div_unsign_8kh:divider                       ; sign_div_unsign_8kh ; work         ;
+;                |alt_u_div_u7f:divider|    ; 17 (17)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |main|dec5toBCD:dec_2|lpm_divide:Div0|lpm_divide_alm:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_u7f:divider ; alt_u_div_u7f       ; work         ;
+;       |lpm_divide:Mod0|                   ; 20 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |main|dec5toBCD:dec_2|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_ddm:auto_generated|  ; 20 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |main|dec5toBCD:dec_2|lpm_divide:Mod0|lpm_divide_ddm:auto_generated                                                   ; lpm_divide_ddm      ; work         ;
+;             |sign_div_unsign_8kh:divider| ; 20 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |main|dec5toBCD:dec_2|lpm_divide:Mod0|lpm_divide_ddm:auto_generated|sign_div_unsign_8kh:divider                       ; sign_div_unsign_8kh ; work         ;
+;                |alt_u_div_u7f:divider|    ; 20 (20)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |main|dec5toBCD:dec_2|lpm_divide:Mod0|lpm_divide_ddm:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_u7f:divider ; alt_u_div_u7f       ; work         ;
++-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+---------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                               ;
-+----------------------------------------------------+---------------------+------------------------+
-; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
-+----------------------------------------------------+---------------------+------------------------+
-; increase                                           ; isEnd               ; yes                    ;
-; state.01                                           ; next_state.00       ; yes                    ;
-; state.10                                           ; next_state.00       ; yes                    ;
-; state.00                                           ; next_state.00       ; yes                    ;
-; isEnd                                              ; isEnd               ; yes                    ;
-; Number of user-specified and inferred latches = 5  ;                     ;                        ;
-+----------------------------------------------------+---------------------+------------------------+
-Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +------------------------------------------------------+
@@ -225,33 +247,135 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 22    ;
+; Total registers                              ; 57    ;
 ; Number of registers using Synchronous Clear  ; 21    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 1     ;
+; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 1     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+--------------------------------------------------+
-; Inverted Register Statistics                     ;
-+----------------------------------------+---------+
-; Inverted Register                      ; Fan out ;
-+----------------------------------------+---------+
-; enable                                 ; 21      ;
-; Total number of inverted registers = 1 ;         ;
-+----------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
+; 3:1                ; 14 bits   ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; Yes        ; |main|bound_flasher:bound_flasher_0|lamp[12] ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |main|BCD_to_HEX:hex_4|data_out              ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |main|BCD_to_HEX:hex_1|data_out[6]           ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |main|BCD_to_HEX:hex_3|data_out[6]           ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |main|BCD_to_HEX:hex_4|data_out[6]           ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |main|BCD_to_HEX:hex_5|data_out[6]           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                            ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output  ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------+
-; 3:1                ; 14 bits   ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; Yes        ; |bound_flasher|lamp[1]~reg0 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bound_flasher:bound_flasher_0 ;
++----------------+------------------+----------------------------------------+
+; Parameter Name ; Value            ; Type                                   ;
++----------------+------------------+----------------------------------------+
+; max0           ; 0000000000111111 ; Unsigned Binary                        ;
+; min0           ; 0000000000000000 ; Unsigned Binary                        ;
+; max1           ; 0000011111111111 ; Unsigned Binary                        ;
+; min1           ; 0000000000011111 ; Unsigned Binary                        ;
+; max2           ; 1111111111111111 ; Unsigned Binary                        ;
+; min2           ; 0000000000000000 ; Unsigned Binary                        ;
++----------------+------------------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: dec5toBCD:dec_0|lpm_divide:Mod0 ;
++------------------------+----------------+----------------------------------------+
+; Parameter Name         ; Value          ; Type                                   ;
++------------------------+----------------+----------------------------------------+
+; LPM_WIDTHN             ; 5              ; Untyped                                ;
+; LPM_WIDTHD             ; 4              ; Untyped                                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                ;
+; LPM_PIPELINE           ; 0              ; Untyped                                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                ;
+; CBXI_PARAMETER         ; lpm_divide_ddm ; Untyped                                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                         ;
++------------------------+----------------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: dec5toBCD:dec_1|lpm_divide:Mod0 ;
++------------------------+----------------+----------------------------------------+
+; Parameter Name         ; Value          ; Type                                   ;
++------------------------+----------------+----------------------------------------+
+; LPM_WIDTHN             ; 5              ; Untyped                                ;
+; LPM_WIDTHD             ; 4              ; Untyped                                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                ;
+; LPM_PIPELINE           ; 0              ; Untyped                                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                ;
+; CBXI_PARAMETER         ; lpm_divide_ddm ; Untyped                                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                         ;
++------------------------+----------------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: dec5toBCD:dec_2|lpm_divide:Div0 ;
++------------------------+----------------+----------------------------------------+
+; Parameter Name         ; Value          ; Type                                   ;
++------------------------+----------------+----------------------------------------+
+; LPM_WIDTHN             ; 5              ; Untyped                                ;
+; LPM_WIDTHD             ; 4              ; Untyped                                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                ;
+; LPM_PIPELINE           ; 0              ; Untyped                                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                ;
+; CBXI_PARAMETER         ; lpm_divide_alm ; Untyped                                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                         ;
++------------------------+----------------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: dec5toBCD:dec_2|lpm_divide:Mod0 ;
++------------------------+----------------+----------------------------------------+
+; Parameter Name         ; Value          ; Type                                   ;
++------------------------+----------------+----------------------------------------+
+; LPM_WIDTHN             ; 5              ; Untyped                                ;
+; LPM_WIDTHD             ; 4              ; Untyped                                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                ;
+; LPM_PIPELINE           ; 0              ; Untyped                                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                ;
+; CBXI_PARAMETER         ; lpm_divide_ddm ; Untyped                                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                         ;
++------------------------+----------------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-----------------------------------------------------+
@@ -259,21 +383,24 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 18                          ;
-; cycloneiii_ff         ; 22                          ;
-;     CLR               ; 1                           ;
+; boundary_port         ; 70                          ;
+; cycloneiii_ff         ; 57                          ;
+;     ENA               ; 1                           ;
 ;     SCLR              ; 21                          ;
-; cycloneiii_lcell_comb ; 32                          ;
-;     arith             ; 4                           ;
-;         2 data inputs ; 1                           ;
-;         3 data inputs ; 3                           ;
-;     normal            ; 28                          ;
-;         2 data inputs ; 5                           ;
+;     plain             ; 35                          ;
+; cycloneiii_lcell_comb ; 177                         ;
+;     arith             ; 55                          ;
+;         2 data inputs ; 37                          ;
 ;         3 data inputs ; 18                          ;
-;         4 data inputs ; 5                           ;
+;     normal            ; 122                         ;
+;         0 data inputs ; 8                           ;
+;         1 data inputs ; 4                           ;
+;         2 data inputs ; 45                          ;
+;         3 data inputs ; 20                          ;
+;         4 data inputs ; 45                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 2.07                        ;
+; Max LUT depth         ; 5.70                        ;
+; Average LUT depth     ; 3.97                        ;
 +-----------------------+-----------------------------+
 
 
@@ -292,67 +419,100 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Thu May 06 10:01:28 2021
+    Info: Processing started: Thu May 06 16:58:47 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab1_version2 -c lab1_version2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file bound_flasher.v
-    Info (12023): Found entity 1: bound_flasher File: D:/Quang/202/Verilog/lab1_version2/bound_flasher.v Line: 1
+    Info (12023): Found entity 1: bound_flasher File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/bound_flasher.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file t_bound_flasher.v
-    Info (12023): Found entity 1: t_bound_flasher File: D:/Quang/202/Verilog/lab1_version2/t_bound_flasher.v Line: 1
+    Info (12023): Found entity 1: t_bound_flasher File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/t_bound_flasher.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file clock_div.v
-    Info (12023): Found entity 1: clock_div File: D:/Quang/202/Verilog/lab1_version2/clock_div.v Line: 1
+    Info (12023): Found entity 1: clock_div File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/clock_div.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file main.v
-    Info (12023): Found entity 1: main File: D:/Quang/202/Verilog/lab1_version2/main.v Line: 1
-Info (12127): Elaborating entity "bound_flasher" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at bound_flasher.v(4): object "pre_state" assigned a value but never read File: D:/Quang/202/Verilog/lab1_version2/bound_flasher.v Line: 4
-Warning (10230): Verilog HDL assignment warning at bound_flasher.v(39): truncated value with size 32 to match size of target (5) File: D:/Quang/202/Verilog/lab1_version2/bound_flasher.v Line: 39
-Warning (10230): Verilog HDL assignment warning at bound_flasher.v(44): truncated value with size 32 to match size of target (5) File: D:/Quang/202/Verilog/lab1_version2/bound_flasher.v Line: 44
-Warning (10235): Verilog HDL Always Construct warning at bound_flasher.v(58): variable "state" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Quang/202/Verilog/lab1_version2/bound_flasher.v Line: 58
-Warning (10235): Verilog HDL Always Construct warning at bound_flasher.v(109): variable "state" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Quang/202/Verilog/lab1_version2/bound_flasher.v Line: 109
-Warning (10235): Verilog HDL Always Construct warning at bound_flasher.v(112): variable "increase" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Quang/202/Verilog/lab1_version2/bound_flasher.v Line: 112
-Warning (10235): Verilog HDL Always Construct warning at bound_flasher.v(114): variable "max" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Quang/202/Verilog/lab1_version2/bound_flasher.v Line: 114
-Warning (10235): Verilog HDL Always Construct warning at bound_flasher.v(120): variable "increase" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Quang/202/Verilog/lab1_version2/bound_flasher.v Line: 120
-Warning (10235): Verilog HDL Always Construct warning at bound_flasher.v(125): variable "min" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Quang/202/Verilog/lab1_version2/bound_flasher.v Line: 125
-Warning (10235): Verilog HDL Always Construct warning at bound_flasher.v(132): variable "increase" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Quang/202/Verilog/lab1_version2/bound_flasher.v Line: 132
-Warning (10235): Verilog HDL Always Construct warning at bound_flasher.v(138): variable "increase" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Quang/202/Verilog/lab1_version2/bound_flasher.v Line: 138
-Warning (10235): Verilog HDL Always Construct warning at bound_flasher.v(140): variable "max" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Quang/202/Verilog/lab1_version2/bound_flasher.v Line: 140
-Warning (10235): Verilog HDL Always Construct warning at bound_flasher.v(146): variable "increase" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Quang/202/Verilog/lab1_version2/bound_flasher.v Line: 146
-Warning (10235): Verilog HDL Always Construct warning at bound_flasher.v(151): variable "min" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Quang/202/Verilog/lab1_version2/bound_flasher.v Line: 151
-Warning (10235): Verilog HDL Always Construct warning at bound_flasher.v(158): variable "increase" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Quang/202/Verilog/lab1_version2/bound_flasher.v Line: 158
-Warning (10235): Verilog HDL Always Construct warning at bound_flasher.v(164): variable "increase" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Quang/202/Verilog/lab1_version2/bound_flasher.v Line: 164
-Warning (10235): Verilog HDL Always Construct warning at bound_flasher.v(166): variable "max" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Quang/202/Verilog/lab1_version2/bound_flasher.v Line: 166
-Warning (10235): Verilog HDL Always Construct warning at bound_flasher.v(173): variable "increase" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Quang/202/Verilog/lab1_version2/bound_flasher.v Line: 173
-Warning (10235): Verilog HDL Always Construct warning at bound_flasher.v(178): variable "min" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Quang/202/Verilog/lab1_version2/bound_flasher.v Line: 178
-Warning (10235): Verilog HDL Always Construct warning at bound_flasher.v(186): variable "increase" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Quang/202/Verilog/lab1_version2/bound_flasher.v Line: 186
-Warning (10235): Verilog HDL Always Construct warning at bound_flasher.v(192): variable "increase" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Quang/202/Verilog/lab1_version2/bound_flasher.v Line: 192
-Warning (10235): Verilog HDL Always Construct warning at bound_flasher.v(193): variable "next_state" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Quang/202/Verilog/lab1_version2/bound_flasher.v Line: 193
-Warning (10235): Verilog HDL Always Construct warning at bound_flasher.v(194): variable "isEnd" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Quang/202/Verilog/lab1_version2/bound_flasher.v Line: 194
-Warning (10240): Verilog HDL Always Construct warning at bound_flasher.v(92): inferring latch(es) for variable "increase", which holds its previous value in one or more paths through the always construct File: D:/Quang/202/Verilog/lab1_version2/bound_flasher.v Line: 92
-Warning (10240): Verilog HDL Always Construct warning at bound_flasher.v(92): inferring latch(es) for variable "next_state", which holds its previous value in one or more paths through the always construct File: D:/Quang/202/Verilog/lab1_version2/bound_flasher.v Line: 92
-Warning (10240): Verilog HDL Always Construct warning at bound_flasher.v(92): inferring latch(es) for variable "isEnd", which holds its previous value in one or more paths through the always construct File: D:/Quang/202/Verilog/lab1_version2/bound_flasher.v Line: 92
-Info (10041): Inferred latch for "isEnd" at bound_flasher.v(92) File: D:/Quang/202/Verilog/lab1_version2/bound_flasher.v Line: 92
-Info (10041): Inferred latch for "next_state.10" at bound_flasher.v(92) File: D:/Quang/202/Verilog/lab1_version2/bound_flasher.v Line: 92
-Info (10041): Inferred latch for "next_state.01" at bound_flasher.v(92) File: D:/Quang/202/Verilog/lab1_version2/bound_flasher.v Line: 92
-Info (10041): Inferred latch for "next_state.00" at bound_flasher.v(92) File: D:/Quang/202/Verilog/lab1_version2/bound_flasher.v Line: 92
-Info (10041): Inferred latch for "increase" at bound_flasher.v(92) File: D:/Quang/202/Verilog/lab1_version2/bound_flasher.v Line: 92
-Warning (13012): Latch state.10 has unsafe behavior File: D:/Quang/202/Verilog/lab1_version2/bound_flasher.v Line: 4
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal state.01 File: D:/Quang/202/Verilog/lab1_version2/bound_flasher.v Line: 4
-Warning (13012): Latch isEnd has unsafe behavior File: D:/Quang/202/Verilog/lab1_version2/bound_flasher.v Line: 5
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal increase File: D:/Quang/202/Verilog/lab1_version2/bound_flasher.v Line: 5
-Info (13000): Registers with preset signals will power-up high File: D:/Quang/202/Verilog/lab1_version2/bound_flasher.v Line: 5
-Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+    Info (12023): Found entity 1: main File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/main.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file bcd_to_hex.v
+    Info (12023): Found entity 1: BCD_to_HEX File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/BCD_to_HEX.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file dec5tobcd.v
+    Info (12023): Found entity 1: dec5toBCD File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/dec5toBCD.v Line: 1
+Info (12127): Elaborating entity "main" for the top level hierarchy
+Warning (10034): Output port "LEDG[6..2]" at main.v(5) has no driver File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/main.v Line: 5
+Info (12128): Elaborating entity "dec5toBCD" for hierarchy "dec5toBCD:dec_0" File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/main.v Line: 14
+Warning (10230): Verilog HDL assignment warning at dec5toBCD.v(6): truncated value with size 32 to match size of target (4) File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/dec5toBCD.v Line: 6
+Warning (10230): Verilog HDL assignment warning at dec5toBCD.v(7): truncated value with size 32 to match size of target (4) File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/dec5toBCD.v Line: 7
+Info (12128): Elaborating entity "BCD_to_HEX" for hierarchy "BCD_to_HEX:hex_0" File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/main.v Line: 18
+Info (12128): Elaborating entity "clock_div" for hierarchy "clock_div:clock_0" File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/main.v Line: 26
+Warning (10230): Verilog HDL assignment warning at clock_div.v(23): truncated value with size 32 to match size of target (31) File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/clock_div.v Line: 23
+Info (12128): Elaborating entity "bound_flasher" for hierarchy "bound_flasher:bound_flasher_0" File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/main.v Line: 28
+Info (278001): Inferred 4 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "dec5toBCD:dec_0|Mod0" File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/dec5toBCD.v Line: 6
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "dec5toBCD:dec_1|Mod0" File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/dec5toBCD.v Line: 6
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "dec5toBCD:dec_2|Div0" File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/dec5toBCD.v Line: 7
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "dec5toBCD:dec_2|Mod0" File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/dec5toBCD.v Line: 6
+Info (12130): Elaborated megafunction instantiation "dec5toBCD:dec_0|lpm_divide:Mod0" File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/dec5toBCD.v Line: 6
+Info (12133): Instantiated megafunction "dec5toBCD:dec_0|lpm_divide:Mod0" with the following parameter: File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/dec5toBCD.v Line: 6
+    Info (12134): Parameter "LPM_WIDTHN" = "5"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_ddm.tdf
+    Info (12023): Found entity 1: lpm_divide_ddm File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/db/lpm_divide_ddm.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_8kh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_8kh File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/db/sign_div_unsign_8kh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_u7f.tdf
+    Info (12023): Found entity 1: alt_u_div_u7f File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/db/alt_u_div_u7f.tdf Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_1tc.tdf
+    Info (12023): Found entity 1: add_sub_1tc File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/db/add_sub_1tc.tdf Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_2tc.tdf
+    Info (12023): Found entity 1: add_sub_2tc File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/db/add_sub_2tc.tdf Line: 23
+Info (12130): Elaborated megafunction instantiation "dec5toBCD:dec_1|lpm_divide:Mod0" File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/dec5toBCD.v Line: 6
+Info (12133): Instantiated megafunction "dec5toBCD:dec_1|lpm_divide:Mod0" with the following parameter: File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/dec5toBCD.v Line: 6
+    Info (12134): Parameter "LPM_WIDTHN" = "5"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12130): Elaborated megafunction instantiation "dec5toBCD:dec_2|lpm_divide:Div0" File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/dec5toBCD.v Line: 7
+Info (12133): Instantiated megafunction "dec5toBCD:dec_2|lpm_divide:Div0" with the following parameter: File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/dec5toBCD.v Line: 7
+    Info (12134): Parameter "LPM_WIDTHN" = "5"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_alm.tdf
+    Info (12023): Found entity 1: lpm_divide_alm File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/db/lpm_divide_alm.tdf Line: 25
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "LEDG[2]" is stuck at GND File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/main.v Line: 5
+    Warning (13410): Pin "LEDG[3]" is stuck at GND File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/main.v Line: 5
+    Warning (13410): Pin "LEDG[4]" is stuck at GND File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/main.v Line: 5
+    Warning (13410): Pin "LEDG[5]" is stuck at GND File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/main.v Line: 5
+    Warning (13410): Pin "LEDG[6]" is stuck at GND File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/main.v Line: 5
+    Warning (13410): Pin "HEX7[1]" is stuck at GND File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/main.v Line: 6
+    Warning (13410): Pin "HEX7[2]" is stuck at GND File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/main.v Line: 6
+    Warning (13410): Pin "HEX7[6]" is stuck at VCC File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/main.v Line: 6
+    Warning (13410): Pin "HEX5[0]" is stuck at GND File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/main.v Line: 6
+    Warning (13410): Pin "HEX5[1]" is stuck at GND File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/main.v Line: 6
+    Warning (13410): Pin "HEX5[2]" is stuck at GND File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/main.v Line: 6
+    Warning (13410): Pin "HEX5[3]" is stuck at GND File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/main.v Line: 6
+    Warning (13410): Pin "HEX5[4]" is stuck at GND File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/main.v Line: 6
+    Warning (13410): Pin "HEX5[5]" is stuck at GND File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/main.v Line: 6
+    Warning (13410): Pin "HEX5[6]" is stuck at VCC File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/main.v Line: 6
+    Warning (13410): Pin "HEX4[0]" is stuck at GND File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/main.v Line: 6
+    Warning (13410): Pin "HEX4[2]" is stuck at GND File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/main.v Line: 6
+    Warning (13410): Pin "HEX4[3]" is stuck at GND File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/main.v Line: 6
+    Warning (13410): Pin "HEX4[5]" is stuck at GND File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/main.v Line: 6
+    Warning (13410): Pin "HEX3[1]" is stuck at GND File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/main.v Line: 6
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 51 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 16 output pins
-    Info (21061): Implemented 33 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 31 warnings
-    Info: Peak virtual memory: 4834 megabytes
-    Info: Processing ended: Thu May 06 10:01:39 2021
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:22
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/Admin/Documents/GitHub/Verilog-202/lab1_version2/main.v Line: 2
+Info (21057): Implemented 244 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 67 output pins
+    Info (21061): Implemented 174 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 28 warnings
+    Info: Peak virtual memory: 4864 megabytes
+    Info: Processing ended: Thu May 06 16:58:55 2021
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:18
 
 

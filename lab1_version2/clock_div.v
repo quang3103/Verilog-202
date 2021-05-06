@@ -12,7 +12,7 @@ module clock_div(clock50, clock);
 	
 	always @(posedge clock50)
    begin
-		if (counter == 24999999) 
+		if (counter == 12499999) 
 		begin
 			clock <= ~clock;
 			counter <= 30'b0;
