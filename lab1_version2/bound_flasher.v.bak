@@ -1,0 +1,179 @@
+module bound_flasher(lamp, clk, flick);
+	input clk, flick;
+	output reg [15:0]lamp;
+	reg [1:0] pre_state, state, next_state;
+	reg increase, enable;
+	
+	reg [4:0] max, min;
+	reg [4:0] position;
+
+	
+	//--------------------------------------
+	
+	always @(posedge flick, posedge isEnd)
+	begin
+		if (isEnd == 1'b1)
+		begin
+			enable <= 1'b0;
+		end
+		else
+		begin
+			enable <= 1'b1;
+		end
+	end
+	
+	//--------------------------------------
+	
+	always @(posedge clk)
+	begin
+		if (enable == 1'b1)
+		begin
+			if (increase == 1'b0)
+			begin
+				lamp <= {lamp[14:0], 1'b1};
+				position <= position + 1;
+			end
+			else
+			begin 
+				lamp <= {1'b1, lamp[15:1]}};
+				position <= position - 1;
+			end
+		end
+		else
+		begin
+			lamp <= 16'd0;
+			position <= 5'd0;
+		end
+	end 
+	
+	//---------------------------------------
+	
+	always @(next_state)
+	begin
+		pre_state = state;
+		state = next_state;
+	end 
+	
+	//---------------------------------------
+	
+	always @(state)
+	begin
+		case state:
+			2'b00:
+				begin
+					max = 5'd6;
+					min = 5'd0;
+				end
+			2'b01:
+				begin
+					max = 5'd11;
+					min = 5'd5;
+				end
+			2'b10:
+				begin
+					max = 5'd16;
+					min = 5'd0;
+				end
+			default:
+				begin
+					max = 5'd6;
+					min = 5'd0;
+				end
+		endcase
+	end 
+	
+	//---------------------------------------
+	
+	always @(*)
+	begin
+		case state:
+			2'b00:
+			begin
+				if (increase == 1'b0)
+				begin
+					if (position == max)
+					begin
+						increase = 1'b1;
+					end
+					else
+					begin
+						increase = increase;
+					end
+				end
+				else
+				begin
+					if (position == min)
+					begin
+						increase = 1'b0;
+						next_state = 2'b01;
+					end
+					else
+					begin
+						increase = increase;
+					end
+				end
+			end
+			2'b01:
+			begin
+				if (increase == 1'b0)
+				begin
+					if (position == max)
+					begin
+						increase = 1'b1;
+					end
+					else
+					begin
+						increase = increase;
+					end
+				end
+				else
+				begin
+					if (position == min)
+					begin
+						increase = 1'b0;
+						next_state = 2'b10;
+					end
+					else
+					begin
+						increase = increase;
+					end
+				end
+			end
+			2'b10:
+			begin
+				if (increase == 1'b0)
+				begin
+					if (position == max)
+					begin
+						increase = 1'b1;
+						isEnd = 1'b0;
+					end
+					else
+					begin
+						increase = increase;
+					end
+				end
+				else
+				begin
+					if (position == min)
+					begin
+						increase = 1'b0;
+						next_state = 2'b00;
+						isEnd = 1'b1;
+					end
+					else
+					begin
+						increase = increase;
+					end
+				end
+			end
+			default:
+			begin
+				increase = increase;
+				next_state = next_state;
+				isEnd = isEnd;
+			end
+		endcase
+	end 
+	 
+endmodule 

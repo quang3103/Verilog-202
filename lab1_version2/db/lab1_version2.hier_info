@@ -1,0 +1,41 @@
+|bound_flasher
+lamp[0] << lamp[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+lamp[1] << lamp[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+lamp[2] << lamp[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+lamp[3] << lamp[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+lamp[4] << lamp[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+lamp[5] << lamp[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+lamp[6] << lamp[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+lamp[7] << lamp[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+lamp[8] << lamp[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+lamp[9] << lamp[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+lamp[10] << lamp[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+lamp[11] << lamp[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+lamp[12] << lamp[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+lamp[13] << lamp[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+lamp[14] << lamp[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+lamp[15] << lamp[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => position[0].CLK
+clk => position[1].CLK
+clk => position[2].CLK
+clk => position[3].CLK
+clk => position[4].CLK
+clk => lamp[0]~reg0.CLK
+clk => lamp[1]~reg0.CLK
+clk => lamp[2]~reg0.CLK
+clk => lamp[3]~reg0.CLK
+clk => lamp[4]~reg0.CLK
+clk => lamp[5]~reg0.CLK
+clk => lamp[6]~reg0.CLK
+clk => lamp[7]~reg0.CLK
+clk => lamp[8]~reg0.CLK
+clk => lamp[9]~reg0.CLK
+clk => lamp[10]~reg0.CLK
+clk => lamp[11]~reg0.CLK
+clk => lamp[12]~reg0.CLK
+clk => lamp[13]~reg0.CLK
+clk => lamp[14]~reg0.CLK
+clk => lamp[15]~reg0.CLK
+flick => enable.PRESET
+
+

@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Quang/202/Verilog/lab1_version2/simulation/modelsim
+vbound_flasher
+Z1 !s110 1620221335
+!i10b 1
+!s100 M@0W]Tg;>bVcX:^l_X11@0
+IA@5=6nn2bMdi5m?VVE[030
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1620221195
+8D:/Quang/202/Verilog/lab1_version2/bound_flasher.v
+FD:/Quang/202/Verilog/lab1_version2/bound_flasher.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1620221335.000000
+!s107 D:/Quang/202/Verilog/lab1_version2/bound_flasher.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Quang/202/Verilog/lab1_version2|D:/Quang/202/Verilog/lab1_version2/bound_flasher.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+D:/Quang/202/Verilog/lab1_version2
+Z7 tCvgOpt 0
+vt_bound_flasher
+R1
+!i10b 1
+!s100 SIUWQfe?F:NLdzK?eMl0>0
+IZ_J]HRASF67GFJb2@2AO71
+R2
+R0
+w1620221307
+8D:/Quang/202/Verilog/lab1_version2/t_bound_flasher.v
+FD:/Quang/202/Verilog/lab1_version2/t_bound_flasher.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Quang/202/Verilog/lab1_version2/t_bound_flasher.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Quang/202/Verilog/lab1_version2|D:/Quang/202/Verilog/lab1_version2/t_bound_flasher.v|
+!i113 1
+R5
+R6
+R7

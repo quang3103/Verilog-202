@@ -1,0 +1,81 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "lamp[0]",
+					"strict" : false
+				},
+				{
+					"name" : "lamp[1]",
+					"strict" : false
+				},
+				{
+					"name" : "lamp[2]",
+					"strict" : false
+				},
+				{
+					"name" : "lamp[3]",
+					"strict" : false
+				},
+				{
+					"name" : "lamp[4]",
+					"strict" : false
+				},
+				{
+					"name" : "lamp[5]",
+					"strict" : false
+				},
+				{
+					"name" : "lamp[6]",
+					"strict" : false
+				},
+				{
+					"name" : "lamp[7]",
+					"strict" : false
+				},
+				{
+					"name" : "lamp[8]",
+					"strict" : false
+				},
+				{
+					"name" : "lamp[9]",
+					"strict" : false
+				},
+				{
+					"name" : "lamp[10]",
+					"strict" : false
+				},
+				{
+					"name" : "lamp[11]",
+					"strict" : false
+				},
+				{
+					"name" : "lamp[12]",
+					"strict" : false
+				},
+				{
+					"name" : "lamp[13]",
+					"strict" : false
+				},
+				{
+					"name" : "lamp[14]",
+					"strict" : false
+				},
+				{
+					"name" : "lamp[15]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "flick",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

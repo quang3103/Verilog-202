@@ -1,0 +1,709 @@
+# Reading C:/intelFPGA_lite/16.1/modelsim_ase/tcl/vsim/pref.tcl
+# do lab1_version2_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/16.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/Quang/202/Verilog/lab1_version2 {D:/Quang/202/Verilog/lab1_version2/bound_flasher.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:28:55 on May 05,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Quang/202/Verilog/lab1_version2" D:/Quang/202/Verilog/lab1_version2/bound_flasher.v 
+# -- Compiling module bound_flasher
+# 
+# Top level modules:
+# 	bound_flasher
+# End time: 20:28:55 on May 05,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/Quang/202/Verilog/lab1_version2 {D:/Quang/202/Verilog/lab1_version2/t_bound_flasher.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:28:55 on May 05,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Quang/202/Verilog/lab1_version2" D:/Quang/202/Verilog/lab1_version2/t_bound_flasher.v 
+# -- Compiling module t_bound_flasher
+# 
+# Top level modules:
+# 	t_bound_flasher
+# End time: 20:28:55 on May 05,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs="+acc"  t_bound_flasher
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs=""+acc"" t_bound_flasher 
+# Start time: 20:28:55 on May 05,2021
+# Loading work.t_bound_flasher
+# Loading work.bound_flasher
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+#                    0: clock = 1 | flick = x | led = 0000000000000000
+# 
+#                    5: clock = 0 | flick = x | led = 0000000000000000
+# 
+#                   10: clock = 1 | flick = x | led = 0000000000000000
+# 
+#                   15: clock = 0 | flick = x | led = 0000000000000000
+# 
+#                   20: clock = 1 | flick = x | led = 0000000000000000
+# 
+#                   25: clock = 0 | flick = 1 | led = 0000000000000000
+# 
+#                   30: clock = 1 | flick = 0 | led = 0000000000000001
+# 
+#                   35: clock = 0 | flick = 0 | led = 0000000000000001
+# 
+#                   40: clock = 1 | flick = 0 | led = 0000000000000011
+# 
+#                   45: clock = 0 | flick = 0 | led = 0000000000000011
+# 
+#                   50: clock = 1 | flick = 0 | led = 0000000000000111
+# 
+#                   55: clock = 0 | flick = 0 | led = 0000000000000111
+# 
+#                   60: clock = 1 | flick = 0 | led = 0000000000001111
+# 
+#                   65: clock = 0 | flick = 0 | led = 0000000000001111
+# 
+#                   70: clock = 1 | flick = 0 | led = 0000000000011111
+# 
+#                   75: clock = 0 | flick = 0 | led = 0000000000011111
+# 
+#                   80: clock = 1 | flick = 0 | led = 0000000000111111
+# 
+#                   85: clock = 0 | flick = 0 | led = 0000000000111111
+# 
+#                   90: clock = 1 | flick = 0 | led = 0000000000011111
+# 
+#                   95: clock = 0 | flick = 0 | led = 0000000000011111
+# 
+#                  100: clock = 1 | flick = 0 | led = 0000000000001111
+# 
+#                  105: clock = 0 | flick = 0 | led = 0000000000001111
+# 
+#                  110: clock = 1 | flick = 0 | led = 0000000000000111
+# 
+#                  115: clock = 0 | flick = 0 | led = 0000000000000111
+# 
+#                  120: clock = 1 | flick = 0 | led = 0000000000000011
+# 
+#                  125: clock = 0 | flick = 0 | led = 0000000000000011
+# 
+#                  130: clock = 1 | flick = 0 | led = 0000000000000001
+# 
+#                  135: clock = 0 | flick = 0 | led = 0000000000000001
+# 
+#                  140: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                  145: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                  150: clock = 1 | flick = 0 | led = 0000000000000001
+# 
+#                  155: clock = 0 | flick = 0 | led = 0000000000000001
+# 
+#                  160: clock = 1 | flick = 0 | led = 0000000000000011
+# 
+#                  165: clock = 0 | flick = 0 | led = 0000000000000011
+# 
+#                  170: clock = 1 | flick = 0 | led = 0000000000000111
+# 
+#                  175: clock = 0 | flick = 0 | led = 0000000000000111
+# 
+#                  180: clock = 1 | flick = 0 | led = 0000000000001111
+# 
+#                  185: clock = 0 | flick = 0 | led = 0000000000001111
+# 
+#                  190: clock = 1 | flick = 0 | led = 0000000000011111
+# 
+#                  195: clock = 0 | flick = 0 | led = 0000000000011111
+# 
+#                  200: clock = 1 | flick = 0 | led = 0000000000111111
+# 
+#                  205: clock = 0 | flick = 0 | led = 0000000000111111
+# 
+#                  210: clock = 1 | flick = 0 | led = 0000000001111111
+# 
+#                  215: clock = 0 | flick = 0 | led = 0000000001111111
+# 
+#                  220: clock = 1 | flick = 0 | led = 0000000011111111
+# 
+#                  225: clock = 0 | flick = 0 | led = 0000000011111111
+# 
+#                  230: clock = 1 | flick = 0 | led = 0000000111111111
+# 
+#                  235: clock = 0 | flick = 0 | led = 0000000111111111
+# 
+#                  240: clock = 1 | flick = 0 | led = 0000001111111111
+# 
+#                  245: clock = 0 | flick = 0 | led = 0000001111111111
+# 
+#                  250: clock = 1 | flick = 0 | led = 0000011111111111
+# 
+#                  255: clock = 0 | flick = 0 | led = 0000011111111111
+# 
+#                  260: clock = 1 | flick = 0 | led = 0000001111111111
+# 
+#                  265: clock = 0 | flick = 0 | led = 0000001111111111
+# 
+#                  270: clock = 1 | flick = 0 | led = 0000000111111111
+# 
+#                  275: clock = 0 | flick = 0 | led = 0000000111111111
+# 
+#                  280: clock = 1 | flick = 0 | led = 0000000011111111
+# 
+#                  285: clock = 0 | flick = 0 | led = 0000000011111111
+# 
+#                  290: clock = 1 | flick = 0 | led = 0000000001111111
+# 
+#                  295: clock = 0 | flick = 0 | led = 0000000001111111
+# 
+#                  300: clock = 1 | flick = 0 | led = 0000000000111111
+# 
+#                  305: clock = 0 | flick = 0 | led = 0000000000111111
+# 
+#                  310: clock = 1 | flick = 0 | led = 0000000000011111
+# 
+#                  315: clock = 0 | flick = 0 | led = 0000000000011111
+# 
+#                  320: clock = 1 | flick = 0 | led = 0000000000111111
+# 
+#                  325: clock = 0 | flick = 0 | led = 0000000000111111
+# 
+#                  330: clock = 1 | flick = 0 | led = 0000000001111111
+# 
+#                  335: clock = 0 | flick = 0 | led = 0000000001111111
+# 
+#                  340: clock = 1 | flick = 0 | led = 0000000011111111
+# 
+#                  345: clock = 0 | flick = 0 | led = 0000000011111111
+# 
+#                  350: clock = 1 | flick = 0 | led = 0000000111111111
+# 
+#                  355: clock = 0 | flick = 0 | led = 0000000111111111
+# 
+#                  360: clock = 1 | flick = 0 | led = 0000001111111111
+# 
+#                  365: clock = 0 | flick = 0 | led = 0000001111111111
+# 
+#                  370: clock = 1 | flick = 0 | led = 0000011111111111
+# 
+#                  375: clock = 0 | flick = 0 | led = 0000011111111111
+# 
+#                  380: clock = 1 | flick = 0 | led = 0000111111111111
+# 
+#                  385: clock = 0 | flick = 0 | led = 0000111111111111
+# 
+#                  390: clock = 1 | flick = 0 | led = 0001111111111111
+# 
+#                  395: clock = 0 | flick = 0 | led = 0001111111111111
+# 
+#                  400: clock = 1 | flick = 0 | led = 0011111111111111
+# 
+#                  405: clock = 0 | flick = 0 | led = 0011111111111111
+# 
+#                  410: clock = 1 | flick = 0 | led = 0111111111111111
+# 
+#                  415: clock = 0 | flick = 0 | led = 0111111111111111
+# 
+#                  420: clock = 1 | flick = 0 | led = 1111111111111111
+# 
+#                  425: clock = 0 | flick = 0 | led = 1111111111111111
+# 
+#                  430: clock = 1 | flick = 0 | led = 0111111111111111
+# 
+#                  435: clock = 0 | flick = 0 | led = 0111111111111111
+# 
+#                  440: clock = 1 | flick = 0 | led = 0011111111111111
+# 
+#                  445: clock = 0 | flick = 0 | led = 0011111111111111
+# 
+#                  450: clock = 1 | flick = 0 | led = 0001111111111111
+# 
+#                  455: clock = 0 | flick = 0 | led = 0001111111111111
+# 
+#                  460: clock = 1 | flick = 0 | led = 0000111111111111
+# 
+#                  465: clock = 0 | flick = 0 | led = 0000111111111111
+# 
+#                  470: clock = 1 | flick = 0 | led = 0000011111111111
+# 
+#                  475: clock = 0 | flick = 0 | led = 0000011111111111
+# 
+#                  480: clock = 1 | flick = 0 | led = 0000001111111111
+# 
+#                  485: clock = 0 | flick = 0 | led = 0000001111111111
+# 
+#                  490: clock = 1 | flick = 0 | led = 0000000111111111
+# 
+#                  495: clock = 0 | flick = 0 | led = 0000000111111111
+# 
+#                  500: clock = 1 | flick = 0 | led = 0000000011111111
+# 
+#                  505: clock = 0 | flick = 0 | led = 0000000011111111
+# 
+#                  510: clock = 1 | flick = 0 | led = 0000000001111111
+# 
+#                  515: clock = 0 | flick = 0 | led = 0000000001111111
+# 
+#                  520: clock = 1 | flick = 0 | led = 0000000000111111
+# 
+#                  525: clock = 0 | flick = 0 | led = 0000000000111111
+# 
+#                  530: clock = 1 | flick = 0 | led = 0000000000011111
+# 
+#                  535: clock = 0 | flick = 0 | led = 0000000000011111
+# 
+#                  540: clock = 1 | flick = 0 | led = 0000000000001111
+# 
+#                  545: clock = 0 | flick = 0 | led = 0000000000001111
+# 
+#                  550: clock = 1 | flick = 0 | led = 0000000000000111
+# 
+#                  555: clock = 0 | flick = 0 | led = 0000000000000111
+# 
+#                  560: clock = 1 | flick = 0 | led = 0000000000000011
+# 
+#                  565: clock = 0 | flick = 0 | led = 0000000000000011
+# 
+#                  570: clock = 1 | flick = 0 | led = 0000000000000001
+# 
+#                  575: clock = 0 | flick = 0 | led = 0000000000000001
+# 
+#                  580: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                  585: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                  590: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                  595: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                  600: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                  605: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                  610: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                  615: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                  620: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                  625: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                  630: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                  635: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                  640: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                  645: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                  650: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                  655: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                  660: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                  665: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                  670: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                  675: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                  680: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                  685: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                  690: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                  695: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                  700: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                  705: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                  710: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                  715: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                  720: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                  725: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                  730: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                  735: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                  740: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                  745: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                  750: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                  755: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                  760: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                  765: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                  770: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                  775: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                  780: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                  785: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                  790: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                  795: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                  800: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                  805: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                  810: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                  815: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                  820: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                  825: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                  830: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                  835: clock = 0 | flick = 1 | led = 0000000000000000
+# 
+#                  837: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                  840: clock = 1 | flick = 0 | led = 0000000000000001
+# 
+#                  845: clock = 0 | flick = 0 | led = 0000000000000001
+# 
+#                  850: clock = 1 | flick = 0 | led = 0000000000000011
+# 
+#                  855: clock = 0 | flick = 0 | led = 0000000000000011
+# 
+#                  860: clock = 1 | flick = 0 | led = 0000000000000111
+# 
+#                  865: clock = 0 | flick = 0 | led = 0000000000000111
+# 
+#                  870: clock = 1 | flick = 0 | led = 0000000000001111
+# 
+#                  875: clock = 0 | flick = 0 | led = 0000000000001111
+# 
+#                  880: clock = 1 | flick = 0 | led = 0000000000011111
+# 
+#                  885: clock = 0 | flick = 0 | led = 0000000000011111
+# 
+#                  890: clock = 1 | flick = 0 | led = 0000000000111111
+# 
+#                  895: clock = 0 | flick = 0 | led = 0000000000111111
+# 
+#                  900: clock = 1 | flick = 0 | led = 0000000000011111
+# 
+#                  905: clock = 0 | flick = 0 | led = 0000000000011111
+# 
+#                  910: clock = 1 | flick = 0 | led = 0000000000001111
+# 
+#                  915: clock = 0 | flick = 0 | led = 0000000000001111
+# 
+#                  920: clock = 1 | flick = 0 | led = 0000000000000111
+# 
+#                  925: clock = 0 | flick = 0 | led = 0000000000000111
+# 
+#                  930: clock = 1 | flick = 0 | led = 0000000000000011
+# 
+#                  935: clock = 0 | flick = 0 | led = 0000000000000011
+# 
+#                  940: clock = 1 | flick = 0 | led = 0000000000000001
+# 
+#                  945: clock = 0 | flick = 0 | led = 0000000000000001
+# 
+#                  950: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                  955: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                  960: clock = 1 | flick = 0 | led = 0000000000000001
+# 
+#                  965: clock = 0 | flick = 0 | led = 0000000000000001
+# 
+#                  970: clock = 1 | flick = 0 | led = 0000000000000011
+# 
+#                  975: clock = 0 | flick = 0 | led = 0000000000000011
+# 
+#                  980: clock = 1 | flick = 0 | led = 0000000000000111
+# 
+#                  985: clock = 0 | flick = 0 | led = 0000000000000111
+# 
+#                  990: clock = 1 | flick = 0 | led = 0000000000001111
+# 
+#                  995: clock = 0 | flick = 0 | led = 0000000000001111
+# 
+#                 1000: clock = 1 | flick = 0 | led = 0000000000011111
+# 
+#                 1005: clock = 0 | flick = 0 | led = 0000000000011111
+# 
+#                 1010: clock = 1 | flick = 0 | led = 0000000000111111
+# 
+#                 1015: clock = 0 | flick = 0 | led = 0000000000111111
+# 
+#                 1020: clock = 1 | flick = 0 | led = 0000000001111111
+# 
+#                 1025: clock = 0 | flick = 0 | led = 0000000001111111
+# 
+#                 1030: clock = 1 | flick = 0 | led = 0000000011111111
+# 
+#                 1035: clock = 0 | flick = 0 | led = 0000000011111111
+# 
+#                 1040: clock = 1 | flick = 0 | led = 0000000111111111
+# 
+#                 1045: clock = 0 | flick = 0 | led = 0000000111111111
+# 
+#                 1050: clock = 1 | flick = 0 | led = 0000001111111111
+# 
+#                 1055: clock = 0 | flick = 0 | led = 0000001111111111
+# 
+#                 1060: clock = 1 | flick = 0 | led = 0000011111111111
+# 
+#                 1065: clock = 0 | flick = 0 | led = 0000011111111111
+# 
+#                 1070: clock = 1 | flick = 0 | led = 0000001111111111
+# 
+#                 1075: clock = 0 | flick = 0 | led = 0000001111111111
+# 
+#                 1080: clock = 1 | flick = 0 | led = 0000000111111111
+# 
+#                 1085: clock = 0 | flick = 0 | led = 0000000111111111
+# 
+#                 1090: clock = 1 | flick = 0 | led = 0000000011111111
+# 
+#                 1095: clock = 0 | flick = 0 | led = 0000000011111111
+# 
+#                 1100: clock = 1 | flick = 0 | led = 0000000001111111
+# 
+#                 1105: clock = 0 | flick = 0 | led = 0000000001111111
+# 
+#                 1110: clock = 1 | flick = 0 | led = 0000000000111111
+# 
+#                 1115: clock = 0 | flick = 0 | led = 0000000000111111
+# 
+#                 1120: clock = 1 | flick = 0 | led = 0000000000011111
+# 
+#                 1125: clock = 0 | flick = 0 | led = 0000000000011111
+# 
+#                 1130: clock = 1 | flick = 0 | led = 0000000000111111
+# 
+#                 1135: clock = 0 | flick = 0 | led = 0000000000111111
+# 
+#                 1140: clock = 1 | flick = 0 | led = 0000000001111111
+# 
+#                 1145: clock = 0 | flick = 0 | led = 0000000001111111
+# 
+#                 1150: clock = 1 | flick = 0 | led = 0000000011111111
+# 
+#                 1155: clock = 0 | flick = 0 | led = 0000000011111111
+# 
+#                 1160: clock = 1 | flick = 0 | led = 0000000111111111
+# 
+#                 1165: clock = 0 | flick = 0 | led = 0000000111111111
+# 
+#                 1170: clock = 1 | flick = 0 | led = 0000001111111111
+# 
+#                 1175: clock = 0 | flick = 0 | led = 0000001111111111
+# 
+#                 1180: clock = 1 | flick = 0 | led = 0000011111111111
+# 
+#                 1185: clock = 0 | flick = 0 | led = 0000011111111111
+# 
+#                 1190: clock = 1 | flick = 0 | led = 0000111111111111
+# 
+#                 1195: clock = 0 | flick = 0 | led = 0000111111111111
+# 
+#                 1200: clock = 1 | flick = 0 | led = 0001111111111111
+# 
+#                 1205: clock = 0 | flick = 0 | led = 0001111111111111
+# 
+#                 1210: clock = 1 | flick = 0 | led = 0011111111111111
+# 
+#                 1215: clock = 0 | flick = 0 | led = 0011111111111111
+# 
+#                 1220: clock = 1 | flick = 0 | led = 0111111111111111
+# 
+#                 1225: clock = 0 | flick = 0 | led = 0111111111111111
+# 
+#                 1230: clock = 1 | flick = 0 | led = 1111111111111111
+# 
+#                 1235: clock = 0 | flick = 0 | led = 1111111111111111
+# 
+#                 1240: clock = 1 | flick = 0 | led = 0111111111111111
+# 
+#                 1245: clock = 0 | flick = 0 | led = 0111111111111111
+# 
+#                 1250: clock = 1 | flick = 0 | led = 0011111111111111
+# 
+#                 1255: clock = 0 | flick = 0 | led = 0011111111111111
+# 
+#                 1260: clock = 1 | flick = 0 | led = 0001111111111111
+# 
+#                 1265: clock = 0 | flick = 0 | led = 0001111111111111
+# 
+#                 1270: clock = 1 | flick = 0 | led = 0000111111111111
+# 
+#                 1275: clock = 0 | flick = 0 | led = 0000111111111111
+# 
+#                 1280: clock = 1 | flick = 0 | led = 0000011111111111
+# 
+#                 1285: clock = 0 | flick = 0 | led = 0000011111111111
+# 
+#                 1290: clock = 1 | flick = 0 | led = 0000001111111111
+# 
+#                 1295: clock = 0 | flick = 0 | led = 0000001111111111
+# 
+#                 1300: clock = 1 | flick = 0 | led = 0000000111111111
+# 
+#                 1305: clock = 0 | flick = 0 | led = 0000000111111111
+# 
+#                 1310: clock = 1 | flick = 0 | led = 0000000011111111
+# 
+#                 1315: clock = 0 | flick = 0 | led = 0000000011111111
+# 
+#                 1320: clock = 1 | flick = 0 | led = 0000000001111111
+# 
+#                 1325: clock = 0 | flick = 0 | led = 0000000001111111
+# 
+#                 1330: clock = 1 | flick = 0 | led = 0000000000111111
+# 
+#                 1335: clock = 0 | flick = 0 | led = 0000000000111111
+# 
+#                 1340: clock = 1 | flick = 0 | led = 0000000000011111
+# 
+#                 1345: clock = 0 | flick = 0 | led = 0000000000011111
+# 
+#                 1350: clock = 1 | flick = 0 | led = 0000000000001111
+# 
+#                 1355: clock = 0 | flick = 0 | led = 0000000000001111
+# 
+#                 1360: clock = 1 | flick = 0 | led = 0000000000000111
+# 
+#                 1365: clock = 0 | flick = 0 | led = 0000000000000111
+# 
+#                 1370: clock = 1 | flick = 0 | led = 0000000000000011
+# 
+#                 1375: clock = 0 | flick = 0 | led = 0000000000000011
+# 
+#                 1380: clock = 1 | flick = 0 | led = 0000000000000001
+# 
+#                 1385: clock = 0 | flick = 0 | led = 0000000000000001
+# 
+#                 1390: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                 1395: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                 1400: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                 1405: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                 1410: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                 1415: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                 1420: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                 1425: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                 1430: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                 1435: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                 1440: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                 1445: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                 1450: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                 1455: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                 1460: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                 1465: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                 1470: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                 1475: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                 1480: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                 1485: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                 1490: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                 1495: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                 1500: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                 1505: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                 1510: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                 1515: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                 1520: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                 1525: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                 1530: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                 1535: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                 1540: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                 1545: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                 1550: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                 1555: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                 1560: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                 1565: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                 1570: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                 1575: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                 1580: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                 1585: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                 1590: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                 1595: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                 1600: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                 1605: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                 1610: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                 1615: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                 1620: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                 1625: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+#                 1630: clock = 1 | flick = 0 | led = 0000000000000000
+# 
+#                 1635: clock = 0 | flick = 0 | led = 0000000000000000
+# 
+# ** Note: $stop    : D:/Quang/202/Verilog/lab1_version2/t_bound_flasher.v(37)
+#    Time: 1637 ps  Iteration: 0  Instance: /t_bound_flasher
+# Break in Module t_bound_flasher at D:/Quang/202/Verilog/lab1_version2/t_bound_flasher.v line 37
+# End time: 20:29:43 on May 05,2021, Elapsed time: 0:00:48
+# Errors: 0, Warnings: 0
